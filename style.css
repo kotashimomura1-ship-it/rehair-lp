@@ -1089,26 +1089,37 @@ details[open] .detail-card__arrow { transform: rotate(180deg); }
 /* ============================================================
    5. HEADSPA FLOW — 7ステップ
 ============================================================ */
-.headspa__inner {
-  display: grid;
-  grid-template-columns: 340px 1fr;
-  gap: 52px;
-  align-items: start;
-}
 
-.headspa__photo { display: flex; flex-direction: column; gap: 8px; }
-.headspa__img {
-  width: 100%;
-  height: 340px;
-  object-fit: cover;
+/* 見出し直下の全幅バナー写真 */
+.headspa__banner {
+  position: relative;
   border-radius: 12px;
+  overflow: hidden;
+  margin-bottom: 40px;
   box-shadow: 0 8px 32px rgba(0,0,0,0.12);
 }
-.headspa__photo-caption {
-  font-size: 11px;
-  color: var(--gray);
-  text-align: center;
-  letter-spacing: 0.05em;
+.headspa__banner-img {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+  display: block;
+}
+.headspa__banner-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(to top, rgba(0,0,0,0.55) 0%, transparent 100%);
+  padding: 24px 20px 16px;
+}
+.headspa__banner-overlay span {
+  font-size: 12px;
+  color: rgba(255,255,255,0.75);
+  letter-spacing: 0.08em;
+}
+
+.headspa__inner {
+  display: block;
 }
 
 .headspa__steps {
@@ -1310,8 +1321,7 @@ details[open] .detail-card__arrow { transform: rotate(180deg); }
   .solution__plus      { transform: rotate(90deg); padding: 8px 0; }
   .solution__track     { max-width: 320px; width: 100%; }
   .botanience__inner   { grid-template-columns: 1fr; max-width: 480px; margin: 0 auto; }
-  .headspa__inner      { grid-template-columns: 1fr; }
-  .headspa__img        { height: 240px; }
+  .headspa__banner-img { height: 220px; }
   .home-bonus__inner   { grid-template-columns: 1fr; text-align: center; }
   .home-bonus__visual  { order: -1; }
   .home-bonus__cycle   { justify-content: center; }
