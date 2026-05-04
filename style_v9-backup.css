@@ -1505,17 +1505,6 @@ details[open] .detail-card__arrow { transform: rotate(180deg); }
 }
 .hero__mini-course-price--main { color: var(--orange); font-size: 22px; }
 .hero__mini-course-desc { font-size: 10px; color: var(--gray); text-align: center; line-height: 1.4; }
-.hero__mini-course-gift {
-  font-size: 9px;
-  font-weight: 700;
-  color: var(--gold);
-  background: rgba(184,153,104,0.12);
-  border: 1px solid rgba(184,153,104,0.3);
-  border-radius: 20px;
-  padding: 2px 8px;
-  margin-top: 3px;
-  letter-spacing: 0.02em;
-}
 .hero__mini-courses-note {
   font-size: 11px;
   color: var(--brown-mid);
@@ -1546,181 +1535,11 @@ details[open] .detail-card__arrow { transform: rotate(180deg); }
   letter-spacing: 0.04em;
 }
 
-/* ============================================================
-   HERO GIFT STRIP（修正1-A）- ヒーロー内ギフト帯
-============================================================ */
-.hero__gift-strip {
-  display: flex;
-  align-items: center;
-  gap: 16px;
-  background: linear-gradient(135deg, #3B2A1F 0%, #5A3828 55%, #8B6840 100%);
-  border-radius: 10px;
-  padding: 14px 20px;
-  max-width: 520px;
-  margin: 0 auto 24px;
-  text-align: left;
-  box-shadow: 0 4px 16px rgba(59,42,31,0.25);
-}
-.hero__gift-img {
-  width: 58px;
-  height: 58px;
-  object-fit: cover;
-  border-radius: 6px;
-  flex-shrink: 0;
-  background: #0e0e0e;
-}
-.hero__gift-body { flex: 1; min-width: 0; }
-.hero__gift-tag {
-  font-size: 10px;
-  font-weight: 800;
-  color: var(--gold-lt);
-  letter-spacing: 0.06em;
-  margin-bottom: 5px;
-}
-.hero__gift-name {
-  font-family: var(--font-serif);
-  font-size: 12px;
-  color: rgba(255,255,255,0.85);
-  font-weight: 400;
-  margin-bottom: 4px;
-  line-height: 1.4;
-}
-.hero__gift-value {
-  font-size: 12px;
-  color: rgba(255,255,255,0.9);
-  font-weight: 500;
-  line-height: 1.5;
-}
-.hero__gift-value strong {
-  font-size: 16px;
-  color: var(--gold-lt);
-  font-family: var(--font-serif);
-  font-weight: 300;
-}
-.hero__gift-label {
-  font-size: 10px;
-  color: rgba(255,255,255,0.5);
-  margin-top: 5px;
-  letter-spacing: 0.04em;
-}
-
-/* ============================================================
-   TONIC TEASER（修正1-B）- ヒーロー直下独立セクション
-============================================================ */
-.tonic-teaser {
-  background: linear-gradient(135deg, #F5EDE3 0%, #FAF7F2 100%);
-  padding: 52px 0;
-  border-top: 2px solid rgba(184,153,104,0.18);
-  border-bottom: 2px solid rgba(184,153,104,0.18);
-}
-.tonic-teaser__inner {
-  display: grid;
-  grid-template-columns: 200px 1fr;
-  gap: 52px;
-  align-items: center;
-}
-.tonic-teaser__visual {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 14px;
-}
-.tonic-teaser__img {
-  width: 180px;
-  height: auto;
-  border-radius: 10px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.14);
-  background: #0e0e0e;
-  display: block;
-}
-.tonic-teaser__official {
-  font-size: 11px;
-  font-weight: 700;
-  color: var(--gold);
-  border: 1.5px solid var(--gold);
-  border-radius: 20px;
-  padding: 5px 16px;
-  letter-spacing: 0.06em;
-  white-space: nowrap;
-}
-.tonic-teaser__label {
-  font-size: 12px;
-  font-weight: 700;
-  color: var(--orange);
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  margin-bottom: 12px;
-}
-.tonic-teaser__title {
-  font-family: var(--font-serif);
-  font-size: clamp(20px, 2.8vw, 28px);
-  font-weight: 400;
-  color: var(--brown-deep);
-  line-height: 1.5;
-  margin-bottom: 20px;
-}
-.tonic-teaser__price-row {
-  display: flex;
-  align-items: baseline;
-  gap: 4px;
-  margin-bottom: 10px;
-  line-height: 1;
-}
-.tonic-teaser__yen {
-  font-family: var(--font-serif);
-  font-size: 26px;
-  color: var(--gold);
-  font-weight: 300;
-}
-.tonic-teaser__amount {
-  font-family: var(--font-serif);
-  font-size: 56px;
-  font-weight: 300;
-  color: var(--brown-deep);
-  line-height: 1;
-}
-.tonic-teaser__unit {
-  font-size: 18px;
-  color: var(--brown-mid);
-  margin-left: 2px;
-}
-.tonic-teaser__product {
-  font-size: 13px;
-  color: var(--gold);
-  font-weight: 600;
-  margin-bottom: 14px;
-}
-.tonic-teaser__desc {
-  font-size: 14px;
-  color: #555;
-  line-height: 1.9;
-  margin-bottom: 20px;
-}
-.tonic-teaser__badges {
-  display: flex;
-  gap: 8px;
-  flex-wrap: wrap;
-}
-.tonic-teaser__badge {
-  font-size: 10px;
-  font-weight: 700;
-  color: var(--brown-deep);
-  background: rgba(184,153,104,0.12);
-  border: 1px solid rgba(184,153,104,0.3);
-  border-radius: 20px;
-  padding: 4px 12px;
-  letter-spacing: 0.04em;
-}
-
 /* レスポンシブ追加 */
 @media (max-width: 860px) {
   .trust-badges__grid { grid-template-columns: repeat(2, 1fr); }
   .hero__mini-courses { max-width: 380px; }
   .hero__mini-course  { min-width: 110px; }
-  .tonic-teaser__inner { grid-template-columns: 1fr; text-align: center; max-width: 480px; margin: 0 auto; }
-  .tonic-teaser__visual { order: -1; }
-  .tonic-teaser__badges { justify-content: center; }
-  .hero__gift-strip { max-width: 100%; }
 }
 @media (max-width: 580px) {
   .trust-badges__grid { grid-template-columns: repeat(2, 1fr); }
@@ -1728,6 +1547,4 @@ details[open] .detail-card__arrow { transform: rotate(180deg); }
   .urgency-bar__days { font-size: 17px; }
   .hero__mini-courses { flex-direction: column; align-items: center; max-width: 280px; }
   .hero__mini-course { width: 100%; }
-  .hero__gift-strip { flex-direction: column; text-align: center; gap: 12px; }
-  .tonic-teaser__amount { font-size: 44px; }
 }
