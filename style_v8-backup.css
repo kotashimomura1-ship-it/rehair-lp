@@ -6,14 +6,14 @@
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
 :root {
-  --cream:       #FAF7F2;
-  --cream-warm:  #F5EDE3;
-  --brown-deep:  #3B2A1F;
+  --cream:       #fdfbf7;
+  --cream-warm:  #fff9f2;
+  --brown-deep:  #2a1508;
   --brown-mid:   #6b3a1a;
-  --gold:        #B89968;
-  --gold-lt:     #D4B07E;
-  --orange:      #C56F4D;
-  --orange-lt:   #D4845E;
+  --gold:        #b89a5e;
+  --gold-lt:     #d4b97e;
+  --orange:      #e8520a;
+  --orange-lt:   #ff7a3a;
   --green-line:  #06C755;
   --beige:       #f0e8d8;
   --gray:        #888;
@@ -33,7 +33,6 @@ body {
   color: var(--brown-deep);
   line-height: 1.85;
   font-size: 15px;
-  padding-top: 44px;
 }
 
 a { text-decoration: none; color: inherit; }
@@ -47,7 +46,7 @@ ul { list-style: none; }
 
 .section { padding: 72px 0; }
 .section--warm { background: var(--cream-warm); }
-.section--campaign { background: linear-gradient(135deg, #3B2A1F 0%, #5A3828 100%); color: var(--white); }
+.section--campaign { background: linear-gradient(135deg, #c93a00 0%, #e8520a 100%); color: var(--white); }
 
 .section__eyebrow {
   font-size: 11px;
@@ -674,13 +673,12 @@ ul { list-style: none; }
   transform: translateX(-50%);
   background: var(--orange);
   color: var(--white);
-  font-size: 13px;
-  font-weight: 800;
-  letter-spacing: 0.06em;
-  padding: 8px 28px;
-  border-radius: 0 0 10px 10px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  padding: 5px 20px;
+  border-radius: 0 0 8px 8px;
   white-space: nowrap;
-  box-shadow: 0 4px 12px rgba(197,111,77,0.35);
 }
 
 .course__for {
@@ -1350,198 +1348,4 @@ details[open] .detail-card__arrow { transform: rotate(180deg); }
   .solution__result-box { font-size: 14px; }
   .home-bonus__cycle   { flex-direction: column; }
   .home-bonus__cycle-item { width: 100%; }
-}
-
-/* ============================================================
-   URGENCY BAR（修正6）- スティッキーカウントダウン
-============================================================ */
-.urgency-bar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 1000;
-  background: linear-gradient(90deg, #7A2200 0%, #C56F4D 100%);
-  color: var(--white);
-  text-align: center;
-  padding: 10px 16px;
-  font-size: 13px;
-  font-weight: 600;
-  letter-spacing: 0.04em;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 8px;
-  flex-wrap: wrap;
-}
-.urgency-bar__sep { opacity: 0.5; }
-.urgency-bar__days {
-  font-family: var(--font-serif);
-  font-size: 20px;
-  font-weight: 300;
-  vertical-align: middle;
-  line-height: 1;
-}
-
-/* ============================================================
-   TRUST BADGES（修正3）- 実績バッジ
-============================================================ */
-.trust-badges {
-  background: #F5EDE3;
-  padding: 36px 0;
-  border-bottom: 1px solid rgba(184,153,104,0.2);
-}
-.trust-badges__grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 12px;
-  margin-bottom: 10px;
-}
-.trust-badge {
-  background: var(--white);
-  border-radius: 14px;
-  padding: 20px 12px 16px;
-  text-align: center;
-  border: 1.5px solid rgba(184,153,104,0.25);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 4px;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.04);
-  transition: box-shadow 0.2s;
-}
-.trust-badge:hover { box-shadow: 0 4px 18px rgba(0,0,0,0.09); }
-.trust-badge__stars { color: #e8a020; font-size: 13px; letter-spacing: 1px; }
-.trust-badge__icon { font-size: 22px; line-height: 1.2; }
-.trust-badge__score {
-  font-family: var(--font-serif);
-  font-size: 28px;
-  font-weight: 300;
-  color: var(--brown-deep);
-  line-height: 1.1;
-  margin-top: 2px;
-}
-.trust-badge__platform { font-size: 12px; font-weight: 700; color: var(--brown-deep); margin-top: 2px; }
-.trust-badge__sub { font-size: 10px; color: var(--gray); margin-top: 2px; }
-.trust-badges__note { font-size: 10px; color: var(--gray); text-align: center; }
-
-/* ============================================================
-   HERO PRICE & MINI COURSES（修正1）- ファーストビュー完結
-============================================================ */
-.hero__price-intro {
-  display: flex;
-  align-items: baseline;
-  justify-content: center;
-  gap: 6px;
-  margin: 16px 0 10px;
-  flex-wrap: wrap;
-}
-.hero__price-from {
-  font-family: var(--font-serif);
-  font-size: 34px;
-  font-weight: 300;
-  color: var(--orange);
-  line-height: 1;
-}
-.hero__price-tax { font-size: 14px; color: var(--brown-mid); }
-.hero__price-label {
-  font-size: 12px;
-  font-weight: 700;
-  color: var(--orange);
-  background: rgba(197,111,77,0.1);
-  border: 1px solid rgba(197,111,77,0.25);
-  padding: 3px 12px;
-  border-radius: 20px;
-}
-
-.hero__mini-courses {
-  display: flex;
-  gap: 8px;
-  justify-content: center;
-  margin: 0 auto 20px;
-  max-width: 540px;
-  flex-wrap: wrap;
-}
-.hero__mini-course {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 3px;
-  background: var(--cream-warm);
-  border: 1px solid var(--gray-lt);
-  border-radius: 10px;
-  padding: 12px 14px;
-  flex: 1;
-  min-width: 130px;
-}
-.hero__mini-course--center {
-  border-color: var(--orange);
-  box-shadow: 0 3px 12px rgba(197,111,77,0.18);
-}
-.hero__mini-course-badge {
-  font-size: 9px;
-  font-weight: 800;
-  color: var(--white);
-  background: var(--orange);
-  border-radius: 20px;
-  padding: 2px 10px;
-  letter-spacing: 0.04em;
-  margin-bottom: 2px;
-}
-.hero__mini-course-name {
-  font-size: 11px;
-  font-weight: 700;
-  color: var(--brown-deep);
-}
-.hero__mini-course-price {
-  font-family: var(--font-serif);
-  font-size: 18px;
-  font-weight: 300;
-  color: var(--brown-deep);
-  line-height: 1;
-}
-.hero__mini-course-price--main { color: var(--orange); font-size: 22px; }
-.hero__mini-course-desc { font-size: 10px; color: var(--gray); text-align: center; line-height: 1.4; }
-.hero__mini-courses-note {
-  font-size: 11px;
-  color: var(--brown-mid);
-  text-align: center;
-  margin-bottom: 20px;
-  opacity: 0.7;
-}
-
-/* ============================================================
-   COURSE SAVINGS（修正5）- アンカリング表示
-============================================================ */
-.course__savings {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  font-size: 12px;
-  color: var(--gray);
-}
-.course__savings s { text-decoration: line-through; }
-.course__savings-badge {
-  display: inline-block;
-  font-size: 10px;
-  font-weight: 800;
-  color: var(--white);
-  background: var(--orange);
-  border-radius: 3px;
-  padding: 2px 8px;
-  letter-spacing: 0.04em;
-}
-
-/* レスポンシブ追加 */
-@media (max-width: 860px) {
-  .trust-badges__grid { grid-template-columns: repeat(2, 1fr); }
-  .hero__mini-courses { max-width: 380px; }
-  .hero__mini-course  { min-width: 110px; }
-}
-@media (max-width: 580px) {
-  .trust-badges__grid { grid-template-columns: repeat(2, 1fr); }
-  .urgency-bar { font-size: 12px; gap: 5px; padding: 9px 12px; }
-  .urgency-bar__days { font-size: 17px; }
-  .hero__mini-courses { flex-direction: column; align-items: center; max-width: 280px; }
-  .hero__mini-course { width: 100%; }
 }
