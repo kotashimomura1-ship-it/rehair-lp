@@ -239,38 +239,37 @@ ul { list-style: none; }
 }
 .hero__reviews-sep { opacity: 0.4; }
 
-/* 施術写真 + トニック ビジュアル */
-.hero__visuals {
-  display: flex;
-  gap: 16px;
-  justify-content: center;
-  margin-top: 24px;
-  flex-wrap: wrap;
-}
-.hero__visual-item {
-  display: flex;
-  flex-direction: column;
+/* ホームケアトニックのヒント */
+.hero__tonic-hint {
+  display: inline-flex;
   align-items: center;
-  gap: 8px;
+  gap: 14px;
   background: var(--cream-warm);
   border: 1.5px solid var(--gold);
-  border-radius: 10px;
-  padding: 10px 12px;
-  max-width: 180px;
+  border-radius: 8px;
+  padding: 10px 20px;
 }
-.hero__visual-item--tonic { border-color: var(--gold); }
-.hero__visual-img {
-  width: 120px;
-  height: 120px;
-  object-fit: cover;
-  border-radius: 6px;
+.hero__tonic-hint-img {
+  height: 64px;
+  width: auto;
+  object-fit: contain;
+  border-radius: 4px;
+  flex-shrink: 0;
 }
-.hero__visual-item--tonic .hero__visual-img { object-fit: contain; background: #0e0e0e; border-radius: 6px; }
-.hero__visual-label {
+.hero__tonic-hint-text {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+.hero__tonic-hint-text strong {
+  font-size: 13px;
+  color: var(--brown-deep);
+  font-weight: 700;
+}
+.hero__tonic-hint-text small {
   font-size: 11px;
-  color: var(--brown-mid);
-  text-align: center;
-  line-height: 1.5;
+  color: var(--gray);
 }
 
 .hero__scroll {
@@ -764,14 +763,7 @@ ul { list-style: none; }
   font-weight: 700;
 }
 
-.course__time-row {
-  display: flex;
-  align-items: center;
-  gap: 5px;
-  font-size: 12px;
-  color: var(--gray);
-}
-.course__time-row svg { color: var(--gray); flex-shrink: 0; }
+.course__time { font-size: 11px; color: var(--gray); }
 
 .course__cta-urgency {
   font-size: 12px;
@@ -779,6 +771,17 @@ ul { list-style: none; }
   font-weight: 500;
 }
 
+.courses__value-note {
+  background: rgba(232,82,10,0.05);
+  border: 1px solid rgba(232,82,10,0.15);
+  border-radius: 6px;
+  padding: 14px 20px;
+  font-size: 13px;
+  color: #444;
+  line-height: 1.9;
+  margin-bottom: 12px;
+}
+.courses__value-note strong { color: var(--brown-deep); }
 
 .courses__note {
   font-size: 11px;
@@ -1087,255 +1090,33 @@ details[open] .detail-card__arrow { transform: rotate(180deg); }
 .footer__copy { font-size: 11px; color: rgba(255,255,255,0.2); }
 
 /* ============================================================
-   5. HEADSPA FLOW — 7ステップ
-============================================================ */
-.headspa__inner {
-  display: grid;
-  grid-template-columns: 340px 1fr;
-  gap: 52px;
-  align-items: start;
-}
-
-.headspa__photo { display: flex; flex-direction: column; gap: 8px; }
-.headspa__img {
-  width: 100%;
-  height: 340px;
-  object-fit: cover;
-  border-radius: 12px;
-  box-shadow: 0 8px 32px rgba(0,0,0,0.12);
-}
-.headspa__photo-caption {
-  font-size: 11px;
-  color: var(--gray);
-  text-align: center;
-  letter-spacing: 0.05em;
-}
-
-.headspa__steps {
-  display: flex;
-  flex-direction: column;
-  gap: 0;
-}
-
-.headspa__step {
-  display: flex;
-  align-items: flex-start;
-  gap: 16px;
-  padding: 14px 0;
-  border-bottom: 1px solid var(--gray-lt);
-  position: relative;
-}
-.headspa__step:last-child { border-bottom: none; }
-
-.headspa__step-num {
-  width: 32px;
-  height: 32px;
-  border-radius: 50%;
-  background: var(--beige);
-  border: 1.5px solid var(--gold);
-  color: var(--gold);
-  font-family: var(--font-serif);
-  font-size: 13px;
-  font-weight: 400;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-shrink: 0;
-}
-
-.headspa__step-num--main {
-  background: var(--orange);
-  border-color: var(--orange);
-  color: var(--white);
-  width: 36px;
-  height: 36px;
-  font-size: 14px;
-}
-
-.headspa__step--main {
-  background: rgba(232,82,10,0.04);
-  border-radius: 6px;
-  padding: 14px 12px;
-  border-bottom: none;
-  margin: 4px 0;
-}
-
-.headspa__step-content strong {
-  font-size: 14px;
-  font-weight: 700;
-  color: var(--brown-deep);
-  display: block;
-  margin-bottom: 3px;
-}
-.headspa__step-content p {
-  font-size: 12px;
-  color: #666;
-  line-height: 1.6;
-}
-
-.step-main-tag {
-  display: inline-block;
-  font-size: 9px;
-  font-weight: 700;
-  color: var(--orange);
-  border: 1px solid var(--orange);
-  border-radius: 2px;
-  padding: 1px 6px;
-  margin-left: 6px;
-  vertical-align: middle;
-  letter-spacing: 0.04em;
-}
-
-/* ============================================================
-   7. HOME BONUS — ホームケア特典（強調）
-============================================================ */
-.home-bonus {
-  background: linear-gradient(135deg, #2a1508 0%, #4a2810 100%);
-  padding: 64px 0;
-}
-
-.home-bonus__inner {
-  display: grid;
-  grid-template-columns: 240px 1fr;
-  gap: 56px;
-  align-items: center;
-}
-
-.home-bonus__visual { display: flex; justify-content: center; }
-.home-bonus__img {
-  width: 220px;
-  height: auto;
-  border-radius: 12px;
-  box-shadow: 0 12px 48px rgba(0,0,0,0.4);
-}
-
-.home-bonus__text { color: var(--white); }
-
-.home-bonus__tag {
-  display: inline-block;
-  background: var(--gold);
-  color: var(--brown-deep);
-  font-size: 12px;
-  font-weight: 700;
-  letter-spacing: 0.08em;
-  padding: 6px 20px;
-  border-radius: 30px;
-  margin-bottom: 20px;
-}
-
-.home-bonus__title {
-  font-family: var(--font-serif);
-  font-size: clamp(20px, 3vw, 30px);
-  font-weight: 300;
-  line-height: 1.5;
-  color: var(--white);
-  margin-bottom: 6px;
-}
-
-.home-bonus__sub {
-  font-size: 16px;
-  color: var(--gold-lt);
-  margin-bottom: 4px;
-  font-weight: 500;
-}
-
-.home-bonus__value {
-  font-family: var(--font-serif);
-  font-size: 22px;
-  font-weight: 300;
-  color: var(--gold-lt);
-  margin-bottom: 28px;
-}
-
-.home-bonus__cycle {
-  display: flex;
-  align-items: center;
-  gap: 16px;
-  margin-bottom: 24px;
-  flex-wrap: wrap;
-}
-
-.home-bonus__cycle-item {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  background: rgba(255,255,255,0.06);
-  border: 1px solid rgba(255,255,255,0.15);
-  border-radius: 8px;
-  padding: 12px 16px;
-}
-
-.home-bonus__cycle-num {
-  font-family: var(--font-serif);
-  font-size: 12px;
-  font-weight: 700;
-  color: var(--gold-lt);
-  background: rgba(184,154,94,0.2);
-  border-radius: 4px;
-  padding: 4px 10px;
-  white-space: nowrap;
-}
-
-.home-bonus__cycle-detail { display: flex; flex-direction: column; gap: 2px; }
-.home-bonus__cycle-detail strong { font-size: 13px; color: var(--white); }
-.home-bonus__cycle-detail small { font-size: 11px; color: rgba(255,255,255,0.5); }
-
-.home-bonus__cycle-plus {
-  font-family: var(--font-serif);
-  font-size: 28px;
-  font-weight: 300;
-  color: var(--gold);
-  flex-shrink: 0;
-}
-
-.home-bonus__message {
-  font-family: var(--font-serif);
-  font-size: 18px;
-  font-weight: 300;
-  color: rgba(255,255,255,0.85);
-  margin-bottom: 24px;
-  letter-spacing: 0.04em;
-}
-
-.home-bonus__btn {
-  display: inline-flex;
-}
-
-/* ============================================================
    RESPONSIVE
 ============================================================ */
 @media (max-width: 860px) {
-  .worry__grid         { grid-template-columns: 1fr; max-width: 340px; margin-left: auto; margin-right: auto; }
+  .worry__grid        { grid-template-columns: 1fr; max-width: 340px; margin-left: auto; margin-right: auto; }
   .solution__two-track { flex-direction: column; align-items: center; }
-  .solution__plus      { transform: rotate(90deg); padding: 8px 0; }
-  .solution__track     { max-width: 320px; width: 100%; }
-  .botanience__inner   { grid-template-columns: 1fr; max-width: 480px; margin: 0 auto; }
-  .headspa__inner      { grid-template-columns: 1fr; }
-  .headspa__img        { height: 240px; }
-  .home-bonus__inner   { grid-template-columns: 1fr; text-align: center; }
-  .home-bonus__visual  { order: -1; }
-  .home-bonus__cycle   { justify-content: center; }
-  .courses__grid       { grid-template-columns: 1fr; max-width: 400px; margin-left: auto; margin-right: auto; }
-  .reviews__grid       { grid-template-columns: repeat(2, 1fr); }
+  .solution__plus     { transform: rotate(90deg); padding: 8px 0; }
+  .solution__track    { max-width: 100%; width: 100%; max-width: 320px; }
+  .botanience__inner  { grid-template-columns: 1fr; max-width: 480px; margin: 0 auto; }
+  .courses__grid      { grid-template-columns: 1fr; max-width: 400px; margin-left: auto; margin-right: auto; }
+  .reviews__grid      { grid-template-columns: repeat(2, 1fr); }
   .reviews-final__grid { grid-template-columns: 1fr; }
-  .about__inner        { grid-template-columns: 1fr; gap: 24px; }
+  .about__inner       { grid-template-columns: 1fr; gap: 24px; }
   .cta-section__buttons { flex-direction: column; align-items: center; }
   .btn--line-hero, .btn--net-hero { width: 100%; max-width: 320px; justify-content: center; }
 }
 
 @media (max-width: 580px) {
-  .hero__cta           { flex-direction: column; align-items: center; }
+  .hero__cta          { flex-direction: column; align-items: center; }
   .btn--line-hero, .btn--net-hero { width: 100%; max-width: 300px; }
-  .hero__period        { padding: 12px 24px; }
-  .hero__visuals       { gap: 12px; }
-  .hero__visual-img    { width: 100px; height: 100px; }
-  .reviews__grid       { grid-template-columns: 1fr; }
-  .reviews__scores     { flex-direction: column; gap: 8px; }
-  .detail-compare      { grid-template-columns: 1fr 0.8fr 1.1fr; font-size: 11px; }
+  .hero__period       { padding: 12px 24px; }
+  .hero__tonic-hint   { flex-direction: column; text-align: center; }
+  .hero__tonic-hint-text { text-align: center; }
+  .reviews__grid      { grid-template-columns: 1fr; }
+  .reviews__scores    { flex-direction: column; gap: 8px; }
+  .detail-compare     { grid-template-columns: 1fr 0.8fr 1.1fr; font-size: 11px; }
   .detail-compare__label,
   .detail-compare__bad,
   .detail-compare__good { padding: 8px 10px; }
   .solution__result-box { font-size: 14px; }
-  .home-bonus__cycle   { flex-direction: column; }
-  .home-bonus__cycle-item { width: 100%; }
 }

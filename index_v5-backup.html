@@ -52,19 +52,13 @@
     <span class="stars-sm">★★★★★</span> Google 4.9（100件超）
   </div>
 
-  <!-- 施術写真 + トニック ビジュアル -->
-  <div class="hero__visuals">
-    <div class="hero__visual-item">
-      <img src="headspa-treatment.jpg"
-           alt="Terminal#10 ヒト幹細胞ヘッドスパ 施術風景"
-           class="hero__visual-img">
-      <span class="hero__visual-label">ヒト幹細胞ヘッドスパ 施術風景</span>
-    </div>
-    <div class="hero__visual-item hero__visual-item--tonic">
-      <img src="botanience-pro-ex.webp"
-           alt="BOTANIENCE SCALPSUPPLY PRO EX 115ml - サンコール"
-           class="hero__visual-img">
-      <span class="hero__visual-label">ホームケアトニック付き<br>¥9,020相当</span>
+  <div class="hero__tonic-hint">
+    <img src="botanience-pro-ex.webp"
+         alt="BOTANIENCE SCALPSUPPLY PRO EX 115ml - サンコール"
+         class="hero__tonic-hint-img">
+    <div class="hero__tonic-hint-text">
+      <strong>ホームケアトニック付き</strong>
+      <small>ボタニエンス スカルプサプリPRO EX（¥9,020相当）</small>
     </div>
   </div>
 
@@ -85,37 +79,36 @@
       <div class="worry__item">
         <div class="worry__illust">
           <svg viewBox="0 0 160 190" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="白髪を気にする女性のイラスト">
-            <!-- 髪（暗い茶色・全体シルエット） -->
-            <path d="M80 8 C52 8 32 28 32 64 L32 92 C42 86 60 82 80 82 C100 82 118 86 128 92 L128 64 C128 28 108 8 80 8Z" fill="#3A200E"/>
-            <!-- 白髪・グレーの根元（分け目中央） -->
-            <path d="M80 8 C76 8 73 11 71 17 L73 38 C75 36 77.5 35 80 35 C82.5 35 85 36 87 38 L89 17 C87 11 84 8 80 8Z" fill="#C2B8A8"/>
-            <!-- 髪・サイド（流れ下がる） -->
-            <path d="M32 92 L30 172 C36 158 34 142 34 128 L34 92Z" fill="#3A200E"/>
-            <path d="M128 92 L130 172 C124 158 126 142 126 128 L126 92Z" fill="#3A200E"/>
+            <!-- 髪（後ろ・ダークブラウン） -->
+            <path d="M80 10 C46 10 28 34 28 68 L28 88 C38 82 56 78 80 78 C104 78 122 82 132 88 L132 68 C132 34 114 10 80 10Z" fill="#3A200E"/>
+            <!-- グレーの根元（白髪・分け目付近） -->
+            <path d="M80 10 C76 10 73 13 72 18 L74 40 C76 38 78 37 80 37 C82 37 84 38 86 40 L88 18 C87 13 84 10 80 10Z" fill="#C0B8A8"/>
+            <!-- 髪サイド（流れ下がる） -->
+            <path d="M28 88 L26 170 C32 158 30 144 30 130 L30 88Z" fill="#3A200E"/>
+            <path d="M132 88 L134 170 C128 158 130 144 130 130 L130 88Z" fill="#3A200E"/>
             <!-- 顔 -->
-            <ellipse cx="80" cy="120" rx="44" ry="50" fill="#F5DCC8"/>
+            <ellipse cx="80" cy="120" rx="46" ry="52" fill="#F5DCC8"/>
             <!-- ほほ -->
-            <ellipse cx="58" cy="128" rx="10" ry="6" fill="#F0A888" opacity="0.2"/>
-            <ellipse cx="102" cy="128" rx="10" ry="6" fill="#F0A888" opacity="0.2"/>
-            <!-- 眉（内側が少し下がる・心配顔） -->
-            <path d="M56 96 C60 93 66 92 71 95" stroke="#2A1508" stroke-width="2.5" fill="none" stroke-linecap="round"/>
-            <path d="M89 95 C94 92 100 93 104 96" stroke="#2A1508" stroke-width="2.5" fill="none" stroke-linecap="round"/>
-            <!-- 目（白目＋瞳＋ハイライト） -->
+            <ellipse cx="58" cy="128" rx="12" ry="7" fill="#ECAA88" opacity="0.25"/>
+            <ellipse cx="102" cy="128" rx="12" ry="7" fill="#ECAA88" opacity="0.25"/>
+            <!-- 眉（内側が下がっている・心配） -->
+            <path d="M55 96 Q62 92 70 95" stroke="#3A200E" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+            <path d="M90 95 Q98 92 105 96" stroke="#3A200E" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+            <!-- 目 -->
             <ellipse cx="63" cy="108" rx="9" ry="8" fill="white"/>
-            <circle cx="63.5" cy="109" r="5" fill="#2A1508"/>
-            <circle cx="65" cy="107" r="2" fill="white"/>
+            <circle cx="64" cy="109" r="4.5" fill="#2A1508"/>
+            <circle cx="65.5" cy="107" r="1.8" fill="white"/>
             <ellipse cx="97" cy="108" rx="9" ry="8" fill="white"/>
-            <circle cx="96.5" cy="109" r="5" fill="#2A1508"/>
-            <circle cx="98" cy="107" r="2" fill="white"/>
-            <!-- 鼻（小さなオーバル） -->
-            <ellipse cx="74" cy="124" rx="3" ry="2" fill="#E8A880" opacity="0.45"/>
-            <ellipse cx="86" cy="124" rx="3" ry="2" fill="#E8A880" opacity="0.45"/>
+            <circle cx="96" cy="109" r="4.5" fill="#2A1508"/>
+            <circle cx="97.5" cy="107" r="1.8" fill="white"/>
+            <!-- 鼻 -->
+            <path d="M76 124 C74 128 76 132 80 132 C84 132 86 128 84 124" stroke="#E0A080" stroke-width="1.5" fill="none" stroke-linecap="round"/>
             <!-- 口（少し下がり気味） -->
-            <path d="M70 140 Q80 137 90 140" stroke="#C09070" stroke-width="2" fill="none" stroke-linecap="round"/>
-            <!-- 手（グレー部分に触れる） -->
-            <path d="M12 64 C8 58 10 50 16 46 C22 42 30 46 32 54 L34 70 L28 72 C18 70 14 68 12 64Z" fill="#F5DCC8" stroke="#E0C8A8" stroke-width="1"/>
-            <!-- グレー部分への点線 -->
-            <path d="M34 62 Q50 46 68 28" stroke="#B8B0A0" stroke-width="1.5" stroke-dasharray="4 3" fill="none" stroke-linecap="round"/>
+            <path d="M68 142 Q80 138 92 142" stroke="#B88868" stroke-width="2" fill="none" stroke-linecap="round"/>
+            <!-- 手（根元のグレー部分を触れる） -->
+            <path d="M10 68 C6 62 8 54 14 50 C20 46 28 50 30 58 L32 74 L28 76 C18 74 12 72 10 68Z" fill="#F5DCC8" stroke="#E0C8A8" stroke-width="1"/>
+            <!-- 指先がグレー部分を指す点線 -->
+            <path d="M32 66 Q48 50 68 30" stroke="#C0B8A8" stroke-width="1.5" stroke-dasharray="4 3" fill="none" stroke-linecap="round"/>
           </svg>
         </div>
         <p class="worry__label">白髪が気になる</p>
@@ -126,49 +119,48 @@
       <div class="worry__item">
         <div class="worry__illust">
           <svg viewBox="0 0 160 190" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="薄毛を気にする女性のイラスト">
-            <!-- 頭皮（薄い毛の隙間から透けて見える） -->
-            <ellipse cx="80" cy="62" rx="38" ry="30" fill="#F8E8D8"/>
-            <!-- まばらな毛束（左） -->
-            <path d="M42 90 C38 70 42 48 52 32" stroke="#3A200E" stroke-width="3" fill="none" stroke-linecap="round"/>
-            <path d="M48 88 C44 68 48 46 58 30" stroke="#3A200E" stroke-width="2.5" fill="none" stroke-linecap="round"/>
-            <path d="M36 94 C32 76 36 56 46 40" stroke="#5A3818" stroke-width="2" fill="none" stroke-linecap="round"/>
-            <!-- まばらな毛束（中央） -->
-            <path d="M70 72 C68 52 72 32 78 18" stroke="#3A200E" stroke-width="3" fill="none" stroke-linecap="round"/>
-            <path d="M90 72 C92 52 88 32 82 18" stroke="#3A200E" stroke-width="2.5" fill="none" stroke-linecap="round"/>
-            <!-- まばらな毛束（右） -->
-            <path d="M118 90 C122 70 118 48 108 32" stroke="#3A200E" stroke-width="3" fill="none" stroke-linecap="round"/>
-            <path d="M112 88 C116 68 112 46 102 30" stroke="#3A200E" stroke-width="2.5" fill="none" stroke-linecap="round"/>
-            <path d="M124 94 C128 76 124 56 114 40" stroke="#5A3818" stroke-width="2" fill="none" stroke-linecap="round"/>
             <!-- 顔 -->
-            <ellipse cx="80" cy="120" rx="44" ry="50" fill="#F5DCC8"/>
+            <ellipse cx="80" cy="118" rx="46" ry="52" fill="#F5DCC8"/>
+            <!-- 頭皮（薄い毛の隙間から透けて見える） -->
+            <ellipse cx="80" cy="64" rx="36" ry="28" fill="#F8E8D8" opacity="0.9"/>
+            <!-- 左側の毛束（まばら） -->
+            <path d="M44 96 C40 76 44 52 54 36" stroke="#3A200E" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+            <path d="M50 92 C46 72 50 48 60 32" stroke="#3A200E" stroke-width="2" fill="none" stroke-linecap="round"/>
+            <path d="M38 100 C34 82 38 60 48 44" stroke="#5A3018" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+            <!-- 中央の毛束 -->
+            <path d="M74 72 C72 54 76 34 80 20" stroke="#3A200E" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+            <path d="M86 72 C88 54 84 34 80 20" stroke="#3A200E" stroke-width="2" fill="none" stroke-linecap="round"/>
+            <!-- 右側の毛束（まばら） -->
+            <path d="M116 96 C120 76 116 52 106 36" stroke="#3A200E" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+            <path d="M110 92 C114 72 110 48 100 32" stroke="#3A200E" stroke-width="2" fill="none" stroke-linecap="round"/>
+            <path d="M122 100 C126 82 122 60 112 44" stroke="#5A3018" stroke-width="1.5" fill="none" stroke-linecap="round"/>
             <!-- ほほ -->
-            <ellipse cx="58" cy="128" rx="10" ry="6" fill="#F0A888" opacity="0.2"/>
-            <ellipse cx="102" cy="128" rx="10" ry="6" fill="#F0A888" opacity="0.2"/>
-            <!-- 眉 -->
-            <path d="M56 96 C60 93 66 92 71 95" stroke="#2A1508" stroke-width="2.5" fill="none" stroke-linecap="round"/>
-            <path d="M89 95 C94 92 100 93 104 96" stroke="#2A1508" stroke-width="2.5" fill="none" stroke-linecap="round"/>
-            <!-- 目（少し上を向いている） -->
+            <ellipse cx="56" cy="126" rx="11" ry="6" fill="#ECAA88" opacity="0.22"/>
+            <ellipse cx="104" cy="126" rx="11" ry="6" fill="#ECAA88" opacity="0.22"/>
+            <!-- 眉（心配そう） -->
+            <path d="M55 96 Q62 92 70 95" stroke="#3A200E" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+            <path d="M90 95 Q98 92 105 96" stroke="#3A200E" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+            <!-- 目（少し見上げている） -->
             <ellipse cx="63" cy="108" rx="9" ry="8" fill="white"/>
-            <circle cx="63" cy="106" r="5" fill="#2A1508"/>
-            <circle cx="64.5" cy="104.5" r="2" fill="white"/>
+            <circle cx="63" cy="106" r="4.5" fill="#2A1508"/>
+            <circle cx="64.5" cy="104.5" r="1.8" fill="white"/>
             <ellipse cx="97" cy="108" rx="9" ry="8" fill="white"/>
-            <circle cx="97" cy="106" r="5" fill="#2A1508"/>
-            <circle cx="98.5" cy="104.5" r="2" fill="white"/>
+            <circle cx="97" cy="106" r="4.5" fill="#2A1508"/>
+            <circle cx="98.5" cy="104.5" r="1.8" fill="white"/>
             <!-- 鼻 -->
-            <ellipse cx="74" cy="124" rx="3" ry="2" fill="#E8A880" opacity="0.45"/>
-            <ellipse cx="86" cy="124" rx="3" ry="2" fill="#E8A880" opacity="0.45"/>
+            <path d="M76 122 C74 126 76 130 80 130 C84 130 86 126 84 122" stroke="#E0A080" stroke-width="1.5" fill="none" stroke-linecap="round"/>
             <!-- 口 -->
-            <path d="M70 140 Q80 137 90 140" stroke="#C09070" stroke-width="2" fill="none" stroke-linecap="round"/>
-            <!-- 頭に乗せた手 -->
-            <ellipse cx="80" cy="28" rx="24" ry="11" fill="#F5DCC8" stroke="#E0C8A8" stroke-width="1.2"/>
-            <path d="M60 26 L58 15" stroke="#F5DCC8" stroke-width="8" stroke-linecap="round"/>
-            <path d="M60 26 L58 15" stroke="#E0C8A8" stroke-width="1.2" stroke-linecap="round"/>
-            <path d="M69 23 L68 12" stroke="#F5DCC8" stroke-width="8" stroke-linecap="round"/>
-            <path d="M69 23 L68 12" stroke="#E0C8A8" stroke-width="1.2" stroke-linecap="round"/>
-            <path d="M80 22 L80 11" stroke="#F5DCC8" stroke-width="8" stroke-linecap="round"/>
-            <path d="M80 22 L80 11" stroke="#E0C8A8" stroke-width="1.2" stroke-linecap="round"/>
-            <path d="M91 23 L92 12" stroke="#F5DCC8" stroke-width="8" stroke-linecap="round"/>
-            <path d="M91 23 L92 12" stroke="#E0C8A8" stroke-width="1.2" stroke-linecap="round"/>
+            <path d="M68 140 Q80 136 92 140" stroke="#B88868" stroke-width="2" fill="none" stroke-linecap="round"/>
+            <!-- 頭に乗せた手（心配そうに触る） -->
+            <ellipse cx="80" cy="26" rx="22" ry="10" fill="#F5DCC8" stroke="#E0C8A8" stroke-width="1"/>
+            <path d="M62 24 L60 14" stroke="#F5DCC8" stroke-width="7" stroke-linecap="round"/>
+            <path d="M62 24 L60 14" stroke="#E0C8A8" stroke-width="1" stroke-linecap="round"/>
+            <path d="M70 22 L69 12" stroke="#F5DCC8" stroke-width="7" stroke-linecap="round"/>
+            <path d="M70 22 L69 12" stroke="#E0C8A8" stroke-width="1" stroke-linecap="round"/>
+            <path d="M80 21 L80 11" stroke="#F5DCC8" stroke-width="7" stroke-linecap="round"/>
+            <path d="M80 21 L80 11" stroke="#E0C8A8" stroke-width="1" stroke-linecap="round"/>
+            <path d="M90 22 L91 12" stroke="#F5DCC8" stroke-width="7" stroke-linecap="round"/>
+            <path d="M90 22 L91 12" stroke="#E0C8A8" stroke-width="1" stroke-linecap="round"/>
           </svg>
         </div>
         <p class="worry__label">ボリュームが減った</p>
@@ -180,51 +172,51 @@
         <div class="worry__illust">
           <svg viewBox="0 0 160 190" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="うねりを気にする女性のイラスト">
             <!-- 左に広がる髪 -->
-            <path d="M8 78 C4 58 10 36 26 22 C16 42 14 66 18 90Z" fill="#3A200E"/>
-            <path d="M14 76 C10 56 16 34 30 20 C22 40 20 64 24 88Z" fill="#2A1008"/>
+            <path d="M6 80 C2 60 8 38 24 24 C14 44 12 68 16 92Z" fill="#3A200E"/>
+            <path d="M12 78 C8 58 14 36 28 22 C20 42 18 66 22 90Z" fill="#2A1008"/>
             <!-- 右に広がる髪 -->
-            <path d="M152 78 C156 58 150 36 134 22 C144 42 146 66 142 90Z" fill="#3A200E"/>
-            <path d="M146 76 C150 56 144 34 130 20 C138 40 140 64 136 88Z" fill="#2A1008"/>
+            <path d="M154 80 C158 60 152 38 136 24 C146 44 148 68 144 92Z" fill="#3A200E"/>
+            <path d="M148 78 C152 58 146 36 132 22 C140 42 142 66 138 90Z" fill="#2A1008"/>
             <!-- 髪・上部メイン -->
-            <path d="M26 86 C24 50 40 16 80 10 C120 16 136 50 134 86 C124 80 104 76 80 76 C56 76 36 80 26 86Z" fill="#3A200E"/>
-            <!-- うねり突起（左） -->
-            <path d="M20 52 C12 44 6 34 10 24 C18 32 24 42 28 54Z" fill="#3A200E"/>
-            <path d="M30 28 C24 16 28 6 36 10 C35 22 32 28 34 38Z" fill="#4A2810"/>
-            <!-- うねり突起（右） -->
-            <path d="M140 52 C148 44 154 34 150 24 C142 32 136 42 132 54Z" fill="#3A200E"/>
-            <path d="M130 28 C136 16 132 6 124 10 C125 22 128 28 126 38Z" fill="#4A2810"/>
+            <path d="M24 86 C22 52 38 18 80 12 C122 18 138 52 136 86 C126 80 106 76 80 76 C54 76 34 80 24 86Z" fill="#3A200E"/>
+            <!-- うねり突起（左上） -->
+            <path d="M18 54 C10 46 4 36 8 26 C16 34 22 44 26 56Z" fill="#3A200E"/>
+            <path d="M28 30 C22 18 26 8 34 12 C33 22 30 28 32 38Z" fill="#4A2810"/>
+            <!-- うねり突起（右上） -->
+            <path d="M142 54 C150 46 156 36 152 26 C144 34 138 44 134 56Z" fill="#3A200E"/>
+            <path d="M132 30 C138 18 134 8 126 12 C127 22 130 28 128 38Z" fill="#4A2810"/>
             <!-- 毛先うねり（左） -->
-            <path d="M18 90 C10 98 6 114 14 126 C20 118 22 106 26 94Z" fill="#3A200E"/>
-            <path d="M18 126 C12 136 14 150 22 156 C26 144 24 132 22 124Z" fill="#2A1008"/>
+            <path d="M16 92 C8 100 4 116 12 128 C18 120 20 108 24 96Z" fill="#3A200E"/>
+            <path d="M16 128 C10 138 12 152 20 158 C24 146 22 134 20 126Z" fill="#2A1008"/>
             <!-- 毛先うねり（右） -->
-            <path d="M142 90 C150 98 154 114 146 126 C140 118 138 106 134 94Z" fill="#3A200E"/>
-            <path d="M142 126 C148 136 146 150 138 156 C134 144 136 132 138 124Z" fill="#2A1008"/>
+            <path d="M144 92 C152 100 156 116 148 128 C142 120 140 108 136 96Z" fill="#3A200E"/>
+            <path d="M144 128 C150 138 148 152 140 158 C136 146 138 134 140 126Z" fill="#2A1008"/>
             <!-- 顔 -->
-            <ellipse cx="80" cy="118" rx="44" ry="50" fill="#F5DCC8"/>
+            <ellipse cx="80" cy="118" rx="46" ry="52" fill="#F5DCC8"/>
             <!-- ほほ -->
-            <ellipse cx="58" cy="126" rx="10" ry="6" fill="#F0A888" opacity="0.2"/>
-            <ellipse cx="102" cy="126" rx="10" ry="6" fill="#F0A888" opacity="0.2"/>
-            <!-- 眉 -->
-            <path d="M56 96 C60 93 66 92 71 95" stroke="#2A1508" stroke-width="2.5" fill="none" stroke-linecap="round"/>
-            <path d="M89 95 C94 92 100 93 104 96" stroke="#2A1508" stroke-width="2.5" fill="none" stroke-linecap="round"/>
-            <!-- 目 -->
+            <ellipse cx="58" cy="126" rx="11" ry="6" fill="#ECAA88" opacity="0.25"/>
+            <ellipse cx="102" cy="126" rx="11" ry="6" fill="#ECAA88" opacity="0.25"/>
+            <!-- 眉（困り顔） -->
+            <path d="M55 96 Q62 92 70 95" stroke="#3A200E" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+            <path d="M90 95 Q98 92 105 96" stroke="#3A200E" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+            <!-- 目（うんざり、少し上を向く） -->
             <ellipse cx="63" cy="108" rx="9" ry="8" fill="white"/>
-            <circle cx="63" cy="106" r="5" fill="#2A1508"/>
-            <circle cx="64.5" cy="104.5" r="2" fill="white"/>
+            <circle cx="63" cy="106" r="4.5" fill="#2A1508"/>
+            <circle cx="64.5" cy="105" r="1.8" fill="white"/>
             <ellipse cx="97" cy="108" rx="9" ry="8" fill="white"/>
-            <circle cx="97" cy="106" r="5" fill="#2A1508"/>
-            <circle cx="98.5" cy="104.5" r="2" fill="white"/>
+            <circle cx="97" cy="106" r="4.5" fill="#2A1508"/>
+            <circle cx="98.5" cy="105" r="1.8" fill="white"/>
             <!-- 鼻 -->
-            <ellipse cx="74" cy="122" rx="3" ry="2" fill="#E8A880" opacity="0.45"/>
-            <ellipse cx="86" cy="122" rx="3" ry="2" fill="#E8A880" opacity="0.45"/>
-            <!-- 口 -->
-            <path d="M70 138 Q80 135 90 138" stroke="#C09070" stroke-width="2" fill="none" stroke-linecap="round"/>
+            <path d="M76 122 C74 126 76 130 80 130 C84 130 86 126 84 122" stroke="#E0A080" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+            <!-- 口（やや平ら・うんざり感） -->
+            <path d="M68 140 Q80 137 92 140" stroke="#B88868" stroke-width="2" fill="none" stroke-linecap="round"/>
             <!-- 湿気の水滴 -->
-            <ellipse cx="12" cy="36" rx="4" ry="5.5" fill="#88B4CC" opacity="0.65"/>
-            <ellipse cx="148" cy="42" rx="3.5" ry="5" fill="#88B4CC" opacity="0.6"/>
-            <ellipse cx="4" cy="56" rx="3" ry="4.5" fill="#88B4CC" opacity="0.5"/>
-            <ellipse cx="156" cy="62" rx="3" ry="4.5" fill="#88B4CC" opacity="0.5"/>
-            <ellipse cx="10" cy="22" rx="2.5" ry="3.5" fill="#88B4CC" opacity="0.4"/>
+            <ellipse cx="12" cy="36" rx="4" ry="5.5" fill="#88B4CC" opacity="0.6"/>
+            <ellipse cx="148" cy="42" rx="3.5" ry="5" fill="#88B4CC" opacity="0.55"/>
+            <ellipse cx="4" cy="56" rx="3" ry="4" fill="#88B4CC" opacity="0.45"/>
+            <ellipse cx="156" cy="62" rx="3" ry="4" fill="#88B4CC" opacity="0.45"/>
+            <ellipse cx="8" cy="22" rx="2.5" ry="3.5" fill="#88B4CC" opacity="0.35"/>
+            <ellipse cx="152" cy="26" rx="2.5" ry="3.5" fill="#88B4CC" opacity="0.35"/>
           </svg>
         </div>
         <p class="worry__label">うねりが出る</p>
@@ -249,6 +241,7 @@
     <h2 class="section__title">サロンと自宅の「両輪」で<br>根本から変わる。</h2>
 
     <div class="solution__two-track">
+      <!-- サロン施術 -->
       <div class="solution__track">
         <div class="solution__track-icon">
           <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -267,9 +260,12 @@
 
       <div class="solution__plus">+</div>
 
+      <!-- ホームケア -->
       <div class="solution__track">
         <div class="solution__track-icon solution__track-icon--home">
-          <img src="botanience-pro-ex.webp" alt="ボタニエンス スカルプサプリPRO EX" class="solution__track-tonic">
+          <img src="botanience-pro-ex.webp"
+               alt="ボタニエンス スカルプサプリPRO EX"
+               class="solution__track-tonic">
         </div>
         <div class="solution__track-type">ホームケア</div>
         <div class="solution__track-name">ボタニエンス<br>スカルプサプリ PRO EX</div>
@@ -308,6 +304,8 @@
     <h2 class="section__title">サンコール × ボタニエンス<br><em class="botanience__product-name">スカルプサプリ PRO EX 115ml</em></h2>
 
     <div class="botanience__inner">
+
+      <!-- 商品写真（左） -->
       <div class="botanience__visual">
         <div class="botanience__img-frame">
           <img src="botanience-pro-ex.webp"
@@ -321,6 +319,7 @@
         </div>
       </div>
 
+      <!-- 成分情報（右） -->
       <div class="botanience__info">
         <div class="botanience__dual-badge">
           <span>スカルプケア</span>
@@ -328,119 +327,66 @@
           <span>エイジングケア</span>
           <strong>の両立</strong>
         </div>
+
         <p class="botanience__lead">業界最先端の成分を毎日、自宅で。サロン施術と組み合わせることで、根本改善の効果を日々継続させます。</p>
+
         <p class="botanience__ingredients-title">主要成分</p>
         <ul class="botanience__ingredients">
           <li class="botanience__ingredient">
             <span class="botanience__ingredient-num">01</span>
-            <div><strong>ヒト毛根幹細胞順化培養液</strong><p>毛根の細胞を活性化し、健やかな発育をサポート</p></div>
+            <div>
+              <strong>ヒト毛根幹細胞順化培養液</strong>
+              <p>毛根の細胞を活性化し、健やかな発育をサポート</p>
+            </div>
           </li>
           <li class="botanience__ingredient">
             <span class="botanience__ingredient-num">02</span>
-            <div><strong>ヒトサイタイ血幹細胞順化培養液</strong><p>頭皮の若々しさを保つ、エイジングケア成分</p></div>
+            <div>
+              <strong>ヒトサイタイ血幹細胞順化培養液</strong>
+              <p>頭皮の若々しさを保つ、エイジングケア成分</p>
+            </div>
           </li>
           <li class="botanience__ingredient">
             <span class="botanience__ingredient-num">03</span>
-            <div><strong>Focus P.D.R.N. <span class="ingredient-advance">業界最先端</span></strong><p>幹細胞培養液の効果を引き出す先端美容成分</p></div>
+            <div>
+              <strong>Focus P.D.R.N. <span class="ingredient-advance">業界最先端</span></strong>
+              <p>幹細胞培養液の効果を引き出す先端美容成分</p>
+            </div>
           </li>
           <li class="botanience__ingredient">
             <span class="botanience__ingredient-num">04</span>
-            <div><strong>ヘマチン</strong><p>即効性あり。使い始めから効果実感を早める</p></div>
+            <div>
+              <strong>ヘマチン</strong>
+              <p>即効性あり。使い始めから効果実感を早める</p>
+            </div>
           </li>
           <li class="botanience__ingredient">
             <span class="botanience__ingredient-num">05</span>
-            <div><strong>ピディオキシジル</strong><p>頭皮環境を整え、健やかな頭皮をサポート</p></div>
+            <div>
+              <strong>ピディオキシジル</strong>
+              <p>頭皮環境を整え、健やかな頭皮をサポート</p>
+            </div>
           </li>
           <li class="botanience__ingredient">
             <span class="botanience__ingredient-num">06</span>
-            <div><strong>21種の植物美容エキス</strong><p>髪一本一本にハリとコシを与え、しっかりとした髪へ</p></div>
+            <div>
+              <strong>21種の植物美容エキス</strong>
+              <p>髪一本一本にハリとコシを与え、しっかりとした髪へ</p>
+            </div>
           </li>
         </ul>
+
         <p class="botanience__footnote">※ サンコール × ボタニエンス スカルプサプリPRO EX 115ml（サロン専売・市販不可）</p>
       </div>
-    </div>
-  </div>
-</section>
-
-<!-- ============================================================
-     5. HEADSPA FLOW — 7ステップ施術フロー
-============================================================ -->
-<section class="headspa section section--warm" id="headspa">
-  <div class="container">
-    <p class="section__eyebrow">サロン施術の流れ</p>
-    <h2 class="section__title">ヒト幹細胞ヘッドスパ<br>7ステップの施術</h2>
-
-    <div class="headspa__inner">
-
-      <!-- 施術写真 -->
-      <div class="headspa__photo">
-        <img src="headspa-treatment.jpg"
-             alt="Terminal#10 ヒト幹細胞ヘッドスパ 施術風景"
-             class="headspa__img">
-        <p class="headspa__photo-caption">実際の施術風景（Terminal#10）</p>
-      </div>
-
-      <!-- ステップフロー -->
-      <div class="headspa__steps">
-        <div class="headspa__step">
-          <div class="headspa__step-num">1</div>
-          <div class="headspa__step-content">
-            <strong>カウンセリング</strong>
-            <p>髪と頭皮の状態を丁寧に確認</p>
-          </div>
-        </div>
-        <div class="headspa__step">
-          <div class="headspa__step-num">2</div>
-          <div class="headspa__step-content">
-            <strong>頭皮のクレンジング</strong>
-            <p>毛穴の汚れと皮脂をしっかり落とす</p>
-          </div>
-        </div>
-        <div class="headspa__step">
-          <div class="headspa__step-num">3</div>
-          <div class="headspa__step-content">
-            <strong>クレンジングシャンプー</strong>
-            <p>頭皮環境を整える専用シャンプー</p>
-          </div>
-        </div>
-        <div class="headspa__step headspa__step--main">
-          <div class="headspa__step-num headspa__step-num--main">4</div>
-          <div class="headspa__step-content">
-            <strong>ヒト幹細胞ヘッドスパ <span class="step-main-tag">メイン施術</span></strong>
-            <p>ヒト幹細胞培養液を頭皮に導入</p>
-          </div>
-        </div>
-        <div class="headspa__step">
-          <div class="headspa__step-num">5</div>
-          <div class="headspa__step-content">
-            <strong>毛先トリートメント</strong>
-            <p>髪のダメージを補修</p>
-          </div>
-        </div>
-        <div class="headspa__step">
-          <div class="headspa__step-num">6</div>
-          <div class="headspa__step-content">
-            <strong>トニックマッサージ</strong>
-            <p>ボタニエンスを使った頭皮マッサージ</p>
-          </div>
-        </div>
-        <div class="headspa__step">
-          <div class="headspa__step-num">7</div>
-          <div class="headspa__step-content">
-            <strong>仕上げ</strong>
-            <p>ブロー＆スタイリング</p>
-          </div>
-        </div>
-      </div>
 
     </div>
   </div>
 </section>
 
 <!-- ============================================================
-     6. COURSES — 早期提示・価格大きく
+     5. COURSES — 早期提示・価格大きく
 ============================================================ -->
-<section class="courses section" id="courses">
+<section class="courses section section--warm" id="courses">
   <div class="container">
     <div class="courses__banner">
       <span>5月限定</span>
@@ -466,19 +412,18 @@
         <ul class="course__items">
           <li>カット</li>
           <li>カラー（白髪・おしゃれ）</li>
-          <li>ヒト幹細胞ヘッドスパ</li>
+          <li>ヒト幹細胞トリートメント</li>
         </ul>
         <div class="course__tonic-row">
-          <img src="botanience-pro-ex.webp" alt="ボタニエンス スカルプサプリPRO EX" class="course__tonic-mini">
+          <img src="botanience-pro-ex.webp"
+               alt="ボタニエンス スカルプサプリPRO EX"
+               class="course__tonic-mini">
           <div class="course__tonic-info">
             <span class="course__tonic-name">ボタニエンス スカルプサプリPRO EX</span>
             <span class="course__tonic-value">お持ち帰り ¥9,020相当</span>
           </div>
         </div>
-        <div class="course__time-row">
-          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12,6 12,12 16,14"/></svg>
-          <span>所要時間 約150分</span>
-        </div>
+        <p class="course__time">所要時間 約120分</p>
         <p class="course__cta-urgency">5月31日まで</p>
         <a href="#reserve" class="btn btn--course">このコースで予約</a>
       </div>
@@ -494,19 +439,18 @@
         </div>
         <ul class="course__items">
           <li>カラー（白髪染め or おしゃれ染め）</li>
-          <li>ヒト幹細胞ヘッドスパ</li>
+          <li>ヒト幹細胞トリートメント</li>
         </ul>
         <div class="course__tonic-row">
-          <img src="botanience-pro-ex.webp" alt="ボタニエンス スカルプサプリPRO EX" class="course__tonic-mini">
+          <img src="botanience-pro-ex.webp"
+               alt="ボタニエンス スカルプサプリPRO EX"
+               class="course__tonic-mini">
           <div class="course__tonic-info">
             <span class="course__tonic-name">ボタニエンス スカルプサプリPRO EX</span>
             <span class="course__tonic-value">お持ち帰り ¥9,020相当</span>
           </div>
         </div>
-        <div class="course__time-row">
-          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12,6 12,12 16,14"/></svg>
-          <span>所要時間 約120分</span>
-        </div>
+        <p class="course__time">所要時間 約90分</p>
         <p class="course__cta-urgency">5月31日まで</p>
         <a href="#reserve" class="btn btn--course-featured">このコースで予約</a>
       </div>
@@ -520,23 +464,27 @@
           <span class="course__tax">税込</span>
         </div>
         <ul class="course__items">
-          <li>ヒト幹細胞ヘッドスパ</li>
+          <li>ヒト幹細胞トリートメント</li>
         </ul>
         <div class="course__tonic-row">
-          <img src="botanience-pro-ex.webp" alt="ボタニエンス スカルプサプリPRO EX" class="course__tonic-mini">
+          <img src="botanience-pro-ex.webp"
+               alt="ボタニエンス スカルプサプリPRO EX"
+               class="course__tonic-mini">
           <div class="course__tonic-info">
             <span class="course__tonic-name">ボタニエンス スカルプサプリPRO EX</span>
             <span class="course__tonic-value">お持ち帰り ¥9,020相当</span>
           </div>
         </div>
-        <div class="course__time-row">
-          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12,6 12,12 16,14"/></svg>
-          <span>所要時間 約60分</span>
-        </div>
+        <p class="course__time">所要時間 約60分</p>
         <p class="course__cta-urgency">5月31日まで</p>
         <a href="#reserve" class="btn btn--course">このコースで予約</a>
       </div>
 
+    </div>
+
+    <div class="courses__value-note">
+      <strong>全コース共通：</strong>ボタニエンス スカルプサプリPRO EX 115ml（¥9,020相当）をお持ち帰りいただけます。<br>
+      サロンで変えて、自宅で継続。この「両輪」が根本改善の鍵です。
     </div>
 
     <p class="courses__note">
@@ -546,64 +494,9 @@
 </section>
 
 <!-- ============================================================
-     7. HOME CARE BONUS — 全コース共通特典（強調）
+     6. REVIEWS — お客様の声（5件）
 ============================================================ -->
-<section class="home-bonus section">
-  <div class="container">
-    <div class="home-bonus__inner">
-
-      <!-- 商品写真 -->
-      <div class="home-bonus__visual">
-        <img src="botanience-pro-ex.webp"
-             alt="BOTANIENCE SCALPSUPPLY PRO EX 115ml - サンコール"
-             class="home-bonus__img">
-      </div>
-
-      <!-- テキスト -->
-      <div class="home-bonus__text">
-        <div class="home-bonus__tag">✨ 全コース共通の特典</div>
-        <h2 class="home-bonus__title">
-          ボタニエンス<br>スカルプサプリ PRO EX 115ml
-        </h2>
-        <p class="home-bonus__sub">お持ち帰りいただけます</p>
-        <p class="home-bonus__value">通常価格 ¥9,020 相当</p>
-
-        <div class="home-bonus__cycle">
-          <div class="home-bonus__cycle-item">
-            <div class="home-bonus__cycle-num">サロン</div>
-            <div class="home-bonus__cycle-detail">
-              <strong>ヒト幹細胞ヘッドスパ</strong>
-              <small>月1〜2回の集中ケア</small>
-            </div>
-          </div>
-          <div class="home-bonus__cycle-plus">＋</div>
-          <div class="home-bonus__cycle-item">
-            <div class="home-bonus__cycle-num">自宅</div>
-            <div class="home-bonus__cycle-detail">
-              <strong>ボタニエンス（毎日）</strong>
-              <small>90日間のホームケア</small>
-            </div>
-          </div>
-        </div>
-
-        <p class="home-bonus__message">
-          この「両輪」こそ、根本改善の鍵です。
-        </p>
-        <a href="#reserve" class="btn btn--line-hero home-bonus__btn">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="white" aria-hidden="true"><path d="M19.365 9.863c.349 0 .63.285.63.631 0 .345-.281.63-.63.63H17.61v1.125h1.755c.349 0 .63.283.63.63 0 .344-.281.629-.63.629h-2.386c-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.63-.63h2.386c.346 0 .627.285.627.63 0 .349-.281.63-.63.63H17.61v1.125h1.755zm-3.855 3.016c0 .27-.174.51-.432.596-.064.021-.133.031-.199.031-.211 0-.391-.09-.51-.25l-2.443-3.317v2.94c0 .344-.279.629-.631.629-.346 0-.626-.285-.626-.629V8.108c0-.27.173-.51.43-.595.06-.023.136-.033.194-.033.195 0 .375.104.495.254l2.462 3.33V8.108c0-.345.282-.63.63-.63.345 0 .63.285.63.63v4.771zm-5.741 0c0 .344-.282.629-.631.629-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.63-.63.346 0 .628.285.628.63v4.771zm-2.466.629H4.917c-.345 0-.63-.285-.63-.629V8.108c0-.345.285-.63.63-.63.348 0 .63.285.63.63v4.141h1.756c.348 0 .629.283.629.63 0 .344-.281.629-.629.629M24 10.314C24 4.943 18.615.572 12 .572S0 4.943 0 10.314c0 4.811 4.27 8.842 10.035 9.608.391.082.923.258 1.058.59.12.301.079.766.038 1.08l-.164 1.02c-.045.301-.24 1.186 1.049.645 1.291-.539 6.916-4.078 9.436-6.975C23.176 14.393 24 12.458 24 10.314"/></svg>
-          LINEで予約する
-          <small>24時間受付</small>
-        </a>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<!-- ============================================================
-     8. REVIEWS — お客様の声（5件）
-============================================================ -->
-<section class="reviews section section--warm">
+<section class="reviews section">
   <div class="container">
     <div class="reviews__scores">
       <div class="reviews__score-block">
@@ -651,9 +544,9 @@
 </section>
 
 <!-- ============================================================
-     9. DETAILS — 折りたたみ詳細
+     7. DETAILS — 折りたたみ詳細
 ============================================================ -->
-<section class="details-section section" id="details">
+<section class="details-section section section--warm" id="details">
   <div class="container">
     <p class="details-section__lead">もっと詳しく知りたい方へ</p>
 
@@ -698,15 +591,19 @@
           <div class="detail-compare__head"></div>
           <div class="detail-compare__head detail-compare__head--bad">市販品</div>
           <div class="detail-compare__head detail-compare__head--good">ボタニエンス</div>
+
           <div class="detail-compare__label">幹細胞濃度</div>
           <div class="detail-compare__bad">✕ 微量</div>
           <div class="detail-compare__good">◎ 毛乳頭まで届く濃度</div>
+
           <div class="detail-compare__label">品質設計</div>
           <div class="detail-compare__bad">✕ 一般向け</div>
           <div class="detail-compare__good">◎ サロンプロ専用</div>
+
           <div class="detail-compare__label">入手方法</div>
           <div class="detail-compare__bad">△ 誰でも購入可</div>
           <div class="detail-compare__good">◎ サロン限定・市販不可</div>
+
           <div class="detail-compare__label">使い方指導</div>
           <div class="detail-compare__bad">✕ なし</div>
           <div class="detail-compare__good">◎ プロが直接レクチャー</div>
@@ -718,7 +615,7 @@
 </section>
 
 <!-- ============================================================
-     10. CTA #2 — 申込導線
+     8. CTA #2 — 申込導線
 ============================================================ -->
 <section class="cta-section section section--campaign" id="reserve">
   <div class="container">
@@ -744,7 +641,7 @@
 </section>
 
 <!-- ============================================================
-     11. ABOUT — 短く
+     9. ABOUT — 短く
 ============================================================ -->
 <section class="about section">
   <div class="container">
@@ -763,7 +660,7 @@
 </section>
 
 <!-- ============================================================
-     12. FINAL REVIEWS — 背中を押す3件
+     10. FINAL REVIEWS — 背中を押す3件
 ============================================================ -->
 <section class="reviews-final section section--warm">
   <div class="container">
@@ -790,7 +687,7 @@
 </section>
 
 <!-- ============================================================
-     13. FOOTER
+     11. FOOTER
 ============================================================ -->
 <footer class="footer">
   <div class="container">
