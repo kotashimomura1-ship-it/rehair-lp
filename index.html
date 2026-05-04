@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Re:Hair | 5月限定キャンペーン｜ヒト幹細胞×白髪・薄毛・うねり｜麻布十番 Terminal#10</title>
+  <title>Re:Hair | 5月限定キャンペーン｜白髪・薄毛・うねりの根本改善｜麻布十番</title>
   <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -11,800 +11,587 @@
 </head>
 <body>
 
-  <!-- ============================================================
-       1. HERO
-       背景: サロン内装（人物なし）。人物写真は使わない。
-  ============================================================ -->
-  <section class="hero">
-    <!-- ※ サロン内装写真 — 後日実写に差し替え可 -->
-    <div class="hero__bg" style="background-image:url('https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?w=1600&q=80&auto=format&fit=crop')"></div>
-    <div class="hero__overlay"></div>
+<!-- ============================================================
+     1. HERO — キャンペーン特化
+============================================================ -->
+<section class="hero">
+  <div class="hero__badge">🔥 5月限定キャンペーン</div>
 
-    <div class="hero__campaign-badge">
-      <span class="hero__campaign-fire">🔥</span>
-      <span class="hero__campaign-text">5月限定キャンペーン</span>
-      <span class="hero__campaign-date">5/7(水)〜5/31(土) のみ</span>
+  <div class="hero__logo">
+    <span class="hero__logo-re">Re:</span>Hair
+  </div>
+
+  <div class="hero__period">
+    <span class="hero__period-date">5/7</span>
+    <span class="hero__period-sep">—</span>
+    <span class="hero__period-date">5/31</span>
+    <span class="hero__period-only">限定</span>
+  </div>
+
+  <h1 class="hero__catch">
+    白髪・薄毛・うねり、<br>
+    根本から変える。
+  </h1>
+  <p class="hero__sub">麻布十番 Terminal#10｜ヒト幹細胞×ホームケアで根本改善</p>
+
+  <div class="hero__cta">
+    <a href="#" class="btn btn--line-hero">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="white" aria-hidden="true"><path d="M19.365 9.863c.349 0 .63.285.63.631 0 .345-.281.63-.63.63H17.61v1.125h1.755c.349 0 .63.283.63.63 0 .344-.281.629-.63.629h-2.386c-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.63-.63h2.386c.346 0 .627.285.627.63 0 .349-.281.63-.63.63H17.61v1.125h1.755zm-3.855 3.016c0 .27-.174.51-.432.596-.064.021-.133.031-.199.031-.211 0-.391-.09-.51-.25l-2.443-3.317v2.94c0 .344-.279.629-.631.629-.346 0-.626-.285-.626-.629V8.108c0-.27.173-.51.43-.595.06-.023.136-.033.194-.033.195 0 .375.104.495.254l2.462 3.33V8.108c0-.345.282-.63.63-.63.345 0 .63.285.63.63v4.771zm-5.741 0c0 .344-.282.629-.631.629-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.63-.63.346 0 .628.285.628.63v4.771zm-2.466.629H4.917c-.345 0-.63-.285-.63-.629V8.108c0-.345.285-.63.63-.63.348 0 .63.285.63.63v4.141h1.756c.348 0 .629.283.629.63 0 .344-.281.629-.629.629M24 10.314C24 4.943 18.615.572 12 .572S0 4.943 0 10.314c0 4.811 4.27 8.842 10.035 9.608.391.082.923.258 1.058.59.12.301.079.766.038 1.08l-.164 1.02c-.045.301-.24 1.186 1.049.645 1.291-.539 6.916-4.078 9.436-6.975C23.176 14.393 24 12.458 24 10.314"/></svg>
+      LINEで予約する
+      <small>24時間受付</small>
+    </a>
+    <a href="https://globaltouchnewyork.wixsite.com/terminal-1" target="_blank" rel="noopener" class="btn btn--net-hero">
+      ネットで予約する
+      <small>24時間受付</small>
+    </a>
+  </div>
+
+  <div class="hero__reviews">
+    <span class="stars-sm">★★★★★</span> OZmall 5.0（500件超）
+    <span class="hero__reviews-sep">／</span>
+    <span class="stars-sm">★★★★★</span> Google 4.9（100件超）
+  </div>
+
+  <div class="hero__scroll">scroll ↓</div>
+</section>
+
+<!-- ============================================================
+     2. WORRY — SVG イラストで悩み可視化
+============================================================ -->
+<section class="worry section">
+  <div class="container">
+    <p class="section__eyebrow">こんなお悩みはありませんか</p>
+    <h2 class="section__title">35歳を過ぎると、<br>髪が変わります。</h2>
+
+    <div class="worry__grid">
+
+      <!-- 白髪 -->
+      <div class="worry__item">
+        <div class="worry__illust">
+          <svg viewBox="0 0 160 190" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="白髪を気にする女性のイラスト">
+            <!-- 髪（暗い茶色） -->
+            <path d="M32 88 C30 52 44 20 80 14 C116 20 130 52 128 88 L128 96 C116 90 100 87 80 87 C60 87 44 90 32 96Z" fill="#3d2510"/>
+            <!-- 白髪・グレーの根元（分け目付近） -->
+            <path d="M68 22 C72 16 80 14 88 16 L86 44 C83 42 80 42 77 43Z" fill="#ccc5b5"/>
+            <line x1="72" y1="30" x2="66" y2="54" stroke="#c4bdb0" stroke-width="2.5" stroke-linecap="round"/>
+            <line x1="80" y1="25" x2="76" y2="52" stroke="#c4bdb0" stroke-width="2" stroke-linecap="round"/>
+            <!-- 髪・サイド -->
+            <path d="M32 92 L32 168 Q38 158 36 148 L36 92Z" fill="#3d2510"/>
+            <path d="M128 92 L128 168 Q122 158 124 148 L124 92Z" fill="#3d2510"/>
+            <!-- 顔 -->
+            <ellipse cx="80" cy="122" rx="42" ry="50" fill="#f5ddc8"/>
+            <!-- 目 -->
+            <ellipse cx="66" cy="115" rx="5" ry="4.5" fill="none" stroke="#2e1a08" stroke-width="1.5"/>
+            <circle cx="66" cy="115" r="2.2" fill="#2e1a08"/>
+            <circle cx="68" cy="113" r="1" fill="white"/>
+            <ellipse cx="94" cy="115" rx="5" ry="4.5" fill="none" stroke="#2e1a08" stroke-width="1.5"/>
+            <circle cx="94" cy="115" r="2.2" fill="#2e1a08"/>
+            <circle cx="96" cy="113" r="1" fill="white"/>
+            <!-- 眉（少し寄っている） -->
+            <path d="M59 104 C63 101 69 102 73 105" stroke="#3d2510" stroke-width="1.8" stroke-linecap="round" fill="none"/>
+            <path d="M87 105 C91 102 97 101 101 104" stroke="#3d2510" stroke-width="1.8" stroke-linecap="round" fill="none"/>
+            <!-- 鼻 -->
+            <path d="M78 124 C76 129 74 133 77 134 C80 135 83 134 81 133 C84 132 82 128 80 124" fill="#eba888" opacity="0.4"/>
+            <!-- 口（少し下向き） -->
+            <path d="M70 143 Q80 140 90 143" stroke="#b89070" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+            <!-- 髪に触れる手（左から） -->
+            <ellipse cx="22" cy="75" rx="13" ry="10" fill="#f5ddc8" stroke="#e0b898" stroke-width="1"/>
+            <path d="M12 68 L8 56" stroke="#f5ddc8" stroke-width="6" stroke-linecap="round"/>
+            <path d="M17 66 L14 53" stroke="#f5ddc8" stroke-width="6" stroke-linecap="round"/>
+            <path d="M22 65 L21 52" stroke="#f5ddc8" stroke-width="6" stroke-linecap="round"/>
+            <path d="M12 68 L8 56" stroke="#e0b898" stroke-width="1" stroke-linecap="round"/>
+            <path d="M17 66 L14 53" stroke="#e0b898" stroke-width="1" stroke-linecap="round"/>
+            <path d="M22 65 L21 52" stroke="#e0b898" stroke-width="1" stroke-linecap="round"/>
+            <!-- グレー部への点線 -->
+            <path d="M30 62 Q46 44 64 36" stroke="#ccc5b5" stroke-width="1.2" stroke-dasharray="3 2" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <p class="worry__label">白髪が気になる</p>
+        <p class="worry__desc">染めても染めても、追いかけっこが終わらない</p>
+      </div>
+
+      <!-- 薄毛 -->
+      <div class="worry__item">
+        <div class="worry__illust">
+          <svg viewBox="0 0 160 190" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="薄毛を気にする女性のイラスト">
+            <!-- 顔 -->
+            <ellipse cx="80" cy="122" rx="42" ry="50" fill="#f5ddc8"/>
+            <!-- 頭皮（薄い毛の隙間から見える） -->
+            <ellipse cx="80" cy="48" rx="32" ry="20" fill="#f5ddc8" opacity="0.85"/>
+            <!-- 薄い毛束（左） -->
+            <path d="M44 95 C40 72 48 46 58 34" stroke="#6b4520" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+            <path d="M50 90 C46 68 52 44 64 30" stroke="#6b4520" stroke-width="2" fill="none" stroke-linecap="round"/>
+            <path d="M38 100 C35 80 42 58 54 42" stroke="#8b6040" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+            <!-- 薄い毛束（中央） -->
+            <path d="M72 40 C70 26 76 18 80 16" stroke="#4d2e10" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+            <path d="M80 16 C84 14 90 16 92 26 C90 38 86 52 84 68" stroke="#4d2e10" stroke-width="2" fill="none" stroke-linecap="round"/>
+            <!-- 薄い毛束（右） -->
+            <path d="M100 90 C106 68 102 44 92 30" stroke="#6b4520" stroke-width="2" fill="none" stroke-linecap="round"/>
+            <path d="M110 95 C116 72 110 48 100 34" stroke="#6b4520" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+            <path d="M118 100 C124 78 118 56 108 42" stroke="#8b6040" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+            <!-- 目 -->
+            <ellipse cx="66" cy="115" rx="5" ry="4.5" fill="none" stroke="#2e1a08" stroke-width="1.5"/>
+            <circle cx="66" cy="115" r="2.2" fill="#2e1a08"/>
+            <circle cx="68" cy="113" r="1" fill="white"/>
+            <ellipse cx="94" cy="115" rx="5" ry="4.5" fill="none" stroke="#2e1a08" stroke-width="1.5"/>
+            <circle cx="94" cy="115" r="2.2" fill="#2e1a08"/>
+            <circle cx="96" cy="113" r="1" fill="white"/>
+            <!-- 眉（心配そう） -->
+            <path d="M59 103 C63 100 69 101 73 104" stroke="#3d2510" stroke-width="1.8" stroke-linecap="round" fill="none"/>
+            <path d="M87 104 C91 101 97 100 101 103" stroke="#3d2510" stroke-width="1.8" stroke-linecap="round" fill="none"/>
+            <!-- 鼻 -->
+            <path d="M78 124 C76 129 74 133 77 134 C80 135 83 134 81 133 C84 132 82 128 80 124" fill="#eba888" opacity="0.35"/>
+            <!-- 口 -->
+            <path d="M70 143 Q80 140 90 143" stroke="#b89070" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+            <!-- 頭上の手 -->
+            <ellipse cx="80" cy="16" rx="20" ry="9" fill="#f5ddc8" stroke="#e0b898" stroke-width="1"/>
+            <path d="M64 16 L62 6" stroke="#f5ddc8" stroke-width="5" stroke-linecap="round"/>
+            <path d="M72 14 L71 4" stroke="#f5ddc8" stroke-width="5" stroke-linecap="round"/>
+            <path d="M80 13 L80 3" stroke="#f5ddc8" stroke-width="5" stroke-linecap="round"/>
+            <path d="M88 14 L89 4" stroke="#f5ddc8" stroke-width="5" stroke-linecap="round"/>
+            <path d="M64 16 L62 6" stroke="#e0b898" stroke-width="1" stroke-linecap="round"/>
+            <path d="M72 14 L71 4" stroke="#e0b898" stroke-width="1" stroke-linecap="round"/>
+            <path d="M80 13 L80 3" stroke="#e0b898" stroke-width="1" stroke-linecap="round"/>
+            <path d="M88 14 L89 4" stroke="#e0b898" stroke-width="1" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <p class="worry__label">ボリュームが減った</p>
+        <p class="worry__desc">分け目や頭頂部が薄くなってきた気がする</p>
+      </div>
+
+      <!-- うねり -->
+      <div class="worry__item">
+        <div class="worry__illust">
+          <svg viewBox="0 0 160 190" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="うねりを気にする女性のイラスト">
+            <!-- 広がる髪（左側） -->
+            <path d="M8 82 C2 58 10 30 32 18 C16 38 14 68 18 94Z" fill="#3d2510"/>
+            <path d="M16 76 C8 52 16 28 36 16 C22 38 20 66 24 92Z" fill="#2e1a08"/>
+            <!-- 髪・メイン（上部） -->
+            <path d="M22 86 C20 50 36 18 80 12 C124 18 140 50 138 86 C128 80 108 77 80 77 C52 77 32 80 22 86Z" fill="#3d2510"/>
+            <!-- 広がる髪（右側） -->
+            <path d="M152 82 C158 58 150 30 128 18 C144 38 146 68 142 94Z" fill="#3d2510"/>
+            <path d="M144 76 C152 52 144 28 124 16 C138 38 140 66 136 92Z" fill="#2e1a08"/>
+            <!-- うねりのはみ出し（左上） -->
+            <path d="M22 52 C12 44 4 34 8 24 C16 32 24 42 28 56Z" fill="#3d2510"/>
+            <path d="M30 34 C24 20 28 10 36 14 C34 24 30 30 32 40Z" fill="#4d2e10"/>
+            <!-- うねりのはみ出し（右上） -->
+            <path d="M138 52 C148 44 156 34 152 24 C144 32 136 42 132 56Z" fill="#3d2510"/>
+            <path d="M130 34 C136 20 132 10 124 14 C126 24 130 30 128 40Z" fill="#4d2e10"/>
+            <!-- 毛先のうねり（左） -->
+            <path d="M22 92 C10 100 6 118 14 130 C20 122 22 110 26 98Z" fill="#3d2510"/>
+            <path d="M20 130 C12 140 16 155 24 160 C28 148 26 136 24 128Z" fill="#2e1a08"/>
+            <!-- 毛先のうねり（右） -->
+            <path d="M138 92 C150 100 154 118 146 130 C140 122 138 110 134 98Z" fill="#3d2510"/>
+            <path d="M140 130 C148 140 144 155 136 160 C132 148 134 136 136 128Z" fill="#2e1a08"/>
+            <!-- 顔 -->
+            <ellipse cx="80" cy="120" rx="42" ry="50" fill="#f5ddc8"/>
+            <!-- 目（少し上を向いている=うんざり） -->
+            <ellipse cx="66" cy="113" rx="5" ry="4.5" fill="none" stroke="#2e1a08" stroke-width="1.5"/>
+            <circle cx="66" cy="111" r="2.2" fill="#2e1a08"/>
+            <circle cx="67" cy="110" r="1" fill="white"/>
+            <ellipse cx="94" cy="113" rx="5" ry="4.5" fill="none" stroke="#2e1a08" stroke-width="1.5"/>
+            <circle cx="94" cy="111" r="2.2" fill="#2e1a08"/>
+            <circle cx="95" cy="110" r="1" fill="white"/>
+            <!-- 眉（困り気味） -->
+            <path d="M59 101 C63 99 69 100 73 103" stroke="#3d2510" stroke-width="1.8" stroke-linecap="round" fill="none"/>
+            <path d="M87 103 C91 100 97 99 101 101" stroke="#3d2510" stroke-width="1.8" stroke-linecap="round" fill="none"/>
+            <!-- 鼻 -->
+            <path d="M78 122 C76 127 74 131 77 132 C80 133 83 132 81 131 C84 130 82 126 80 122" fill="#eba888" opacity="0.35"/>
+            <!-- 口（うんざり感） -->
+            <path d="M71 141 Q80 138 89 141" stroke="#b89070" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+            <!-- 湿気の水滴 -->
+            <ellipse cx="12" cy="38" rx="3.5" ry="4.5" fill="#a0c8e0" opacity="0.55"/>
+            <ellipse cx="150" cy="44" rx="3" ry="4" fill="#a0c8e0" opacity="0.5"/>
+            <ellipse cx="4" cy="56" rx="2.5" ry="3.5" fill="#a0c8e0" opacity="0.4"/>
+            <ellipse cx="158" cy="62" rx="2.5" ry="3.5" fill="#a0c8e0" opacity="0.4"/>
+            <ellipse cx="18" cy="22" rx="2" ry="3" fill="#a0c8e0" opacity="0.35"/>
+          </svg>
+        </div>
+        <p class="worry__label">うねりが出る</p>
+        <p class="worry__desc">湿気の日はスタイルが決まらない、縮毛矯正の繰り返し</p>
+      </div>
+
     </div>
 
-    <div class="hero__inner">
-      <p class="hero__eyebrow">ヒト幹細胞が、髪を根本から再生する。</p>
-      <h1 class="hero__title">
-        <span class="hero__re">Re:</span>Hair
-      </h1>
-      <p class="hero__sub">
-        白髪・薄毛・うねり——<br>
-        表面のケアをやめて、根本から変えませんか。
-      </p>
-      <div class="hero__rating-teaser">
+    <div class="worry__cause">
+      <p>これらは全て、<strong>頭皮の細胞レベルの問題</strong>です。</p>
+      <p>表面のケアでは届かない場所に、Re:Hair はアプローチします。</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     3. SOLUTION — 方程式図解
+============================================================ -->
+<section class="solution section section--warm">
+  <div class="container">
+    <p class="section__eyebrow">Re:Hair の方程式</p>
+    <h2 class="section__title">根本改善は、<br>この組み合わせで完成する。</h2>
+
+    <div class="equation">
+      <div class="equation__item">
+        <div class="equation__icon">
+          <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="32" cy="32" r="30" fill="rgba(184,154,94,0.12)" stroke="#b89a5e" stroke-width="1.5"/>
+            <!-- サロンチェア的アイコン -->
+            <rect x="22" y="36" width="20" height="12" rx="3" fill="#b89a5e" opacity="0.7"/>
+            <rect x="18" y="46" width="28" height="3" rx="1.5" fill="#b89a5e"/>
+            <path d="M22 48 L20 56 M42 48 L44 56" stroke="#b89a5e" stroke-width="2" stroke-linecap="round"/>
+            <ellipse cx="32" cy="30" rx="10" ry="8" fill="#b89a5e" opacity="0.5"/>
+            <path d="M28 26 Q32 22 36 26" stroke="#b89a5e" stroke-width="1.5" fill="none"/>
+            <!-- 幹細胞の波紋 -->
+            <circle cx="32" cy="30" r="14" stroke="#b89a5e" stroke-width="0.8" opacity="0.4" stroke-dasharray="2 2"/>
+          </svg>
+        </div>
+        <strong>サロン施術</strong>
+        <p>ヒト幹細胞培養液を<br>毛乳頭まで届ける</p>
+      </div>
+
+      <div class="equation__op">×</div>
+
+      <div class="equation__item">
+        <div class="equation__icon">
+          <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="32" cy="32" r="30" fill="rgba(184,154,94,0.12)" stroke="#b89a5e" stroke-width="1.5"/>
+            <!-- ボトルアイコン -->
+            <rect x="26" y="22" width="12" height="28" rx="4" fill="#b89a5e" opacity="0.6"/>
+            <rect x="29" y="16" width="6" height="8" rx="2" fill="#b89a5e" opacity="0.8"/>
+            <rect x="28" y="14" width="8" height="4" rx="1" fill="#b89a5e"/>
+            <!-- 液体の滴 -->
+            <path d="M44 38 Q48 42 44 46 Q40 42 44 38Z" fill="#b89a5e" opacity="0.5"/>
+            <path d="M49 32 Q52 35 49 38 Q46 35 49 32Z" fill="#b89a5e" opacity="0.35"/>
+            <!-- 毎日のサイクル -->
+            <path d="M14 32 Q14 24 20 20" stroke="#b89a5e" stroke-width="1" stroke-linecap="round" opacity="0.5"/>
+            <path d="M20 20 L18 16 M20 20 L24 18" stroke="#b89a5e" stroke-width="1" stroke-linecap="round" opacity="0.5"/>
+          </svg>
+        </div>
+        <strong>毎日のホームケア</strong>
+        <p>サンコール社トニックで<br>毎日根本を守る</p>
+      </div>
+
+      <div class="equation__op">=</div>
+
+      <div class="equation__item equation__item--result">
+        <div class="equation__icon equation__icon--result">
+          <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="32" cy="32" r="30" fill="rgba(232,82,10,0.1)" stroke="#e8520a" stroke-width="1.5"/>
+            <!-- 輝く髪 -->
+            <path d="M32 52 C32 52 26 40 26 32 C26 24 29 18 32 18 C35 18 38 24 38 32 C38 40 32 52 32 52Z" fill="#e8520a" opacity="0.7"/>
+            <path d="M32 18 L32 10" stroke="#e8520a" stroke-width="2" stroke-linecap="round"/>
+            <!-- 輝き -->
+            <path d="M22 20 L18 16 M42 20 L46 16 M20 32 L14 32 M44 32 L50 32" stroke="#e8520a" stroke-width="1.5" stroke-linecap="round" opacity="0.6"/>
+            <path d="M24 24 L20 20 M40 24 L44 20" stroke="#e8520a" stroke-width="1" stroke-linecap="round" opacity="0.4"/>
+          </svg>
+        </div>
+        <strong>根本改善</strong>
+        <p>白髪・薄毛・うねりが<br>根本から変わる</p>
+      </div>
+    </div>
+
+    <p class="solution__note">
+      <a href="#details" class="solution__detail-link">ヒト幹細胞・サンコールの詳しい説明を読む ▼</a>
+    </p>
+  </div>
+</section>
+
+<!-- ============================================================
+     4. COURSES — 早期提示・価格大きく
+============================================================ -->
+<section class="courses section" id="courses">
+  <div class="container">
+    <div class="courses__banner">
+      <span>🔥 5月限定</span>
+      <span class="courses__banner-sep">|</span>
+      <span>初回限定価格</span>
+      <span class="courses__banner-sep">|</span>
+      <span>お申込みは<strong>5/31まで</strong></span>
+    </div>
+
+    <p class="section__eyebrow">5月限定コース</p>
+    <h2 class="section__title">コースを選んで、今月変わる。</h2>
+
+    <div class="courses__grid">
+
+      <!-- スペシャル（松） -->
+      <div class="course">
+        <p class="course__for">スタイルごと変えたい方</p>
+        <h3 class="course__name">Re:Hair<br>スペシャル</h3>
+        <div class="course__price-wrap">
+          <div class="course__price">¥28,500</div>
+          <span class="course__tax">税込</span>
+        </div>
+        <ul class="course__items">
+          <li>カット</li>
+          <li>カラー（白髪・おしゃれ）</li>
+          <li>ヒト幹細胞トリートメント</li>
+          <li class="course__items--tonic">
+            サンコール スカルプトニック
+            <span class="tonic-tag">サロン専売</span>
+          </li>
+        </ul>
+        <p class="course__time">所要時間 約120分</p>
+        <p class="course__cta-urgency">⚠ 5月31日まで</p>
+        <a href="#reserve" class="btn btn--course">このコースで予約</a>
+      </div>
+
+      <!-- スタンダード（竹・推奨） -->
+      <div class="course course--featured">
+        <div class="course__ribbon">★ 最も選ばれています</div>
+        <p class="course__for">白髪・うねりが気になる方</p>
+        <h3 class="course__name">Re:Hair<br>スタンダード</h3>
+        <div class="course__price-wrap">
+          <div class="course__price course__price--featured">¥22,000</div>
+          <span class="course__tax">税込</span>
+        </div>
+        <ul class="course__items">
+          <li>カラー（白髪染め or おしゃれ染め）</li>
+          <li>ヒト幹細胞トリートメント</li>
+          <li class="course__items--tonic">
+            サンコール スカルプトニック
+            <span class="tonic-tag">サロン専売</span>
+          </li>
+        </ul>
+        <p class="course__time">所要時間 約90分</p>
+        <p class="course__cta-urgency">⚠ 5月31日まで</p>
+        <a href="#reserve" class="btn btn--course-featured">このコースで予約</a>
+      </div>
+
+      <!-- ベース（梅） -->
+      <div class="course">
+        <p class="course__for">まず体感してみたい方</p>
+        <h3 class="course__name">Re:Hair<br>ベース</h3>
+        <div class="course__price-wrap">
+          <div class="course__price">¥12,000</div>
+          <span class="course__tax">税込</span>
+        </div>
+        <ul class="course__items">
+          <li>ヒト幹細胞トリートメント</li>
+          <li class="course__items--tonic">
+            サンコール スカルプトニック
+            <span class="tonic-tag">サロン専売</span>
+          </li>
+        </ul>
+        <p class="course__time">所要時間 約60分</p>
+        <p class="course__cta-urgency">⚠ 5月31日まで</p>
+        <a href="#reserve" class="btn btn--course">このコースで予約</a>
+      </div>
+
+    </div>
+
+    <p class="courses__note">
+      ※ 全コース無料カウンセリング（約15分）含む。5月限定初回価格。
+      ※ サンコール製品の正式商品名は下村が後日確認・更新します。
+    </p>
+  </div>
+</section>
+
+<!-- ============================================================
+     5. REVIEWS — お客様の声（5件）
+============================================================ -->
+<section class="reviews section section--warm">
+  <div class="container">
+    <div class="reviews__scores">
+      <div class="reviews__score-block">
         <span class="stars">★★★★★</span>
-        <strong>5.0</strong>
-        <span>Googleレビュー 4.9（100件超）</span>
+        <span class="reviews__score-num">5.0</span>
+        <span class="reviews__score-label">OZmall（500件超）</span>
       </div>
-      <div class="hero__actions">
-        <a href="#courses" class="btn btn--primary">5月限定コースを見る</a>
-        <a href="#reserve" class="btn btn--outline">無料カウンセリングを予約する</a>
-      </div>
-      <p class="hero__deadline">⚠ お申込みは5月31日まで。残り枠わずかです。</p>
-    </div>
-
-    <div class="hero__scroll">scroll ↓</div>
-  </section>
-
-  <!-- ============================================================
-       2. お客様の声・トップ（5件）
-  ============================================================ -->
-  <section class="reviews-top section section--beige">
-    <div class="container">
-      <p class="section__eyebrow">Customer Reviews</p>
-      <h2 class="section__title">通ってくださったお客様の声</h2>
-      <div class="rating-summary">
-        <div class="rating-summary__score">5.0</div>
-        <div class="rating-summary__detail">
-          <div class="stars stars--lg">★★★★★</div>
-          <p>OZmall ★★★★★ 5.0（500件超）／ Google ★★★★★ 4.9（100件超）</p>
-        </div>
-      </div>
-
-      <div class="reviews-grid reviews-grid--5">
-        <div class="review-card">
-          <div class="stars">★★★★★</div>
-          <p class="review-card__body">「半年通って、自分でも見違えるほど髪が変わりました。3回目あたりから手触りが全然違ってきて。今は白髪が来るのが怖くなくなりました」</p>
-          <p class="review-card__meta">48歳・自営業</p>
-        </div>
-        <div class="review-card">
-          <div class="stars">★★★★★</div>
-          <p class="review-card__body">「白髪のストレスから解放されました。染めても染めても追いかけっこだったのが、根元が伸びても気にならなくなってきた。こんな変化があるとは思っていなかった」</p>
-          <p class="review-card__meta">43歳・会社員</p>
-        </div>
-        <div class="review-card review-card--highlight">
-          <div class="stars">★★★★★</div>
-          <p class="review-card__body">「下村さんに会えて本当によかったです。他のサロンでは流されてしまっていた悩みを、真剣に一緒に考えてくれる。そのことがどれだけ心強かったか」</p>
-          <p class="review-card__meta">52歳・主婦</p>
-        </div>
-        <div class="review-card">
-          <div class="stars">★★★★★</div>
-          <p class="review-card__body">「他のサロンとは全く違う体験でした。施術の一つひとつに理由があって、頭皮のことを本当に理解してくれていると感じました。結果も出ているので長く通い続けます」</p>
-          <p class="review-card__meta">39歳・経営者</p>
-        </div>
-        <div class="review-card">
-          <div class="stars">★★★★★</div>
-          <p class="review-card__body">「カウンセリングが本当に丁寧で、安心して任せられました。初回から『この人に頼んで正解だった』と思えるサロンは初めてです」</p>
-          <p class="review-card__meta">45歳・自営業</p>
-        </div>
-      </div>
-      <p class="reviews-note">※ お客様のご了承のもと掲載しています。個人名は伏せ字にしています。</p>
-    </div>
-  </section>
-
-  <!-- ============================================================
-       3. 35歳からの髪の変化
-       写真: 髪のケア・スタイリングのクローズアップ（人物の顔は映らない）
-  ============================================================ -->
-  <section class="age-change section">
-    <div class="container">
-      <div class="age-change__inner">
-        <div class="age-change__img">
-          <!-- 髪のクローズアップ / ケアの手元 — 後日差し替え可 -->
-          <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=700&q=80&auto=format&fit=crop&crop=top" alt="髪のケア" loading="lazy">
-        </div>
-        <div class="age-change__text">
-          <p class="section__eyebrow">12年、お客様と向き合ってきて</p>
-          <h2 class="section__title section__title--left">35歳を過ぎると、<br>髪が変わります。</h2>
-          <p>私が麻布十番でサロンを続けて12年。毎日お客様の髪を見てきて、はっきりと分かることがあります。</p>
-          <p>それは、<strong>35歳を境に、「染める・切る・整える」だけでは追いつかなくなる方が急増する</strong>ということです。</p>
-          <p>白髪が増えるスピードが速くなった。ボリュームが出なくなった。うねりが強くなった。今まで通りのケアをしているのに、なぜか結果が変わってきた——。</p>
-          <p>それは、<strong>あなたのせいではありません。</strong>髪を作り出す「頭皮の細胞」が変化しているんです。表面のケアだけでは、届かない場所があります。</p>
-          <div class="age-change__quote">
-            「毎日お客様の声を聞いてきて、ずっと感じていた。<br>表面のケアだけでは、もう届かない場所がある、と。<br>だから根本から変えるアプローチを選んだ。」
-            <span>— 下村</span>
-          </div>
-        </div>
+      <div class="reviews__score-sep">/</div>
+      <div class="reviews__score-block">
+        <span class="stars">★★★★★</span>
+        <span class="reviews__score-num">4.9</span>
+        <span class="reviews__score-label">Google（100件超）</span>
       </div>
     </div>
-  </section>
 
-  <!-- ============================================================
-       4. 髪悩みの本当の原因は頭皮
-       写真: 髪の状態を示すクローズアップ（顔なし）。CSSカードで代替。
-  ============================================================ -->
-  <section class="root-cause section section--dark">
-    <div class="container">
-      <p class="section__eyebrow">The Root Cause</p>
-      <h2 class="section__title">その悩みの本当の原因は、<br>頭皮の「細胞レベル」の問題です。</h2>
-      <p class="root-cause__lead">
-        シャンプーを変えても、トリートメントをしても変わらない——それはそのはず。<br>
-        <strong>問題が起きているのは、あなたが触れていない場所</strong>だからです。
-      </p>
-      <div class="root-cause__grid">
-        <div class="root-cause__card">
-          <!-- 白髪を気にして髪に手をやる仕草 — 後日日本人モデル写真に差し替え推奨 -->
-          <div class="root-cause__card-photo">
-            <img src="https://images.unsplash.com/photo-1620827024-e6640e5fba7a?w=480&q=80&auto=format&fit=crop&crop=top" alt="白髪を気にする女性" loading="lazy">
-          </div>
-          <h3>白髪</h3>
-          <p class="root-cause__surface"><span class="tag tag--surface">表面のケアでは</span>「隠す」だけ</p>
-          <div class="root-cause__divider">↓ 本当の原因</div>
-          <p class="root-cause__deep">毛根の<strong>メラノサイト（色素細胞）</strong>の機能低下。色を作る細胞自体が弱っています。</p>
-        </div>
-        <div class="root-cause__card">
-          <!-- 薄毛・ボリューム不足を気にする仕草 — 後日日本人モデル写真に差し替え推奨 -->
-          <div class="root-cause__card-photo">
-            <img src="https://images.unsplash.com/photo-1559599101-f09722fb4948?w=480&q=80&auto=format&fit=crop&crop=top" alt="薄毛・ボリューム不足を気にする女性" loading="lazy">
-          </div>
-          <h3>薄毛・ボリューム不足</h3>
-          <p class="root-cause__surface"><span class="tag tag--surface">表面のケアでは</span>「ふんわり見せる」だけ</p>
-          <div class="root-cause__divider">↓ 本当の原因</div>
-          <p class="root-cause__deep"><strong>毛母細胞の分裂が弱まり</strong>、毛周期が乱れています。髪を作り出す工場自体が止まりかけています。</p>
-        </div>
-        <div class="root-cause__card">
-          <!-- うねり・くせ毛に悩む仕草 — 後日日本人モデル写真に差し替え推奨 -->
-          <div class="root-cause__card-photo">
-            <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=480&q=80&auto=format&fit=crop&crop=center" alt="うねり・くせ毛に悩む女性" loading="lazy">
-          </div>
-          <h3>うねり・くせ毛</h3>
-          <p class="root-cause__surface"><span class="tag tag--surface">表面のケアでは</span>「一時的に抑える」だけ</p>
-          <div class="root-cause__divider">↓ 本当の原因</div>
-          <p class="root-cause__deep"><strong>毛根のゆがみ</strong>と細胞分裂の不均一さが原因。梅雨になるたび悩むのは、根っこが変わっていないからです。</p>
-        </div>
+    <div class="reviews__grid">
+      <div class="review-card">
+        <div class="stars">★★★★★</div>
+        <p>「半年通って、自分でも見違えるほど髪が変わりました。3回目あたりから手触りが全然違ってきて。今は白髪が来るのが怖くなくなりました」</p>
+        <span class="review-card__meta">48歳・自営業</span>
       </div>
-      <div class="root-cause__cta-hint">
-        <p>あなたの髪も——<strong>根本から変えることができます。</strong></p>
-        <p class="root-cause__cta-hint-sub">それが「Re:Hair」のアプローチです。</p>
+      <div class="review-card">
+        <div class="stars">★★★★★</div>
+        <p>「白髪のストレスから解放されました。根元が伸びても気にならなくなってきた。こんな変化があるとは思っていなかった」</p>
+        <span class="review-card__meta">43歳・会社員</span>
+      </div>
+      <div class="review-card review-card--accent">
+        <div class="stars">★★★★★</div>
+        <p>「下村さんに会えて本当によかったです。他のサロンでは流されてしまっていた悩みを、真剣に一緒に考えてくれる」</p>
+        <span class="review-card__meta">52歳・主婦</span>
+      </div>
+      <div class="review-card">
+        <div class="stars">★★★★★</div>
+        <p>「他のサロンとは全く違う体験でした。施術の一つひとつに理由があって、頭皮のことを本当に理解してくれていると感じました」</p>
+        <span class="review-card__meta">39歳・経営者</span>
+      </div>
+      <div class="review-card">
+        <div class="stars">★★★★★</div>
+        <p>「カウンセリングが本当に丁寧で、安心して任せられました。初回から『この人に頼んで正解だった』と思えるサロンは初めてです」</p>
+        <span class="review-card__meta">45歳・自営業</span>
       </div>
     </div>
-  </section>
+    <p class="reviews__note">※ お客様のご了承のもと掲載。個人名は伏せ字にしています。</p>
+  </div>
+</section>
 
-  <!-- ============================================================
-       5. ヒト幹細胞培養液という選択肢
-  ============================================================ -->
-  <section class="stem-cell section">
-    <div class="container">
-      <p class="section__eyebrow">The Technology</p>
-      <h2 class="section__title">ヒト幹細胞培養液が<br>髪の"再生スイッチ"を押す</h2>
+<!-- ============================================================
+     6. DETAILS — 折りたたみ詳細
+============================================================ -->
+<section class="details-section section" id="details">
+  <div class="container">
+    <p class="details-section__lead">もっと詳しく知りたい方へ</p>
 
-      <!-- ステップフロー図解 -->
-      <div class="stem-cell__flow">
-        <div class="stem-cell__flow-step">
-          <div class="stem-cell__flow-icon">
-            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <circle cx="24" cy="24" r="22" stroke="#b89a5e" stroke-width="1.5"/>
-              <path d="M24 12 C20 12 16 16 16 22 C16 28 20 32 24 34 C28 32 32 28 32 22 C32 16 28 12 24 12Z" fill="rgba(184,154,94,0.15)" stroke="#b89a5e" stroke-width="1"/>
-              <path d="M18 28 Q24 38 30 28" stroke="#b89a5e" stroke-width="1.5" fill="none" stroke-linecap="round"/>
-              <circle cx="24" cy="20" r="3" fill="#b89a5e" opacity="0.6"/>
-            </svg>
+    <details class="detail-card">
+      <summary class="detail-card__trigger">
+        <span>ヒト幹細胞培養液とは？仕組みを知る</span>
+        <span class="detail-card__arrow">▼</span>
+      </summary>
+      <div class="detail-card__body">
+        <p>ヒト幹細胞の培養液には、細胞の修復・再生を促す<strong>サイトカインや成長因子</strong>が豊富に含まれています。これを頭皮から浸透させることで、毛乳頭細胞・毛母細胞に直接働きかけます。</p>
+        <div class="detail-diagram">
+          <div class="detail-diagram__layer detail-diagram__layer--surface">
+            <span>毛幹（見えている髪）</span><span class="detail-tag">シャンプー・トリートメント</span>
           </div>
-          <p class="stem-cell__flow-num">01</p>
-          <p class="stem-cell__flow-title">頭皮に塗布</p>
-          <p class="stem-cell__flow-desc">ヒト幹細胞培養液を頭皮に直接アプローチ</p>
-        </div>
-        <div class="stem-cell__flow-arrow">→</div>
-        <div class="stem-cell__flow-step">
-          <div class="stem-cell__flow-icon">
-            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <circle cx="24" cy="24" r="22" stroke="#b89a5e" stroke-width="1.5"/>
-              <path d="M24 8 L24 40" stroke="#b89a5e" stroke-width="1.5" stroke-dasharray="3 2"/>
-              <path d="M14 18 L24 28 L34 18" stroke="#b89a5e" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
-              <circle cx="24" cy="32" r="4" fill="rgba(184,154,94,0.25)" stroke="#b89a5e" stroke-width="1"/>
-            </svg>
+          <div class="detail-diagram__arrow">↓</div>
+          <div class="detail-diagram__layer detail-diagram__layer--mid">
+            <span>毛根・毛球部</span><span class="detail-tag">一般的なヘアケア</span>
           </div>
-          <p class="stem-cell__flow-num">02</p>
-          <p class="stem-cell__flow-title">深層へ浸透</p>
-          <p class="stem-cell__flow-desc">毛乳頭・毛母細胞のある深層まで到達</p>
-        </div>
-        <div class="stem-cell__flow-arrow">→</div>
-        <div class="stem-cell__flow-step">
-          <div class="stem-cell__flow-icon">
-            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <circle cx="24" cy="24" r="22" stroke="#b89a5e" stroke-width="1.5"/>
-              <circle cx="24" cy="24" r="8" fill="rgba(184,154,94,0.2)" stroke="#b89a5e" stroke-width="1.5"/>
-              <path d="M24 10 L24 14M38 24 L34 24M24 38 L24 34M10 24 L14 24" stroke="#b89a5e" stroke-width="1.5" stroke-linecap="round"/>
-              <path d="M33.9 14.1 L31.1 16.9M33.9 33.9 L31.1 31.1M14.1 14.1 L16.9 16.9" stroke="#b89a5e" stroke-width="1" stroke-linecap="round"/>
-            </svg>
+          <div class="detail-diagram__arrow detail-diagram__arrow--gold">↓ Re:Hair はここまで届く</div>
+          <div class="detail-diagram__layer detail-diagram__layer--deep">
+            <span><strong>毛乳頭細胞・毛母細胞</strong><br><small>Re:Hair ターゲット領域</small></span>
           </div>
-          <p class="stem-cell__flow-num">03</p>
-          <p class="stem-cell__flow-title">細胞を活性化</p>
-          <p class="stem-cell__flow-desc">サイトカイン・成長因子が眠った細胞を目覚めさせる</p>
         </div>
-        <div class="stem-cell__flow-arrow">→</div>
-        <div class="stem-cell__flow-step stem-cell__flow-step--final">
-          <div class="stem-cell__flow-icon">
-            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <circle cx="24" cy="24" r="22" fill="rgba(184,154,94,0.12)" stroke="#b89a5e" stroke-width="1.5"/>
-              <path d="M24 36 C24 36 18 28 18 22 C18 18 21 15 24 15 C27 15 30 18 30 22 C30 28 24 36 24 36Z" fill="#b89a5e" opacity="0.7"/>
-              <path d="M24 15 L24 10" stroke="#b89a5e" stroke-width="2" stroke-linecap="round"/>
-              <path d="M21 12 L24 10 L27 12" stroke="#b89a5e" stroke-width="1.5" fill="none" stroke-linejoin="round"/>
-            </svg>
-          </div>
-          <p class="stem-cell__flow-num">04</p>
-          <p class="stem-cell__flow-title">根本から再生</p>
-          <p class="stem-cell__flow-desc">白髪・薄毛・うねりの根本原因に働きかけ、髪が変わり始める</p>
+        <div class="detail-effects">
+          <div class="detail-effect"><span class="detail-effect__dot"></span><div><strong>白髪：</strong>メラノサイトへの働きかけで、色素細胞をサポート</div></div>
+          <div class="detail-effect"><span class="detail-effect__dot"></span><div><strong>薄毛：</strong>毛母細胞の分裂促進・毛周期の正常化</div></div>
+          <div class="detail-effect"><span class="detail-effect__dot"></span><div><strong>うねり：</strong>毛根のゆがみ補正・均一な細胞分裂をサポート</div></div>
         </div>
+        <p class="detail-note">※効果には個人差があります。医薬品ではなく化粧品成分として作用します。</p>
       </div>
+    </details>
 
-      <div class="stem-cell__body">
-        <div class="stem-cell__diagram">
-          <p class="stem-cell__diagram-title">従来のケアとの届く深さの違い</p>
-          <div class="diagram">
-            <div class="diagram__layer diagram__layer--surface">
-              <span class="diagram__icon">◎</span>
-              <span>毛幹（見えている髪）</span>
-              <span class="diagram__tag">シャンプー・トリートメント</span>
-            </div>
-            <div class="diagram__arrow">↓</div>
-            <div class="diagram__layer diagram__layer--mid">
-              <span class="diagram__icon">◎</span>
-              <span>毛根・毛球部</span>
-              <span class="diagram__tag">一般的なヘアケア</span>
-            </div>
-            <div class="diagram__arrow diagram__arrow--gold">↓ Re:Hair はここまで届く</div>
-            <div class="diagram__layer diagram__layer--deep">
-              <span class="diagram__icon diagram__icon--gold">◉</span>
-              <div>
-                <strong>毛乳頭細胞・毛母細胞</strong>
-                <small>Re:Hair ターゲット領域</small>
-              </div>
-            </div>
-          </div>
+    <details class="detail-card">
+      <summary class="detail-card__trigger">
+        <span>なぜサンコールなのか？市販品との違い</span>
+        <span class="detail-card__arrow">▼</span>
+      </summary>
+      <div class="detail-card__body">
+        <p class="detail-intro-quote">「12年間、数多くのケア製品を試してきた中で、本当に変わったという声を一番多くいただいたのがサンコールでした。」— 下村</p>
+        <div class="detail-compare">
+          <div class="detail-compare__head"></div>
+          <div class="detail-compare__head detail-compare__head--bad">市販品</div>
+          <div class="detail-compare__head detail-compare__head--good">サンコール</div>
+
+          <div class="detail-compare__label">幹細胞濃度</div>
+          <div class="detail-compare__bad">✕ 微量</div>
+          <div class="detail-compare__good">◎ 毛乳頭まで届く濃度</div>
+
+          <div class="detail-compare__label">品質設計</div>
+          <div class="detail-compare__bad">✕ 一般向け</div>
+          <div class="detail-compare__good">◎ サロンプロ専用</div>
+
+          <div class="detail-compare__label">入手方法</div>
+          <div class="detail-compare__bad">△ 誰でも購入可</div>
+          <div class="detail-compare__good">◎ サロン限定・市販不可</div>
+
+          <div class="detail-compare__label">使い方指導</div>
+          <div class="detail-compare__bad">✕ なし</div>
+          <div class="detail-compare__good">◎ プロが直接レクチャー</div>
         </div>
-        <div class="stem-cell__text">
-          <h3>なぜ「ヒト幹細胞」でなければならないのか</h3>
-          <p>ヒト幹細胞の培養液には、細胞を修復・再生へ導く<strong>サイトカインや成長因子</strong>が豊富に含まれています。</p>
-          <p>これを頭皮から浸透させることで、<strong>毛乳頭細胞・毛母細胞に直接働きかける</strong>ことができます。表面のトリートメントとは、届く場所が根本的に違います。</p>
-          <p>Re:Hair では、日本のサロンケア業界でも実績のある<strong>サンコール社のヒト幹細胞培養液配合トニック</strong>を採用しています。サロン専売のため、品質管理と有効成分の濃度が市販品とは根本的に異なります。</p>
-          <div class="stem-cell__effects">
-            <div class="stem-cell__effect">
-              <span class="stem-cell__effect-icon">◈</span>
-              <div>
-                <strong>白髪へ</strong>
-                <p>メラノサイトへの働きかけで、色素細胞の機能をサポート</p>
-              </div>
-            </div>
-            <div class="stem-cell__effect">
-              <span class="stem-cell__effect-icon">◈</span>
-              <div>
-                <strong>薄毛へ</strong>
-                <p>毛母細胞の分裂を促進し、毛周期を正常化</p>
-              </div>
-            </div>
-            <div class="stem-cell__effect">
-              <span class="stem-cell__effect-icon">◈</span>
-              <div>
-                <strong>うねりへ</strong>
-                <p>毛根のゆがみを補正し、均一な細胞分裂をサポート</p>
-              </div>
-            </div>
-          </div>
-          <p class="stem-cell__note">※効果には個人差があります。化粧品成分として作用します（医薬品ではありません）。</p>
-        </div>
+        <p class="detail-note">※ 商品の正式名称は下村が後日確認・更新します。</p>
+      </div>
+    </details>
+  </div>
+</section>
+
+<!-- ============================================================
+     7. CTA #2 — 申込導線
+============================================================ -->
+<section class="cta-section section section--campaign" id="reserve">
+  <div class="container">
+    <div class="cta-section__badge">5月限定キャンペーン</div>
+    <div class="cta-section__period">5/7(水) 〜 5/31(土)</div>
+    <h2 class="cta-section__title">
+      今月だけの価格で、<br>髪を根本から変える。
+    </h2>
+    <p class="cta-section__urgency">⚠ 残り枠わずか。お申込みは5月31日まで。</p>
+    <div class="cta-section__buttons">
+      <a href="#" class="btn btn--line-hero">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="white" aria-hidden="true"><path d="M19.365 9.863c.349 0 .63.285.63.631 0 .345-.281.63-.63.63H17.61v1.125h1.755c.349 0 .63.283.63.63 0 .344-.281.629-.63.629h-2.386c-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.63-.63h2.386c.346 0 .627.285.627.63 0 .349-.281.63-.63.63H17.61v1.125h1.755zm-3.855 3.016c0 .27-.174.51-.432.596-.064.021-.133.031-.199.031-.211 0-.391-.09-.51-.25l-2.443-3.317v2.94c0 .344-.279.629-.631.629-.346 0-.626-.285-.626-.629V8.108c0-.27.173-.51.43-.595.06-.023.136-.033.194-.033.195 0 .375.104.495.254l2.462 3.33V8.108c0-.345.282-.63.63-.63.345 0 .63.285.63.63v4.771zm-5.741 0c0 .344-.282.629-.631.629-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.63-.63.346 0 .628.285.628.63v4.771zm-2.466.629H4.917c-.345 0-.63-.285-.63-.629V8.108c0-.345.285-.63.63-.63.348 0 .63.285.63.63v4.141h1.756c.348 0 .629.283.629.63 0 .344-.281.629-.629.629M24 10.314C24 4.943 18.615.572 12 .572S0 4.943 0 10.314c0 4.811 4.27 8.842 10.035 9.608.391.082.923.258 1.058.59.12.301.079.766.038 1.08l-.164 1.02c-.045.301-.24 1.186 1.049.645 1.291-.539 6.916-4.078 9.436-6.975C23.176 14.393 24 12.458 24 10.314"/></svg>
+        LINEで予約する
+        <small>24時間受付・無料カウンセリング</small>
+      </a>
+      <a href="https://globaltouchnewyork.wixsite.com/terminal-1" target="_blank" rel="noopener" class="btn btn--net-hero">
+        ネットで予約する
+        <small>24時間受付</small>
+      </a>
+    </div>
+    <p class="cta-section__tel">お問い合わせ（営業時間内）: <a href="tel:03-6887-0302">03-6887-0302</a></p>
+  </div>
+</section>
+
+<!-- ============================================================
+     8. ABOUT — 短く
+============================================================ -->
+<section class="about section">
+  <div class="container">
+    <div class="about__inner">
+      <div>
+        <p class="section__eyebrow">About Terminal#10</p>
+        <h2 class="section__title section__title--left">麻布十番 12年。<br>根本改善だけを<br>追い続けた。</h2>
+      </div>
+      <div class="about__text">
+        <p>東京・麻布十番で12年間、頭皮と向き合ってきたサロンです。</p>
+        <p>Re:Hair は、私がお客様と向き合い続けた中で「本当に変わる」と確信したアプローチだけを、5月限定でまとめたキャンペーンです。</p>
+        <p class="about__sign">— 下村</p>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- ============================================================
-       NEW: なぜサンコールなのか
-  ============================================================ -->
-  <section class="suncall section section--beige" id="suncall">
-    <div class="container">
-      <p class="section__eyebrow">Why Suncall</p>
-      <h2 class="section__title">なぜ、サンコールなのか。</h2>
-
-      <!-- 比較表 -->
-      <div class="suncall__compare">
-        <p class="suncall__compare-label">3秒でわかる違い</p>
-        <div class="suncall__compare-grid">
-          <div class="suncall__compare-head suncall__compare-head--blank"></div>
-          <div class="suncall__compare-head suncall__compare-head--bad">市販品・<br>ネット購入品</div>
-          <div class="suncall__compare-head suncall__compare-head--good">サンコール<br><small>（Terminal#10 限定）</small></div>
-
-          <div class="suncall__compare-row-label">幹細胞培養液の濃度</div>
-          <div class="suncall__compare-cell suncall__compare-cell--bad"><span class="compare-x">✕</span>極めて微量</div>
-          <div class="suncall__compare-cell suncall__compare-cell--good"><span class="compare-o">◎</span>毛乳頭まで届く濃度</div>
-
-          <div class="suncall__compare-row-label">品質・配合設計</div>
-          <div class="suncall__compare-cell suncall__compare-cell--bad"><span class="compare-x">✕</span>一般消費者向け</div>
-          <div class="suncall__compare-cell suncall__compare-cell--good"><span class="compare-o">◎</span>サロンプロ専用設計</div>
-
-          <div class="suncall__compare-row-label">入手方法</div>
-          <div class="suncall__compare-cell suncall__compare-cell--bad"><span class="compare-tri">△</span>誰でも購入可能</div>
-          <div class="suncall__compare-cell suncall__compare-cell--good"><span class="compare-o">◎</span>サロン限定・市販不可</div>
-
-          <div class="suncall__compare-row-label">使い方の指導</div>
-          <div class="suncall__compare-cell suncall__compare-cell--bad"><span class="compare-x">✕</span>なし</div>
-          <div class="suncall__compare-cell suncall__compare-cell--good"><span class="compare-o">◎</span>プロが直接レクチャー</div>
-
-          <div class="suncall__compare-row-label">サロン施術との<br>相乗効果</div>
-          <div class="suncall__compare-cell suncall__compare-cell--bad"><span class="compare-x">✕</span>設計されていない</div>
-          <div class="suncall__compare-cell suncall__compare-cell--good"><span class="compare-o">◎</span>施術と組み合わせ前提</div>
-        </div>
+<!-- ============================================================
+     9. FINAL REVIEWS — 背中を押す3件
+============================================================ -->
+<section class="reviews-final section section--warm">
+  <div class="container">
+    <h2 class="section__title">「申し込んでよかった」<br>その一言が、一番の答えです。</h2>
+    <div class="reviews-final__grid">
+      <div class="review-card-final">
+        <div class="stars">★★★★★</div>
+        <p>「申し込んで本当によかった。もっと早く来ればよかったと思うくらい。最初の一歩が怖かっただけで、来てみたら全然違いました」</p>
+        <span>50歳・会社役員</span>
       </div>
-
-      <div class="suncall__body">
-        <div class="suncall__text">
-          <p class="suncall__intro">
-            私が12年間、数多くのケア製品を試してきた中で、<strong>「本当に根本から変わった」という声を一番多くいただいたのがサンコールの処方でした。</strong>正直、最初は私自身も半信半疑でした。でも、お客様の頭皮と髪の変化を実際に見続けて、確信しました。
-          </p>
-
-          <div class="suncall__reasons">
-            <div class="suncall__reason">
-              <div class="suncall__reason-num">01</div>
-              <div>
-                <h3>サロン専売——市場に出ない理由がある</h3>
-                <p>サンコール社のヒト幹細胞配合トニックは、<strong>サロン専売のため市販・ネット購入不可</strong>です。それは「扱い方を熟知したプロが使う」という前提で設計されているから。濃度・配合比が市販品とは根本的に異なります。</p>
-              </div>
-            </div>
-            <div class="suncall__reason">
-              <div class="suncall__reason-num">02</div>
-              <div>
-                <h3>ヒト幹細胞培養液の「濃度」が違う</h3>
-                <p>市販の「幹細胞配合」と謳う製品の多くは、配合量が極めて少ない。サンコール社の処方は、<strong>毛乳頭細胞・毛母細胞に届く濃度で設計</strong>されており、そのためにサロン施術との組み合わせが必要です。</p>
-              </div>
-            </div>
-            <div class="suncall__reason">
-              <div class="suncall__reason-num">03</div>
-              <div>
-                <h3>「サロンで変えて、家で守る」完結型</h3>
-                <p>Re:Hair の施術でプロが頭皮環境を整え、その後の<strong>ホームケアとしてサンコールを継続使用</strong>することで、変化が定着します。どちらか一方では不完全。この両輪が根本改善の方程式です。</p>
-              </div>
-            </div>
-            <div class="suncall__reason">
-              <div class="suncall__reason-num">04</div>
-              <div>
-                <h3>私たちが「選んだ」理由</h3>
-                <p>Terminal#10がサンコールを取り扱うのは、代理店だからではありません。<strong>私が12年間で「本当に変化が出る」と確信した製品だから</strong>です。お客様に自信を持って勧められるものだけを置いています。</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="suncall__product">
-            <div class="suncall__product-info">
-              <p class="suncall__product-label">使用製品（※下村が商品名確認後に差し替え）</p>
-              <p class="suncall__product-name">サンコール社<br>ヒト幹細胞培養液配合トニック</p>
-              <p class="suncall__product-sub">サロン専売・市販非流通 / 90日継続で頭皮環境が変わる</p>
-            </div>
-            <div class="suncall__product-badge">
-              <span>サロン専売</span>
-              <span>市販不可</span>
-              <span>プロ仕様</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="suncall__visual">
-          <!-- 製品・頭皮ケアのビジュアル — 後日実写差し替え -->
-          <div class="suncall__product-img">
-            <img src="https://images.unsplash.com/photo-1608248597279-f99d160bfcbc?w=500&q=80&auto=format&fit=crop" alt="サンコール トニック" loading="lazy">
-            <div class="suncall__product-overlay">
-              <p>※ 写真は後日<br>実物に差し替え</p>
-            </div>
-          </div>
-          <div class="suncall__formula">
-            <p class="suncall__formula-title">根本改善の方程式</p>
-            <div class="suncall__formula-body">
-              <div class="suncall__formula-item">
-                <span class="suncall__formula-icon">💆</span>
-                <strong>サロン施術</strong>
-                <p>Re:Hair で<br>頭皮を変える</p>
-              </div>
-              <div class="suncall__formula-plus">+</div>
-              <div class="suncall__formula-item">
-                <span class="suncall__formula-icon">🧴</span>
-                <strong>ホームケア</strong>
-                <p>サンコールで<br>毎日守る</p>
-              </div>
-              <div class="suncall__formula-equals">=</div>
-              <div class="suncall__formula-result">
-                <span class="suncall__formula-icon">✨</span>
-                <strong>根本改善</strong>
-                <p>変化が<br>定着する</p>
-              </div>
-            </div>
-          </div>
-        </div>
+      <div class="review-card-final">
+        <div class="stars">★★★★★</div>
+        <p>「3ヶ月後の自分の髪が楽しみすぎます。今まで諦めていたんだなと気づいた。こういう気持ちになれたのは初めて」</p>
+        <span>38歳・会社員</span>
+      </div>
+      <div class="review-card-final">
+        <div class="stars">★★★★★</div>
+        <p>「サロンで変えて、サンコールで毎日守るという考え方に腑に落ちました。今まで何を頑張っていたのか分かった気がします」</p>
+        <span>47歳・自営業</span>
       </div>
     </div>
-  </section>
+    <p class="reviews__note">※ お客様のご了承のもと掲載。個人名は伏せ字にしています。</p>
+  </div>
+</section>
 
-  <!-- ============================================================
-       6. Before/After ギャラリー
-  ============================================================ -->
-  <section class="gallery section" id="gallery">
-    <div class="container">
-      <p class="section__eyebrow">Before / After</p>
-      <h2 class="section__title">お客様の変化</h2>
-      <div class="gallery__notice">
-        <p>📸 現在、施術写真を収集中です。2025年6月以降、実際のビフォーアフター写真に順次差し替えます。<br>以下は概念的な変化のイメージと体験談です。</p>
-      </div>
-
-      <div class="gallery__grid">
-        <div class="gallery__item">
-          <div class="gallery__before-after">
-            <div class="gallery__side gallery__side--before">
-              <span class="gallery__label">Before</span>
-              <div class="gallery__placeholder">
-                <div class="gallery__placeholder-content">
-                  <div class="gallery__hair gallery__hair--problem"></div>
-                  <p>根元 白髪多数<br>ボリューム不足<br>うねり強め</p>
-                </div>
-              </div>
-            </div>
-            <div class="gallery__arrow-ba">→</div>
-            <div class="gallery__side gallery__side--after">
-              <span class="gallery__label gallery__label--after">After</span>
-              <div class="gallery__placeholder gallery__placeholder--after">
-                <div class="gallery__placeholder-content">
-                  <div class="gallery__hair gallery__hair--improved"></div>
-                  <p>艶・ハリ回復<br>ボリュームアップ<br>うねり落ち着く</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="gallery__comment">
-            <div class="stars">★★★★★</div>
-            <p>「3回目から手触りが全然違ってきた。自分の髪じゃないみたい、と思うくらい。サンコールを毎日使い始めてから、さらに変化を感じています」</p>
-            <span class="gallery__meta">48歳・C案 → E案に移行 / サンコール継続中</span>
-          </div>
-        </div>
-
-        <div class="gallery__item">
-          <div class="gallery__before-after">
-            <div class="gallery__side gallery__side--before">
-              <span class="gallery__label">Before</span>
-              <div class="gallery__placeholder">
-                <div class="gallery__placeholder-content">
-                  <div class="gallery__hair gallery__hair--problem gallery__hair--thin"></div>
-                  <p>分け目 薄さ目立つ<br>毛量・密度低下<br>頭皮透け気味</p>
-                </div>
-              </div>
-            </div>
-            <div class="gallery__arrow-ba">→</div>
-            <div class="gallery__side gallery__side--after">
-              <span class="gallery__label gallery__label--after">After</span>
-              <div class="gallery__placeholder gallery__placeholder--after">
-                <div class="gallery__placeholder-content">
-                  <div class="gallery__hair gallery__hair--improved gallery__hair--full"></div>
-                  <p>分け目の密度 UP<br>根元からふんわり<br>頭皮の透け 改善</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="gallery__comment">
-            <div class="stars">★★★★★</div>
-            <p>「美容師さんに『根元がしっかりしてきた』と言ってもらえた。鏡を見るのが怖くなくなりました。根本から変わっていくって、こういうことかと」</p>
-            <span class="gallery__meta">50代・D案 → C案に移行</span>
-          </div>
-        </div>
-      </div>
-
-      <p class="gallery__deadline-hint">⚠ 5月31日までにご予約いただいた方が対象です。</p>
-    </div>
-  </section>
-
-  <!-- ============================================================
-       7. サロンだけでは続かない + サンコール + 皮脂シーズン
-       写真: 手元・トニック商品（人物の顔なし）
-  ============================================================ -->
-  <section class="tonic section section--dark">
-    <div class="container">
-      <p class="section__eyebrow">Home Care × Salon</p>
-      <h2 class="section__title">サロン施術だけでは、<br>根本改善は完成しません。</h2>
-      <div class="tonic__body">
-        <div class="tonic__text">
-          <p>正直にお伝えします。どんなに良い施術でも、毎日の頭皮環境が整っていなければ効果は長続きしません。</p>
-          <p>私がお客様に必ずお伝えしていること——<strong>「サロンで根本を変えて、家で毎日守る」</strong>。この両輪があって初めて、変化が定着し、根本改善へと向かいます。</p>
-
-          <div class="tonic__product-callout">
-            <p class="tonic__product-callout-label">Re:Hair が採用するホームケア</p>
-            <p class="tonic__product-callout-name">サンコール社<br>ヒト幹細胞培養液配合トニック</p>
-            <p class="tonic__product-callout-note">※ 商品名は下村が後日確認・更新します</p>
-          </div>
-
-          <div class="tonic__features">
-            <div class="tonic__feature">
-              <span>◈</span>
-              <p><strong>毎日の頭皮に届く</strong> — サロン施術で開いた毛穴に、継続的に幹細胞成分を届けます</p>
-            </div>
-            <div class="tonic__feature">
-              <span>◈</span>
-              <p><strong>皮脂バランスを整える</strong> — 毛穴詰まりを防ぎ、成分吸収効率をキープ</p>
-            </div>
-            <div class="tonic__feature">
-              <span>◈</span>
-              <p><strong>90日継続で頭皮環境が変わる</strong> — 細胞レベルの変化には、継続が不可欠です</p>
-            </div>
-            <div class="tonic__feature">
-              <span>◈</span>
-              <p><strong>サロン専売・市販不可</strong> — Terminal#10でのみ処方・ご購入いただけます</p>
-            </div>
-          </div>
-
-          <div class="tonic__sebum">
-            <p class="tonic__sebum-label">5月の頭皮事情</p>
-            <p>気温上昇とともに皮脂分泌が増える5月は、毛穴詰まりによる成長サイクルの乱れが起きやすい季節。Re:Hair のトニック施術で頭皮環境を整えてから幹細胞成分を届けることで、吸収効率がさらに高まります。</p>
-          </div>
-        </div>
-        <div class="tonic__img">
-          <!-- 手元・商品写真 — 後日実写差し替え -->
-          <img src="https://images.unsplash.com/photo-1608248597279-f99d160bfcbc?w=500&q=80&auto=format&fit=crop" alt="サンコール トニック（サロン専売）" loading="lazy">
-          <p class="tonic__img-caption">サンコール社 ヒト幹細胞培養液配合トニック<br>（サロン専売・市販非流通）<br>※写真は後日実物に差し替え</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ============================================================
-       8. お客様が選んだ理由（中盤口コミ）
-  ============================================================ -->
-  <section class="why-choose section section--beige">
-    <div class="container">
-      <p class="section__eyebrow">Why Terminal#10</p>
-      <h2 class="section__title">お客様が選んだ理由を、<br>お客様の言葉で。</h2>
-      <div class="why-reviews">
-        <div class="why-review">
-          <div class="why-review__quote">"</div>
-          <p class="why-review__body">初回のカウンセリングで、なぜここまで丁寧に説明してくれるのかと驚きました。頭皮の状態を見せてもらいながら、「今こうなっているから、こういうケアが有効」と論理的に教えてくれる。自分の髪のことを初めて理解できた気がしました。</p>
-          <p class="why-review__meta">46歳・会社員</p>
-        </div>
-        <div class="why-review">
-          <div class="why-review__quote">"</div>
-          <p class="why-review__body">他店で相談しづらかった頭皮の悩みを、真剣に聞いてくれました。「薄くなってきた」って言いにくいじゃないですか。でも下村さんには最初から全部話せた。ジャッジなく、ただ一緒に考えてくれる。</p>
-          <p class="why-review__meta">50歳・主婦</p>
-        </div>
-        <div class="why-review">
-          <div class="why-review__quote">"</div>
-          <p class="why-review__body">12年も麻布十番で続けている理由が分かりました。「売る」ためではなく、「変える」ために動いてくれているのが伝わる。サンコールの説明も、なぜこれを使うかを丁寧に話してくれた。</p>
-          <p class="why-review__meta">42歳・自営業</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ============================================================
-       9. なぜTerminal#10か（短く）
-       写真: サロン内装（人物なし）
-  ============================================================ -->
-  <section class="about section">
-    <div class="container">
-      <div class="about__inner">
-        <div class="about__img">
-          <!-- サロン内装写真 — 後日実写差し替え推奨 -->
-          <img src="https://images.unsplash.com/photo-1560066984-138dadb4c035?w=700&q=80&auto=format&fit=crop" alt="Terminal#10 サロン内装" loading="lazy">
-        </div>
-        <div class="about__text">
-          <p class="section__eyebrow">About Terminal#10</p>
-          <h2 class="section__title section__title--left">麻布十番、12年。<br>根本改善だけを<br>追い続けてきた。</h2>
-          <p>東京・麻布十番で12年間、頭皮と向き合ってきたサロンです。</p>
-          <p>対症療法——隠す、ごまかす、一時的に整える——ではなく、<strong>根本から変える</strong>ことだけを12年間追求してきました。</p>
-          <p>Re:Hair は、私がお客様と向き合い続けた中で「本当に根本改善につながる」と確信した施術とホームケアだけを組み合わせた、5月限定のキャンペーンです。</p>
-          <p class="about__sign">— 下村</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ============================================================
-       10. コース提示（E → C → D）
-  ============================================================ -->
-  <section class="courses section section--beige" id="courses">
-    <div class="container">
-      <p class="section__eyebrow">5月限定コース</p>
-      <h2 class="section__title">あなたに合ったコースを<br>選んでください</h2>
-      <p class="courses__lead">⚠ お申込みは<strong>5月31日まで</strong>。この価格でご提供できるのは今月だけです。</p>
-
-      <div class="courses__grid">
-
-        <!-- E案：Re:Hair スペシャル（松） -->
-        <div class="course course--E">
-          <div class="course__header">
-            <p class="course__label">スタイルごとリフレッシュしたい方</p>
-            <h3 class="course__name">Re:Hair スペシャル</h3>
-            <p class="course__campaign-tag">5月限定価格</p>
-          </div>
-          <div class="course__price">
-            <span class="course__yen">¥</span>28,500
-            <span class="course__tax">（税込）</span>
-          </div>
-          <ul class="course__menu">
-            <li>カット</li>
-            <li>カラー（白髪染め or おしゃれ染め）</li>
-            <li>ヒト幹細胞トリートメント</li>
-            <li class="course__menu-highlight">サンコール スカルプトニック<br><small>（90日分相当 / サロン専売）※商品名確認中</small></li>
-          </ul>
-          <p class="course__time">所要時間 約120分</p>
-          <a href="#reserve" class="btn btn--course">このコースで予約する</a>
-        </div>
-
-        <!-- C案：Re:Hair スタンダード（竹・推奨） -->
-        <div class="course course--C course--recommended">
-          <div class="course__ribbon">最も選ばれています</div>
-          <div class="course__header">
-            <p class="course__label">白髪・うねりが気になる方</p>
-            <h3 class="course__name">Re:Hair スタンダード</h3>
-            <p class="course__campaign-tag">5月限定価格</p>
-          </div>
-          <div class="course__price">
-            <span class="course__yen">¥</span>22,000
-            <span class="course__tax">（税込）</span>
-          </div>
-          <ul class="course__menu">
-            <li>カラー（白髪染め or おしゃれ染め）</li>
-            <li>ヒト幹細胞トリートメント</li>
-            <li class="course__menu-highlight">サンコール スカルプトニック<br><small>（90日分相当 / サロン専売）※商品名確認中</small></li>
-          </ul>
-          <p class="course__time">所要時間 約90分</p>
-          <a href="#reserve" class="btn btn--course btn--course-main">このコースで予約する</a>
-        </div>
-
-        <!-- D案：Re:Hair ベース（梅） -->
-        <div class="course course--D">
-          <div class="course__header">
-            <p class="course__label">まず体感したい方</p>
-            <h3 class="course__name">Re:Hair ベース</h3>
-            <p class="course__campaign-tag">5月限定価格</p>
-          </div>
-          <div class="course__price">
-            <span class="course__yen">¥</span>12,000
-            <span class="course__tax">（税込）</span>
-          </div>
-          <ul class="course__menu">
-            <li>ヒト幹細胞トリートメント</li>
-            <li class="course__menu-highlight">サンコール スカルプトニック<br><small>（90日分相当 / サロン専売）※商品名確認中</small></li>
-          </ul>
-          <p class="course__time">所要時間 約60分</p>
-          <a href="#reserve" class="btn btn--course">このコースで予約する</a>
-        </div>
-
-      </div>
-
-      <p class="courses__note">
-        ※ すべてのコースに無料カウンセリング（約15分）が含まれます。<br>
-        ※ 5月限定初回価格。通常価格は店頭でご確認ください。<br>
-        ※ サンコール製品の正式商品名・容量は下村が確認後に更新します。<br>
-        ※ お申込みは<strong>5月31日まで</strong>。
-      </p>
-    </div>
-  </section>
-
-  <!-- ============================================================
-       11. お客様の声・最終（背中押し）
-  ============================================================ -->
-  <section class="reviews-final section">
-    <div class="container">
-      <p class="section__eyebrow">最後に——</p>
-      <h2 class="section__title">「申し込んでよかった」<br>その一言が、一番の答えです。</h2>
-      <div class="reviews-final__grid">
-        <div class="review-card-final">
-          <div class="stars">★★★★★</div>
-          <p>「申し込んで本当によかったです。もっと早く来ればよかったと思うくらい。最初の一歩が怖かっただけで、来てみたら全然違いました」</p>
-          <span class="review-card__meta">50歳・会社役員</span>
-        </div>
-        <div class="review-card-final">
-          <div class="stars">★★★★★</div>
-          <p>「3ヶ月後の自分の髪が楽しみすぎます。こういう気持ちになれたのは初めて。今まで諦めていたんだなと気づいた」</p>
-          <span class="review-card__meta">38歳・会社員</span>
-        </div>
-        <div class="review-card-final">
-          <div class="stars">★★★★★</div>
-          <p>「サロンで変えて、サンコールで毎日守る、という考え方に腑に落ちました。今まで何を頑張っていたのか分かった気がします」</p>
-          <span class="review-card__meta">47歳・自営業</span>
-        </div>
-      </div>
-      <p class="reviews-note">※ お客様のご了承のもと掲載しています（個人名は伏せ字）。</p>
-    </div>
-  </section>
-
-  <!-- ============================================================
-       12. 5月限定キャンペーン強調
-  ============================================================ -->
-  <section class="campaign-highlight section section--campaign">
-    <div class="container">
-      <div class="campaign-highlight__badge">5月限定キャンペーン</div>
-      <h2 class="campaign-highlight__title">
-        今月だけの価格で、<br>髪を根本から変える。
-      </h2>
-      <div class="campaign-highlight__period">
-        <span class="campaign-highlight__date">5/7(水)</span>
-        <span class="campaign-highlight__dash">〜</span>
-        <span class="campaign-highlight__date">5/31(土)</span>
-      </div>
-      <p class="campaign-highlight__urgency">⚠ 残り枠わずか。お申込みは5月31日まで。</p>
-      <div class="campaign-highlight__courses">
-        <div class="campaign-mini-course">
-          <p>Re:Hair スペシャル</p>
-          <strong>¥28,500</strong>
-        </div>
-        <div class="campaign-mini-course campaign-mini-course--main">
-          <p>Re:Hair スタンダード ★人気</p>
-          <strong>¥22,000</strong>
-        </div>
-        <div class="campaign-mini-course">
-          <p>Re:Hair ベース</p>
-          <strong>¥12,000</strong>
-        </div>
-      </div>
-      <a href="#reserve" class="btn btn--campaign">今すぐ予約する（5月31日まで）</a>
-    </div>
-  </section>
-
-  <!-- ============================================================
-       13. 申込導線
-  ============================================================ -->
-  <section class="reserve section section--dark" id="reserve">
-    <div class="container">
-      <p class="section__eyebrow">ご予約・お問い合わせ</p>
-      <h2 class="reserve__title">
-        あなたの髪も同じように、<br>根本から変わることができます。
-      </h2>
-      <p class="reserve__sub">
-        ぜひ一度、カウンセリングだけでも試してみてください。<br>
-        決して押し売りはしません。まずお話を聞かせてください。
-      </p>
-      <div class="reserve__actions">
-        <a href="#" class="btn btn--line">
-          <span>LINE で予約する</span>
-          <small>24時間受付・無料カウンセリング</small>
-        </a>
-        <a href="https://globaltouchnewyork.wixsite.com/terminal-1" target="_blank" rel="noopener" class="btn btn--net">
-          <span>ネットで予約する</span>
-          <small>24時間受付</small>
-        </a>
-      </div>
-      <p class="reserve__tel-note">お問い合わせ（営業時間内）: <a href="tel:03-6887-0302">03-6887-0302</a></p>
-      <div class="reserve__flow">
-        <div class="reserve__step">
-          <span class="reserve__step-num">01</span>
-          <p>ご予約<br><small>LINE or ネット</small></p>
-        </div>
-        <span class="reserve__step-arrow">→</span>
-        <div class="reserve__step">
-          <span class="reserve__step-num">02</span>
-          <p>カウンセリング<br><small>約15分・無料</small></p>
-        </div>
-        <span class="reserve__step-arrow">→</span>
-        <div class="reserve__step">
-          <span class="reserve__step-num">03</span>
-          <p>施術 + ホームケア処方<br><small>コースによる</small></p>
-        </div>
-      </div>
-      <p class="reserve__note">
-        営業時間：10:00〜19:00（最終受付 18:00）／定休日：毎週火曜日<br>
-        〒108-0073 東京都港区三田1-6-5 2F<br>
-        ⚠ お申込みは<strong>5月31日まで</strong>。この機会をお見逃しなく。
-      </p>
-    </div>
-  </section>
-
-  <!-- FOOTER -->
-  <footer class="footer">
-    <div class="container">
-      <p class="footer__logo">Re:Hair</p>
-      <p class="footer__salon">Terminal#10</p>
-      <p class="footer__info">
-        〒108-0073 東京都港区三田1-6-5 2F<br>
-        TEL: 03-6887-0302（お問い合わせ）
-      </p>
-      <p class="footer__copy">© 2025 Terminal#10 / Re:Hair. All rights reserved.</p>
-    </div>
-  </footer>
+<!-- ============================================================
+     10. FOOTER
+============================================================ -->
+<footer class="footer">
+  <div class="container">
+    <p class="footer__logo"><span class="footer__logo-re">Re:</span>Hair</p>
+    <p class="footer__salon">Terminal#10</p>
+    <p class="footer__info">
+      〒108-0073 東京都港区三田1-6-5 2F<br>
+      お問い合わせ: <a href="tel:03-6887-0302">03-6887-0302</a>（営業時間内）
+    </p>
+    <p class="footer__hours">営業時間 10:00〜19:00 / 定休日 毎週火曜</p>
+    <p class="footer__copy">© 2025 Terminal#10 / Re:Hair. All rights reserved.</p>
+  </div>
+</footer>
 
 </body>
 </html>
