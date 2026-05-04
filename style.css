@@ -1,5 +1,5 @@
 /* ===========================
-   Re:Hair LP v3 — style.css
+   Re:Hair LP v4 — style.css
    =========================== */
 
 /* ---------- Reset & Base ---------- */
@@ -1145,6 +1145,193 @@ img { display: block; width: 100%; height: 100%; object-fit: cover; }
 .footer__copy { font-size: 11px; color: rgba(255,255,255,0.18); }
 
 /* ==========
+   修正2: ROOT CAUSE 写真
+   ========== */
+.root-cause__card-photo {
+  width: 100%;
+  aspect-ratio: 4/3;
+  border-radius: 4px;
+  overflow: hidden;
+  margin-bottom: 4px;
+}
+.root-cause__card-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top center;
+  filter: brightness(0.85) saturate(0.9);
+  transition: filter 0.3s;
+}
+.root-cause__card:hover .root-cause__card-photo img {
+  filter: brightness(0.95) saturate(1);
+}
+
+/* ==========
+   修正3: STEM CELL FLOW 図解
+   ========== */
+.stem-cell__flow {
+  display: flex;
+  align-items: flex-start;
+  gap: 0;
+  margin-bottom: 64px;
+  padding: 40px;
+  background: var(--color-beige);
+  border-radius: 8px;
+}
+.stem-cell__flow-step {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 0 16px;
+}
+.stem-cell__flow-step--final .stem-cell__flow-icon {
+  background: rgba(184,154,94,0.15);
+  border-color: var(--color-gold);
+}
+.stem-cell__flow-icon {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  background: var(--color-white);
+  border: 1.5px solid rgba(184,154,94,0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 14px;
+  margin-bottom: 12px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+}
+.stem-cell__flow-icon svg { width: 100%; height: 100%; }
+.stem-cell__flow-num {
+  font-family: var(--font-serif);
+  font-size: 11px;
+  color: var(--color-gold);
+  letter-spacing: 0.1em;
+  margin-bottom: 4px;
+}
+.stem-cell__flow-title {
+  font-weight: 700;
+  font-size: 15px;
+  margin-bottom: 6px;
+  color: var(--color-black);
+}
+.stem-cell__flow-desc {
+  font-size: 12px;
+  color: #666;
+  line-height: 1.7;
+}
+.stem-cell__flow-arrow {
+  font-size: 22px;
+  color: var(--color-gold);
+  padding-top: 28px;
+  flex-shrink: 0;
+  opacity: 0.6;
+}
+
+/* ==========
+   修正4: SUNCALL 比較表
+   ========== */
+.suncall__compare {
+  margin-bottom: 48px;
+}
+.suncall__compare-label {
+  font-size: 11px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--color-gold);
+  margin-bottom: 16px;
+  text-align: center;
+}
+.suncall__compare-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1px;
+  background: var(--color-gray-lt);
+  border-radius: 6px;
+  overflow: hidden;
+  border: 1px solid var(--color-gray-lt);
+}
+.suncall__compare-head {
+  padding: 14px 16px;
+  font-size: 13px;
+  font-weight: 700;
+  text-align: center;
+  line-height: 1.4;
+}
+.suncall__compare-head--blank { background: #f0ece4; }
+.suncall__compare-head--bad {
+  background: #f5f5f5;
+  color: #999;
+}
+.suncall__compare-head--good {
+  background: rgba(184,154,94,0.12);
+  color: var(--color-gold);
+}
+.suncall__compare-head--good small {
+  display: block;
+  font-size: 10px;
+  font-weight: 400;
+  margin-top: 3px;
+  color: var(--color-gold);
+  opacity: 0.8;
+}
+.suncall__compare-row-label {
+  background: #f5f1ea;
+  padding: 12px 16px;
+  font-size: 12px;
+  color: #555;
+  display: flex;
+  align-items: center;
+  line-height: 1.5;
+}
+.suncall__compare-cell {
+  padding: 12px 16px;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  line-height: 1.4;
+}
+.suncall__compare-cell--bad { background: var(--color-white); color: #888; }
+.suncall__compare-cell--good { background: rgba(184,154,94,0.06); color: #444; font-weight: 500; }
+.compare-o { color: var(--color-gold); font-size: 14px; flex-shrink: 0; }
+.compare-x { color: #ccc; font-size: 14px; flex-shrink: 0; }
+.compare-tri { color: #c0a060; font-size: 13px; flex-shrink: 0; }
+
+/* ==========
+   修正5: ネット予約ボタン
+   ========== */
+.btn--net {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  background: var(--color-black);
+  color: var(--color-white);
+  padding: 16px 44px;
+  font-size: 16px;
+  border-radius: 4px;
+  font-weight: 700;
+  border: 1px solid rgba(255,255,255,0.15);
+}
+.btn--net small { font-size: 11px; font-weight: 400; opacity: 0.7; }
+.btn--net:hover { background: #333; }
+
+.reserve__tel-note {
+  font-size: 12px;
+  color: rgba(255,255,255,0.35);
+  margin-bottom: 48px;
+  margin-top: -32px;
+}
+.reserve__tel-note a {
+  color: rgba(255,255,255,0.45);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+/* ==========
    RESPONSIVE
    ========== */
 @media (max-width: 900px) {
@@ -1158,8 +1345,13 @@ img { display: block; width: 100%; height: 100%; object-fit: cover; }
 
   .root-cause__grid { grid-template-columns: 1fr; }
 
+  .stem-cell__flow { flex-direction: column; align-items: center; gap: 16px; padding: 28px 20px; }
+  .stem-cell__flow-arrow { transform: rotate(90deg); padding-top: 0; }
+  .stem-cell__flow-step { max-width: 280px; }
+
   .stem-cell__body { grid-template-columns: 1fr; gap: 40px; }
 
+  .suncall__compare-grid { grid-template-columns: 1.2fr 1fr 1.2fr; }
   .suncall__body { grid-template-columns: 1fr; gap: 40px; }
   .suncall__visual { max-width: 360px; }
 
@@ -1182,7 +1374,7 @@ img { display: block; width: 100%; height: 100%; object-fit: cover; }
   .campaign-highlight__courses { flex-direction: column; align-items: center; }
 
   .reserve__actions { flex-direction: column; align-items: flex-start; }
-  .btn--line, .btn--tel { width: 100%; justify-content: center; }
+  .btn--line, .btn--net { width: 100%; justify-content: center; }
 
   .reserve__flow { flex-direction: column; gap: 20px; align-items: flex-start; }
   .reserve__step-arrow { transform: rotate(90deg); }
@@ -1194,4 +1386,6 @@ img { display: block; width: 100%; height: 100%; object-fit: cover; }
   .reviews-grid--5 { grid-template-columns: 1fr; }
   .rating-summary { flex-direction: column; gap: 12px; }
   .suncall__formula-body { flex-direction: column; gap: 12px; }
+  .suncall__compare-grid { font-size: 11px; }
+  .suncall__compare-cell, .suncall__compare-row-label { padding: 10px 10px; }
 }
