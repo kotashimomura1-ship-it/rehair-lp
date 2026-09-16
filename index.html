@@ -1,953 +1,320 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Re:Hair | 5月限定キャンペーン｜白髪・薄毛・うねりの根本改善｜麻布十番</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@300;400;600&family=Noto+Sans+JP:wght@300;400;500;700&display=swap" rel="stylesheet">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>全体カラー＋ヒト幹細胞ヘッドスパ 初回9,000円｜Terminal#10 麻布十番</title>
+<meta name="description" content="麻布十番の美容室Terminal#10。全体カラー＋ヒト幹細胞ヘッドスパ(120分)を、初めての方限定で通常17,000円→9,000円。染めるだけで終わらせない、大人世代のためのカラーメニュー。">
+<meta property="og:title" content="全体カラー＋ヒト幹細胞ヘッドスパ 初回9,000円｜Terminal#10 麻布十番">
+<meta property="og:description" content="通常17,000円→新規限定9,000円。120分。麻布十番駅徒歩圏。">
+<meta property="og:image" content="https://kotashimomura1-ship-it.github.io/rehair-lp/headspa-treatment.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;600;700&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --cream:#FAF7F2;--cream-warm:#F3EBDF;--brown:#3B2A1F;--brown-mid:#6B4A36;
+  --gold:#B89968;--gold-lt:#D4B07E;--terra:#C56F4D;--line:#06C755;
+  --white:#fff;--gray:#8a8078;--gray-lt:#E8E2D8;
+  --serif:'Noto Serif JP',serif;--sans:'Noto Sans JP',sans-serif;
+}
+html{scroll-behavior:smooth}
+body{font-family:var(--sans);background:var(--cream);color:var(--brown);line-height:1.9;font-size:15px;padding-bottom:84px;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}
+img{max-width:100%;display:block}
+.wrap{max-width:720px;margin:0 auto;padding:0 20px}
+.eyebrow{font-size:11px;letter-spacing:.28em;text-transform:uppercase;color:var(--terra);font-weight:500;margin-bottom:10px}
+.ttl{font-family:var(--serif);font-size:clamp(22px,5.6vw,30px);font-weight:600;line-height:1.5;letter-spacing:.02em;margin-bottom:22px}
+.sec{padding:64px 0}
+.sec--warm{background:var(--cream-warm)}
+.sec--dark{background:linear-gradient(150deg,#3B2A1F 0%,#5A3828 100%);color:var(--white)}
+.sec--dark .eyebrow{color:var(--gold-lt)}
+
+/* hero */
+.hero{position:relative;background:var(--brown);color:var(--white);overflow:hidden}
+.hero__bg{position:absolute;inset:0;background:url(headspa-treatment.jpg) center 35%/cover no-repeat;opacity:.38;filter:saturate(.8)}
+.hero__bg::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(59,42,31,.35) 0%,rgba(59,42,31,.85) 55%,#3B2A1F 100%)}
+.hero__in{position:relative;padding:56px 20px 44px;text-align:center}
+.hero__shop{font-family:var(--serif);letter-spacing:.3em;font-size:12px;color:var(--gold-lt)}
+.hero__badge{display:inline-block;margin:18px 0 22px;padding:6px 16px;border:1px solid var(--gold-lt);border-radius:999px;font-size:12px;letter-spacing:.12em;color:var(--gold-lt)}
+.hero__catch{font-family:var(--serif);font-size:clamp(26px,7.4vw,40px);font-weight:600;line-height:1.4;letter-spacing:.04em;margin-bottom:14px}
+.hero__sub{font-size:14px;opacity:.85;margin-bottom:30px;line-height:1.8}
+.offer{background:rgba(255,255,255,.06);border:1px solid rgba(212,176,126,.45);border-radius:14px;padding:22px 18px 20px;margin:0 auto 26px;max-width:460px;backdrop-filter:blur(2px)}
+.offer__menu{font-family:var(--serif);font-size:clamp(16px,4.6vw,21px);font-weight:600;line-height:1.45}
+.offer__time{font-size:12px;letter-spacing:.15em;color:var(--gold-lt);margin:6px 0 14px}
+.offer__price{display:flex;align-items:baseline;justify-content:center;gap:14px;flex-wrap:wrap}
+.offer__was{font-size:15px;opacity:.7;text-decoration:line-through;text-decoration-color:var(--terra)}
+.offer__arrow{font-size:14px;opacity:.7}
+.offer__now{font-family:var(--serif);font-size:clamp(40px,12vw,56px);font-weight:700;line-height:1;color:var(--gold-lt);letter-spacing:.01em}
+.offer__now small{font-size:16px;font-weight:500;margin-left:2px}
+.offer__note{font-size:12px;opacity:.75;margin-top:10px}
+.cta{display:flex;flex-direction:column;gap:12px;max-width:420px;margin:0 auto}
+.btn{display:flex;align-items:center;justify-content:center;gap:10px;padding:17px 22px;border-radius:999px;font-weight:700;font-size:16px;letter-spacing:.06em;transition:transform .15s,opacity .15s}
+.btn:active{transform:scale(.98)}
+.btn--main{background:var(--gold-lt);color:var(--brown)}
+.btn--line{background:var(--line);color:#fff}
+.btn svg{width:22px;height:22px;flex:none}
+.hero__trust{display:flex;justify-content:center;gap:18px;flex-wrap:wrap;margin-top:26px;font-size:12px;opacity:.9}
+.hero__trust b{font-family:var(--serif);font-size:18px;color:var(--gold-lt);margin-right:3px}
+
+/* checklist */
+.check{display:grid;gap:12px}
+.check li{display:flex;gap:12px;align-items:flex-start;background:var(--white);border-radius:12px;padding:14px 16px;box-shadow:0 2px 10px rgba(59,42,31,.05)}
+.check li::before{content:"✓";flex:none;width:24px;height:24px;border-radius:50%;background:var(--terra);color:#fff;font-size:13px;display:grid;place-items:center;margin-top:3px}
+.lead{font-size:15px;color:var(--brown-mid);margin-bottom:26px}
+
+/* flow */
+.flow{counter-reset:step;display:grid;gap:0;list-style:none}
+.flow li{counter-increment:step;position:relative;padding:0 0 22px 52px}
+.flow li::before{content:counter(step,decimal-leading-zero);position:absolute;left:0;top:-2px;font-family:var(--serif);font-size:22px;color:var(--gold);font-weight:600}
+.flow li::after{content:"";position:absolute;left:14px;top:34px;bottom:6px;width:1px;background:var(--gray-lt)}
+.flow li:last-child::after{display:none}
+.flow h3{font-size:16px;font-weight:700;margin-bottom:2px}
+.flow p{font-size:14px;color:var(--brown-mid)}
+.flow .tag{display:inline-block;font-size:11px;padding:1px 8px;border-radius:999px;background:var(--cream-warm);color:var(--terra);margin-left:6px;vertical-align:middle}
+
+/* photo + text */
+.spa__img{border-radius:16px;overflow:hidden;margin-bottom:24px;aspect-ratio:3/2;object-fit:cover;width:100%}
+.spa p{margin-bottom:14px;font-size:15px}
+.spa .pts{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:22px 0 6px}
+.spa .pts div{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.14);border-radius:12px;padding:14px 8px;text-align:center;font-size:12.5px;line-height:1.5}
+.spa .pts b{display:block;font-family:var(--serif);font-size:15px;margin-bottom:4px;color:var(--gold-lt)}
+
+/* why */
+.why{display:grid;gap:14px}
+.why div{background:var(--white);border-radius:14px;padding:20px 18px;border-left:4px solid var(--gold)}
+.why h3{font-family:var(--serif);font-size:17px;margin-bottom:6px}
+.why p{font-size:14px;color:var(--brown-mid)}
+
+/* price table */
+.ptable{background:var(--white);border-radius:16px;overflow:hidden;box-shadow:0 6px 24px rgba(59,42,31,.08)}
+.ptable__head{background:var(--brown);color:#fff;padding:18px 20px;text-align:center}
+.ptable__head .m{font-family:var(--serif);font-size:18px;font-weight:600}
+.ptable__head .t{font-size:12px;letter-spacing:.15em;color:var(--gold-lt);margin-top:2px}
+.ptable__body{padding:22px 20px}
+.ptable__price{text-align:center;margin-bottom:18px}
+.ptable__price .was{font-size:14px;color:var(--gray);text-decoration:line-through}
+.ptable__price .now{font-family:var(--serif);font-size:48px;font-weight:700;color:var(--terra);line-height:1.1}
+.ptable__price .now small{font-size:16px}
+.ptable dl{display:grid;grid-template-columns:auto 1fr;gap:8px 16px;font-size:14px;border-top:1px solid var(--gray-lt);padding-top:16px}
+.ptable dt{color:var(--gray);white-space:nowrap}
+.ptable dd{font-weight:500}
+
+/* faq */
+.faq details{background:var(--white);border-radius:12px;margin-bottom:10px;padding:0 18px;box-shadow:0 2px 10px rgba(59,42,31,.04)}
+.faq summary{cursor:pointer;list-style:none;padding:16px 28px 16px 0;font-weight:700;font-size:15px;position:relative}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";position:absolute;right:0;top:12px;font-size:22px;color:var(--gold);font-weight:400}
+.faq details[open] summary::after{content:"−"}
+.faq details p{padding:0 0 16px;font-size:14px;color:var(--brown-mid)}
+
+/* shop */
+.shop{display:grid;gap:6px;font-size:14px}
+.shop dt{font-size:11px;letter-spacing:.2em;color:var(--gray);margin-top:10px}
+.shop dd{font-weight:500}
+.map{margin-top:20px;border-radius:14px;overflow:hidden;aspect-ratio:16/9;border:0;width:100%}
+
+.notes{font-size:12px;color:var(--gray);line-height:1.8}
+.notes li{padding-left:1em;text-indent:-1em}
+footer{padding:28px 20px 30px;text-align:center;font-size:11px;color:var(--gray);letter-spacing:.1em}
+
+/* sticky */
+.sticky{position:fixed;left:0;right:0;bottom:0;z-index:50;background:rgba(250,247,242,.96);backdrop-filter:blur(8px);border-top:1px solid var(--gray-lt);padding:10px 14px calc(10px + env(safe-area-inset-bottom,0px))}
+.sticky__in{max-width:720px;margin:0 auto;display:flex;gap:10px;align-items:center}
+.sticky__price{flex:none;line-height:1.2;font-size:11px;color:var(--gray)}
+.sticky__price b{display:block;font-family:var(--serif);font-size:20px;color:var(--terra)}
+.sticky .btn{flex:1;padding:13px 10px;font-size:14px}
+.sticky .btn svg{width:18px;height:18px}
+@media (min-width:640px){.cta{flex-direction:row}.cta .btn{flex:1}}
+</style>
 </head>
 <body>
 
-<!-- STICKY URGENCY BAR（修正6） -->
-<div class="urgency-bar">
-  <span>🔥</span>
-  <span>5月限定キャンペーン</span>
-  <span class="urgency-bar__sep">｜</span>
-  <span>残り<strong class="urgency-bar__days" id="days-left">--</strong>日</span>
+<header class="hero">
+  <div class="hero__bg"></div>
+  <div class="hero__in">
+    <div class="hero__shop">TERMINAL#10 ｜ 麻布十番</div>
+    <div class="hero__badge">初めての方限定 ・ 先着15名</div>
+    <h1 class="hero__catch">染めるだけで、<br>終わらせない。</h1>
+    <p class="hero__sub">白髪も、頭皮も、ハリ・コシも。<br>大人世代のためのカラーメニューです。</p>
+
+    <div class="offer">
+      <div class="offer__menu">全体カラー ＋<br>ヒト幹細胞ヘッドスパ</div>
+      <div class="offer__time">120分コース</div>
+      <div class="offer__price">
+        <span class="offer__was">通常 ¥17,000</span>
+        <span class="offer__arrow">→</span>
+        <span class="offer__now">¥9,000<small>税込</small></span>
+      </div>
+      <div class="offer__note">新規のお客様限定<br>白髪染め／おしゃれ染め どちらも対象</div>
+    </div>
+
+    <div class="cta">
+      <a class="btn btn--main js-book" href="#">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
+        空き日時を見て予約する
+      </a>
+      <a class="btn btn--line" href="https://lin.ee/7M5qu3E" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.5 2 2 5.7 2 10.2c0 4 3.6 7.4 8.4 8.1.3.1.8.2.9.5.1.3.1.7 0 1l-.1.9c0 .3-.2 1 .9.6 1.1-.5 5.9-3.5 8.1-6 1.5-1.6 2.2-3.3 2.2-5.1C22.4 5.7 17.5 2 12 2z"/></svg>
+        LINEで予約・相談する
+      </a>
+    </div>
+
+    <div class="hero__trust">
+      <span><b>5.0</b>OZmall 500件超</span>
+      <span><b>4.9</b>Google 100件超</span>
+      <span><b>92%</b>リピート率</span>
+    </div>
+  </div>
+</header>
+
+<section class="sec">
+  <div class="wrap">
+    <div class="eyebrow">For you</div>
+    <h2 class="ttl">こんな方に、選ばれています。</h2>
+    <ul class="check">
+      <li>白髪は染めたい。でも、染めるたびに頭皮がヒリヒリ・ベタつくのが気になる</li>
+      <li>トップのボリュームや、髪のハリ・コシが以前と違うと感じる</li>
+      <li>カラーとヘッドスパを別々に受けるのは、時間もお金ももったいない</li>
+      <li>「ヒト幹細胞ヘッドスパ」が気になっていたが、試す機会がなかった</li>
+      <li>麻布十番・三田・白金・広尾エリアで、大人向けの落ち着いた美容室を探している</li>
+    </ul>
+  </div>
+</section>
+
+<section class="sec sec--warm">
+  <div class="wrap">
+    <div class="eyebrow">Menu</div>
+    <h2 class="ttl">120分の流れ</h2>
+    <p class="lead">カラーの発色と、頭皮のケアを1回の来店で。初めての方はカウンセリングに時間をかけるため、120分いただいています。</p>
+    <ol class="flow">
+      <li><h3>カウンセリング <span class="tag">約15分</span></h3><p>髪と頭皮の状態、白髪の出方、なりたい色を確認。当店の予約の仕組みもご説明します。</p></li>
+      <li><h3>全体カラー</h3><p>白髪染め・おしゃれ染めどちらも対象。頭皮に薬剤を塗り込まない塗布で、頭皮への負担を抑えます。</p></li>
+      <li><h3>頭皮クレンジング</h3><p>カラー剤の残留と皮脂・汚れを落とし、頭皮をすこやかな状態に整えます。</p></li>
+      <li><h3>ヒト幹細胞ヘッドスパ</h3><p>ヒト幹細胞培養液配合の頭皮用美容液をなじませ、丁寧なマッサージでゆるめていきます。</p></li>
+      <li><h3>毛先トリートメント・仕上げ</h3><p>カラー後の毛先にうるおいを補い、ブローで仕上げます。</p></li>
+    </ol>
+  </div>
+</section>
+
+<section class="sec sec--dark spa">
+  <div class="wrap">
+    <div class="eyebrow">Human stem cell head spa</div>
+    <h2 class="ttl">ヒト幹細胞ヘッドスパとは</h2>
+    <img class="spa__img" src="headspa-treatment.jpg" alt="ヒト幹細胞ヘッドスパの施術風景" loading="lazy">
+    <p>ヒト幹細胞培養液(化粧品成分)を配合した頭皮用美容液を使い、頭皮を清浄に保ちながらマッサージで整えていくヘッドスパです。</p>
+    <p>カラーの日に受けるのは、薬剤で乾きやすくなった頭皮にうるおいを与え、髪の土台となる頭皮をすこやかに保つため。「染めるだけ」で帰るのと、仕上がりの軽さやハリ・コシの印象が変わります。</p>
+    <div class="pts">
+      <div><b>頭皮</b>清浄にして<br>すこやかに保つ</div>
+      <div><b>髪</b>ハリ・コシ・<br>うるおいを与える</div>
+      <div><b>気分</b>120分で<br>頭がふっと軽く</div>
+    </div>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="wrap">
+    <div class="eyebrow">Why 9,000 yen</div>
+    <h2 class="ttl">なぜ、初回だけ半額なのか。</h2>
+    <div class="why">
+      <div><h3>まず、体験してほしいから</h3><p>ヒト幹細胞ヘッドスパは、言葉で説明するより一度受けていただくのが早いメニューです。カラーと一緒に、無理のない価格で体験できるようにしました。</p></div>
+      <div><h3>22年目の美容師が担当します</h3><p>初回は経験22年のスタイリストが、カウンセリングから仕上げまで担当。お客様の髪の履歴と頭皮の状態を見て、次にどう通うのがいちばん良いかまでお伝えします。</p></div>
+      <div><h3>通い続けやすい料金設計</h3><p>2回目以降は、4週以内の根元リタッチ4,200円・次回予約で10%OFFなど、「大人の美容室」として続けやすい仕組みを用意しています。初回の半額は、その入口です。</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec sec--warm">
+  <div class="wrap">
+    <div class="eyebrow">Price</div>
+    <h2 class="ttl">料金・ご予約条件</h2>
+    <div class="ptable">
+      <div class="ptable__head">
+        <div class="m">全体カラー ＋ ヒト幹細胞ヘッドスパ</div>
+        <div class="t">120分 ・ 初めての方限定</div>
+      </div>
+      <div class="ptable__body">
+        <div class="ptable__price">
+          <div class="was">通常価格 ¥17,000</div>
+          <div class="now">¥9,000<small>(税込)</small></div>
+        </div>
+        <dl>
+          <dt>対象</dt><dd>Terminal#10 を初めてご利用の方</dd>
+          <dt>人数</dt><dd>先着15名(定員になり次第終了)</dd>
+          <dt>予約期限</dt><dd>2026年10月16日までのご予約分</dd>
+          <dt>所要時間</dt><dd>120分(カウンセリング含む)</dd>
+          <dt>カラー</dt><dd>白髪染め・おしゃれ染め どちらも可</dd>
+          <dt>お支払い</dt><dd>現金・クレジットカード・電子マネー</dd>
+        </dl>
+      </div>
+    </div>
+    <div class="cta" style="margin-top:26px">
+      <a class="btn btn--main js-book" href="#">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
+        空き日時を見て予約する
+      </a>
+      <a class="btn btn--line" href="https://lin.ee/7M5qu3E" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.5 2 2 5.7 2 10.2c0 4 3.6 7.4 8.4 8.1.3.1.8.2.9.5.1.3.1.7 0 1l-.1.9c0 .3-.2 1 .9.6 1.1-.5 5.9-3.5 8.1-6 1.5-1.6 2.2-3.3 2.2-5.1C22.4 5.7 17.5 2 12 2z"/></svg>
+        LINEで予約・相談する
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="sec faq">
+  <div class="wrap">
+    <div class="eyebrow">Q&amp;A</div>
+    <h2 class="ttl">よくあるご質問</h2>
+    <details><summary>白髪染めでも9,000円ですか？</summary><p>はい。白髪染め・おしゃれ染めのどちらも同じ料金です。</p></details>
+    <details><summary>ヒト幹細胞ヘッドスパは、どんな人に向いていますか？</summary><p>白髪や髪のハリ・コシ、頭皮のベタつき・乾燥が気になる方に選ばれています。頭皮にトラブルがある場合は、当日カウンセリングで施術内容を調整します。</p></details>
+    <details><summary>予約はどうすればいいですか？</summary><p>「空き日時を見て予約する」から24時間ネット予約できます。相談してから決めたい方はLINEからどうぞ。</p></details>
+    <details><summary>2回目以降の料金はいくらですか？</summary><p>全体カラー＋ヒト幹細胞ヘッドスパは通常17,000円です。4週以内の根元リタッチは4,200円、次回予約をお取りいただくと10%OFFになります。初回のカウンセリングで、ご予算に合う通い方をご提案します。</p></details>
+    <details><summary>当日キャンセルや遅刻はできますか？</summary><p>時間予約制のため、遅刻の場合は施術内容を短縮させていただくことがあります。変更はできるだけ前日までにご連絡ください。</p></details>
+  </div>
+</section>
+
+<section class="sec sec--warm">
+  <div class="wrap">
+    <div class="eyebrow">Salon</div>
+    <h2 class="ttl">Terminal#10</h2>
+    <dl class="shop">
+      <dt>ADDRESS</dt><dd>〒108-0073 東京都港区三田1-6-5 2F（麻布十番駅 徒歩圏）</dd>
+      <dt>OPEN</dt><dd>10:00〜19:00　定休日：月曜</dd>
+      <dt>TEL</dt><dd><a href="tel:0368870302">03-6887-0302</a></dd>
+      <dt>STYLIST</dt><dd>下村亨太（経験22年／オーナースタイリスト）</dd>
+    </dl>
+    <iframe class="map" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=%E6%9D%B1%E4%BA%AC%E9%83%BD%E6%B8%AF%E5%8C%BA%E4%B8%89%E7%94%B01-6-5&output=embed" title="Terminal#10 地図"></iframe>
+  </div>
+</section>
+
+<section class="sec" style="padding-top:0">
+  <div class="wrap">
+    <ul class="notes">
+      <li>※初めてご利用の方限定・お一人様1回限り。他の割引との併用はできません。</li>
+      <li>※通常価格17,000円は当店の全体カラー＋ヒト幹細胞ヘッドスパの通常販売価格です。</li>
+      <li>※ヒト幹細胞培養液は化粧品成分です。効果・仕上がりの感じ方には個人差があります。</li>
+      <li>※頭皮に傷や疾患がある場合は、施術をお断りすることがあります。</li>
+    </ul>
+  </div>
+</section>
+
+<footer>© 2026 Terminal#10 / グローバルタッチ株式会社</footer>
+
+<div class="sticky">
+  <div class="sticky__in">
+    <div class="sticky__price">初回限定<b>¥9,000</b></div>
+    <a class="btn btn--main js-book" href="#">ネット予約</a>
+    <a class="btn btn--line" href="https://lin.ee/7M5qu3E" target="_blank" rel="noopener">LINE</a>
+  </div>
 </div>
 
-<!-- ============================================================
-     1. HERO — キャンペーン特化
-============================================================ -->
-<section class="hero">
-  <div class="hero__badge">5月限定キャンペーン</div>
-
-  <div class="hero__logo">
-    <span class="hero__logo-re">Re:</span>Hair
-  </div>
-
-  <div class="hero__period">
-    <span class="hero__period-date">5/7</span>
-    <span class="hero__period-sep">—</span>
-    <span class="hero__period-date">5/31</span>
-    <span class="hero__period-only">限定</span>
-  </div>
-
-  <h1 class="hero__catch">
-    35歳から始める、髪の根本ケア。<br>
-    白髪・薄毛・うねりを、サロンと家で同時にアプローチ。
-  </h1>
-  <p class="hero__sub">麻布十番 Terminal#10｜白髪・薄毛・うねりの根本改善</p>
-
-  <!-- 価格レンジ（修正1） -->
-  <div class="hero__price-intro">
-    <span class="hero__price-from">¥12,000</span>
-    <span class="hero__price-tax">〜（税込）</span>
-    <span class="hero__price-label">5月限定価格</span>
-  </div>
-
-  <!-- ミニコース比較表（修正1） -->
-  <div class="hero__mini-courses">
-    <div class="hero__mini-course">
-      <span class="hero__mini-course-name">ベース</span>
-      <span class="hero__mini-course-price">¥12,000</span>
-      <span class="hero__mini-course-desc">ヒト幹細胞ヘッドスパ</span>
-      <span class="hero__mini-course-gift">🎁 ¥9,020付き</span>
-    </div>
-    <div class="hero__mini-course hero__mini-course--center">
-      <span class="hero__mini-course-badge">★ 最も選ばれています</span>
-      <span class="hero__mini-course-name">スタンダード</span>
-      <span class="hero__mini-course-price hero__mini-course-price--main">¥22,000</span>
-      <span class="hero__mini-course-desc">カラー＋ヘッドスパ</span>
-      <span class="hero__mini-course-gift">🎁 ¥9,020付き</span>
-    </div>
-    <div class="hero__mini-course">
-      <span class="hero__mini-course-name">スペシャル</span>
-      <span class="hero__mini-course-price">¥28,500</span>
-      <span class="hero__mini-course-desc">カット＋カラー＋ヘッドスパ</span>
-      <span class="hero__mini-course-gift">🎁 ¥9,020付き</span>
-    </div>
-  </div>
-  <!-- A: ヒーロー内ギフト帯 -->
-  <div class="hero__gift-strip">
-    <img src="botanience-pro-ex.webp" alt="ボタニエンス スカルプサプリPRO EX" class="hero__gift-img">
-    <div class="hero__gift-body">
-      <div class="hero__gift-tag">🎁 全コース共通特典</div>
-      <div class="hero__gift-name">ボタニエンス スカルプサプリ PRO EX 115ml</div>
-      <div class="hero__gift-value"><strong>¥9,020相当</strong>のホームケアトニックをプレゼント</div>
-      <div class="hero__gift-label">サロン専売・市販不可</div>
-    </div>
-  </div>
-
-  <div class="hero__cta">
-    <!-- LINE URL: 動作未確認 / 下村が後日正しいURLを再取得予定 -->
-    <a href="https://lin.ee/7M5qu3E" target="_blank" rel="noopener noreferrer" class="btn btn--line-hero">
-      <svg width="22" height="22" viewBox="0 0 24 24" fill="white" aria-hidden="true"><path d="M19.365 9.863c.349 0 .63.285.63.631 0 .345-.281.63-.63.63H17.61v1.125h1.755c.349 0 .63.283.63.63 0 .344-.281.629-.63.629h-2.386c-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.63-.63h2.386c.346 0 .627.285.627.63 0 .349-.281.63-.63.63H17.61v1.125h1.755zm-3.855 3.016c0 .27-.174.51-.432.596-.064.021-.133.031-.199.031-.211 0-.391-.09-.51-.25l-2.443-3.317v2.94c0 .344-.279.629-.631.629-.346 0-.626-.285-.626-.629V8.108c0-.27.173-.51.43-.595.06-.023.136-.033.194-.033.195 0 .375.104.495.254l2.462 3.33V8.108c0-.345.282-.63.63-.63.345 0 .63.285.63.63v4.771zm-5.741 0c0 .344-.282.629-.631.629-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.63-.63.346 0 .628.285.628.63v4.771zm-2.466.629H4.917c-.345 0-.63-.285-.63-.629V8.108c0-.345.285-.63.63-.63.348 0 .63.285.63.63v4.141h1.756c.348 0 .629.283.629.63 0 .344-.281.629-.629.629M24 10.314C24 4.943 18.615.572 12 .572S0 4.943 0 10.314c0 4.811 4.27 8.842 10.035 9.608.391.082.923.258 1.058.59.12.301.079.766.038 1.08l-.164 1.02c-.045.301-.24 1.186 1.049.645 1.291-.539 6.916-4.078 9.436-6.975C23.176 14.393 24 12.458 24 10.314"/></svg>
-      LINEで予約する
-      <small>24時間受付・3分で完了</small>
-    </a>
-    <a href="#courses" class="btn btn--net-hero">
-      コースを選んで予約する
-      <small>5月限定価格で確認する</small>
-    </a>
-  </div>
-
-  <div class="hero__reviews">
-    <span class="stars-sm">★★★★★</span> OZmall 5.0（500件超）
-    <span class="hero__reviews-sep">／</span>
-    <span class="stars-sm">★★★★★</span> Google 4.9（100件超）
-  </div>
-
-  <!-- 施術写真 + トニック ビジュアル -->
-  <div class="hero__visuals">
-    <div class="hero__visual-item">
-      <img src="headspa-treatment.jpg"
-           alt="Terminal#10 ヒト幹細胞ヘッドスパ 施術風景"
-           class="hero__visual-img">
-      <span class="hero__visual-label">ヒト幹細胞ヘッドスパ 施術風景</span>
-    </div>
-    <div class="hero__visual-item hero__visual-item--tonic">
-      <img src="botanience-pro-ex.webp"
-           alt="BOTANIENCE SCALPSUPPLY PRO EX 115ml - サンコール"
-           class="hero__visual-img">
-      <span class="hero__visual-label">ホームケアトニック付き<br>¥9,020相当</span>
-    </div>
-  </div>
-
-  <div class="hero__scroll">scroll ↓</div>
-</section>
-
-<!-- ============================================================
-     1.5 TRUST BADGES — 実績バッジ（修正3）
-============================================================ -->
-<section class="trust-badges">
-  <div class="container">
-    <div class="trust-badges__grid">
-      <div class="trust-badge">
-        <div class="trust-badge__stars">★★★★★</div>
-        <div class="trust-badge__score">5.0</div>
-        <div class="trust-badge__platform">OZmall</div>
-        <div class="trust-badge__sub">500件超のレビュー</div>
-      </div>
-      <div class="trust-badge">
-        <div class="trust-badge__stars">★★★★★</div>
-        <div class="trust-badge__score">4.9</div>
-        <div class="trust-badge__platform">Google</div>
-        <div class="trust-badge__sub">100件超のレビュー</div>
-      </div>
-      <div class="trust-badge">
-        <div class="trust-badge__icon">♡</div>
-        <div class="trust-badge__score">94%</div>
-        <div class="trust-badge__platform">リピート率</div>
-        <div class="trust-badge__sub">お客様に選ばれ続ける</div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ============================================================
-     1.7 TONIC TEASER — 5月限定特典（ヒーロー直下・B案）
-============================================================ -->
-<section class="tonic-teaser">
-  <div class="container">
-    <div class="tonic-teaser__inner">
-
-      <div class="tonic-teaser__visual">
-        <img src="botanience-pro-ex.webp"
-             alt="ボタニエンス スカルプサプリPRO EX 115ml - サンコール"
-             class="tonic-teaser__img">
-        <div class="tonic-teaser__official">サロン専売・市販不可</div>
-      </div>
-
-      <div class="tonic-teaser__text">
-        <div class="tonic-teaser__label">✨ 5月限定キャンペーンの特典</div>
-        <h2 class="tonic-teaser__title">全コース対象<br>ホームケアトニックをプレゼント</h2>
-        <div class="tonic-teaser__price-row">
-          <span class="tonic-teaser__yen">¥</span>
-          <span class="tonic-teaser__amount">9,020</span>
-          <span class="tonic-teaser__unit">相当</span>
-        </div>
-        <p class="tonic-teaser__product">ボタニエンス スカルプサプリ PRO EX 115ml</p>
-        <p class="tonic-teaser__desc">
-          施術後にそのままお持ち帰りいただけます。<br>
-          毎日の自宅ケアで、サロン効果を90日間継続。
-        </p>
-        <div class="tonic-teaser__badges">
-          <span class="tonic-teaser__badge">ヒト幹細胞×2種配合</span>
-          <span class="tonic-teaser__badge">Focus P.D.R.N. 配合</span>
-          <span class="tonic-teaser__badge">21種植物エキス</span>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<!-- ============================================================
-     2. WORRY — SVG イラストで悩み可視化
-============================================================ -->
-<section class="worry section">
-  <div class="container">
-    <p class="section__eyebrow">こんなお悩みはありませんか</p>
-    <h2 class="section__title">35歳を過ぎると、<br>髪が変わります。</h2>
-
-    <div class="worry__grid">
-
-      <!-- 白髪 -->
-      <div class="worry__item">
-        <div class="worry__illust">
-          <svg viewBox="0 0 160 190" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="白髪を気にする女性のイラスト">
-            <!-- 髪（暗い茶色・全体シルエット） -->
-            <path d="M80 8 C52 8 32 28 32 64 L32 92 C42 86 60 82 80 82 C100 82 118 86 128 92 L128 64 C128 28 108 8 80 8Z" fill="#3A200E"/>
-            <!-- 白髪・グレーの根元（分け目中央） -->
-            <path d="M80 8 C76 8 73 11 71 17 L73 38 C75 36 77.5 35 80 35 C82.5 35 85 36 87 38 L89 17 C87 11 84 8 80 8Z" fill="#C2B8A8"/>
-            <!-- 髪・サイド（流れ下がる） -->
-            <path d="M32 92 L30 172 C36 158 34 142 34 128 L34 92Z" fill="#3A200E"/>
-            <path d="M128 92 L130 172 C124 158 126 142 126 128 L126 92Z" fill="#3A200E"/>
-            <!-- 顔 -->
-            <ellipse cx="80" cy="120" rx="44" ry="50" fill="#F5DCC8"/>
-            <!-- ほほ -->
-            <ellipse cx="58" cy="128" rx="10" ry="6" fill="#F0A888" opacity="0.2"/>
-            <ellipse cx="102" cy="128" rx="10" ry="6" fill="#F0A888" opacity="0.2"/>
-            <!-- 眉（内側が少し下がる・心配顔） -->
-            <path d="M56 96 C60 93 66 92 71 95" stroke="#2A1508" stroke-width="2.5" fill="none" stroke-linecap="round"/>
-            <path d="M89 95 C94 92 100 93 104 96" stroke="#2A1508" stroke-width="2.5" fill="none" stroke-linecap="round"/>
-            <!-- 目（白目＋瞳＋ハイライト） -->
-            <ellipse cx="63" cy="108" rx="9" ry="8" fill="white"/>
-            <circle cx="63.5" cy="109" r="5" fill="#2A1508"/>
-            <circle cx="65" cy="107" r="2" fill="white"/>
-            <ellipse cx="97" cy="108" rx="9" ry="8" fill="white"/>
-            <circle cx="96.5" cy="109" r="5" fill="#2A1508"/>
-            <circle cx="98" cy="107" r="2" fill="white"/>
-            <!-- 鼻（小さなオーバル） -->
-            <ellipse cx="74" cy="124" rx="3" ry="2" fill="#E8A880" opacity="0.45"/>
-            <ellipse cx="86" cy="124" rx="3" ry="2" fill="#E8A880" opacity="0.45"/>
-            <!-- 口（少し下がり気味） -->
-            <path d="M70 140 Q80 137 90 140" stroke="#C09070" stroke-width="2" fill="none" stroke-linecap="round"/>
-            <!-- 手（グレー部分に触れる） -->
-            <path d="M12 64 C8 58 10 50 16 46 C22 42 30 46 32 54 L34 70 L28 72 C18 70 14 68 12 64Z" fill="#F5DCC8" stroke="#E0C8A8" stroke-width="1"/>
-            <!-- グレー部分への点線 -->
-            <path d="M34 62 Q50 46 68 28" stroke="#B8B0A0" stroke-width="1.5" stroke-dasharray="4 3" fill="none" stroke-linecap="round"/>
-          </svg>
-        </div>
-        <p class="worry__label">白髪が気になる</p>
-        <p class="worry__desc">染めても染めても、追いかけっこが終わらない</p>
-      </div>
-
-      <!-- 薄毛 -->
-      <div class="worry__item">
-        <div class="worry__illust">
-          <svg viewBox="0 0 160 190" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="薄毛を気にする女性のイラスト">
-            <!-- 頭皮（薄い毛の隙間から透けて見える） -->
-            <ellipse cx="80" cy="62" rx="38" ry="30" fill="#F8E8D8"/>
-            <!-- まばらな毛束（左） -->
-            <path d="M42 90 C38 70 42 48 52 32" stroke="#3A200E" stroke-width="3" fill="none" stroke-linecap="round"/>
-            <path d="M48 88 C44 68 48 46 58 30" stroke="#3A200E" stroke-width="2.5" fill="none" stroke-linecap="round"/>
-            <path d="M36 94 C32 76 36 56 46 40" stroke="#5A3818" stroke-width="2" fill="none" stroke-linecap="round"/>
-            <!-- まばらな毛束（中央） -->
-            <path d="M70 72 C68 52 72 32 78 18" stroke="#3A200E" stroke-width="3" fill="none" stroke-linecap="round"/>
-            <path d="M90 72 C92 52 88 32 82 18" stroke="#3A200E" stroke-width="2.5" fill="none" stroke-linecap="round"/>
-            <!-- まばらな毛束（右） -->
-            <path d="M118 90 C122 70 118 48 108 32" stroke="#3A200E" stroke-width="3" fill="none" stroke-linecap="round"/>
-            <path d="M112 88 C116 68 112 46 102 30" stroke="#3A200E" stroke-width="2.5" fill="none" stroke-linecap="round"/>
-            <path d="M124 94 C128 76 124 56 114 40" stroke="#5A3818" stroke-width="2" fill="none" stroke-linecap="round"/>
-            <!-- 顔 -->
-            <ellipse cx="80" cy="120" rx="44" ry="50" fill="#F5DCC8"/>
-            <!-- ほほ -->
-            <ellipse cx="58" cy="128" rx="10" ry="6" fill="#F0A888" opacity="0.2"/>
-            <ellipse cx="102" cy="128" rx="10" ry="6" fill="#F0A888" opacity="0.2"/>
-            <!-- 眉 -->
-            <path d="M56 96 C60 93 66 92 71 95" stroke="#2A1508" stroke-width="2.5" fill="none" stroke-linecap="round"/>
-            <path d="M89 95 C94 92 100 93 104 96" stroke="#2A1508" stroke-width="2.5" fill="none" stroke-linecap="round"/>
-            <!-- 目（少し上を向いている） -->
-            <ellipse cx="63" cy="108" rx="9" ry="8" fill="white"/>
-            <circle cx="63" cy="106" r="5" fill="#2A1508"/>
-            <circle cx="64.5" cy="104.5" r="2" fill="white"/>
-            <ellipse cx="97" cy="108" rx="9" ry="8" fill="white"/>
-            <circle cx="97" cy="106" r="5" fill="#2A1508"/>
-            <circle cx="98.5" cy="104.5" r="2" fill="white"/>
-            <!-- 鼻 -->
-            <ellipse cx="74" cy="124" rx="3" ry="2" fill="#E8A880" opacity="0.45"/>
-            <ellipse cx="86" cy="124" rx="3" ry="2" fill="#E8A880" opacity="0.45"/>
-            <!-- 口 -->
-            <path d="M70 140 Q80 137 90 140" stroke="#C09070" stroke-width="2" fill="none" stroke-linecap="round"/>
-            <!-- 頭に乗せた手 -->
-            <ellipse cx="80" cy="28" rx="24" ry="11" fill="#F5DCC8" stroke="#E0C8A8" stroke-width="1.2"/>
-            <path d="M60 26 L58 15" stroke="#F5DCC8" stroke-width="8" stroke-linecap="round"/>
-            <path d="M60 26 L58 15" stroke="#E0C8A8" stroke-width="1.2" stroke-linecap="round"/>
-            <path d="M69 23 L68 12" stroke="#F5DCC8" stroke-width="8" stroke-linecap="round"/>
-            <path d="M69 23 L68 12" stroke="#E0C8A8" stroke-width="1.2" stroke-linecap="round"/>
-            <path d="M80 22 L80 11" stroke="#F5DCC8" stroke-width="8" stroke-linecap="round"/>
-            <path d="M80 22 L80 11" stroke="#E0C8A8" stroke-width="1.2" stroke-linecap="round"/>
-            <path d="M91 23 L92 12" stroke="#F5DCC8" stroke-width="8" stroke-linecap="round"/>
-            <path d="M91 23 L92 12" stroke="#E0C8A8" stroke-width="1.2" stroke-linecap="round"/>
-          </svg>
-        </div>
-        <p class="worry__label">ボリュームが減った</p>
-        <p class="worry__desc">分け目や頭頂部が薄くなってきた気がする</p>
-      </div>
-
-      <!-- うねり -->
-      <div class="worry__item">
-        <div class="worry__illust">
-          <svg viewBox="0 0 160 190" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="うねりを気にする女性のイラスト">
-            <!-- 左に広がる髪 -->
-            <path d="M8 78 C4 58 10 36 26 22 C16 42 14 66 18 90Z" fill="#3A200E"/>
-            <path d="M14 76 C10 56 16 34 30 20 C22 40 20 64 24 88Z" fill="#2A1008"/>
-            <!-- 右に広がる髪 -->
-            <path d="M152 78 C156 58 150 36 134 22 C144 42 146 66 142 90Z" fill="#3A200E"/>
-            <path d="M146 76 C150 56 144 34 130 20 C138 40 140 64 136 88Z" fill="#2A1008"/>
-            <!-- 髪・上部メイン -->
-            <path d="M26 86 C24 50 40 16 80 10 C120 16 136 50 134 86 C124 80 104 76 80 76 C56 76 36 80 26 86Z" fill="#3A200E"/>
-            <!-- うねり突起（左） -->
-            <path d="M20 52 C12 44 6 34 10 24 C18 32 24 42 28 54Z" fill="#3A200E"/>
-            <path d="M30 28 C24 16 28 6 36 10 C35 22 32 28 34 38Z" fill="#4A2810"/>
-            <!-- うねり突起（右） -->
-            <path d="M140 52 C148 44 154 34 150 24 C142 32 136 42 132 54Z" fill="#3A200E"/>
-            <path d="M130 28 C136 16 132 6 124 10 C125 22 128 28 126 38Z" fill="#4A2810"/>
-            <!-- 毛先うねり（左） -->
-            <path d="M18 90 C10 98 6 114 14 126 C20 118 22 106 26 94Z" fill="#3A200E"/>
-            <path d="M18 126 C12 136 14 150 22 156 C26 144 24 132 22 124Z" fill="#2A1008"/>
-            <!-- 毛先うねり（右） -->
-            <path d="M142 90 C150 98 154 114 146 126 C140 118 138 106 134 94Z" fill="#3A200E"/>
-            <path d="M142 126 C148 136 146 150 138 156 C134 144 136 132 138 124Z" fill="#2A1008"/>
-            <!-- 顔 -->
-            <ellipse cx="80" cy="118" rx="44" ry="50" fill="#F5DCC8"/>
-            <!-- ほほ -->
-            <ellipse cx="58" cy="126" rx="10" ry="6" fill="#F0A888" opacity="0.2"/>
-            <ellipse cx="102" cy="126" rx="10" ry="6" fill="#F0A888" opacity="0.2"/>
-            <!-- 眉 -->
-            <path d="M56 96 C60 93 66 92 71 95" stroke="#2A1508" stroke-width="2.5" fill="none" stroke-linecap="round"/>
-            <path d="M89 95 C94 92 100 93 104 96" stroke="#2A1508" stroke-width="2.5" fill="none" stroke-linecap="round"/>
-            <!-- 目 -->
-            <ellipse cx="63" cy="108" rx="9" ry="8" fill="white"/>
-            <circle cx="63" cy="106" r="5" fill="#2A1508"/>
-            <circle cx="64.5" cy="104.5" r="2" fill="white"/>
-            <ellipse cx="97" cy="108" rx="9" ry="8" fill="white"/>
-            <circle cx="97" cy="106" r="5" fill="#2A1508"/>
-            <circle cx="98.5" cy="104.5" r="2" fill="white"/>
-            <!-- 鼻 -->
-            <ellipse cx="74" cy="122" rx="3" ry="2" fill="#E8A880" opacity="0.45"/>
-            <ellipse cx="86" cy="122" rx="3" ry="2" fill="#E8A880" opacity="0.45"/>
-            <!-- 口 -->
-            <path d="M70 138 Q80 135 90 138" stroke="#C09070" stroke-width="2" fill="none" stroke-linecap="round"/>
-            <!-- 湿気の水滴 -->
-            <ellipse cx="12" cy="36" rx="4" ry="5.5" fill="#88B4CC" opacity="0.65"/>
-            <ellipse cx="148" cy="42" rx="3.5" ry="5" fill="#88B4CC" opacity="0.6"/>
-            <ellipse cx="4" cy="56" rx="3" ry="4.5" fill="#88B4CC" opacity="0.5"/>
-            <ellipse cx="156" cy="62" rx="3" ry="4.5" fill="#88B4CC" opacity="0.5"/>
-            <ellipse cx="10" cy="22" rx="2.5" ry="3.5" fill="#88B4CC" opacity="0.4"/>
-          </svg>
-        </div>
-        <p class="worry__label">うねりが出る</p>
-        <p class="worry__desc">湿気の日はスタイルが決まらない、縮毛矯正の繰り返し</p>
-      </div>
-
-    </div>
-
-    <div class="worry__cause">
-      <p>これらは全て、<strong>頭皮の細胞レベルの問題</strong>です。</p>
-      <p>表面のケアでは届かない場所に、Re:Hair はアプローチします。</p>
-    </div>
-  </div>
-</section>
-
-<!-- ============================================================
-     3. SOLUTION — サロン＋ホームの両輪
-============================================================ -->
-<section class="solution section section--warm">
-  <div class="container">
-    <p class="section__eyebrow">Re:Hair のアプローチ</p>
-    <h2 class="section__title">サロンと自宅の「両輪」で<br>根本から変わる。</h2>
-
-    <div class="solution__two-track">
-      <div class="solution__track">
-        <div class="solution__track-icon">
-          <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <circle cx="32" cy="32" r="30" fill="rgba(184,154,94,0.12)" stroke="#b89a5e" stroke-width="1.5"/>
-            <ellipse cx="32" cy="28" rx="12" ry="10" fill="none" stroke="#b89a5e" stroke-width="1.5"/>
-            <path d="M20 24 Q12 24 10 30 Q12 36 20 36" stroke="#b89a5e" stroke-width="1.2" fill="none" stroke-linecap="round" opacity="0.6"/>
-            <path d="M44 24 Q52 24 54 30 Q52 36 44 36" stroke="#b89a5e" stroke-width="1.2" fill="none" stroke-linecap="round" opacity="0.6"/>
-            <path d="M18 44 Q32 40 46 44 L48 52 L16 52Z" fill="#b89a5e" opacity="0.35"/>
-            <path d="M32 12 L33 15 L36 15 L34 17 L35 20 L32 18 L29 20 L30 17 L28 15 L31 15Z" fill="#b89a5e" opacity="0.7"/>
-          </svg>
-        </div>
-        <div class="solution__track-type">サロン施術</div>
-        <div class="solution__track-name">ヒト幹細胞<br>ヘッドスパ</div>
-        <p class="solution__track-desc">プロが毛乳頭まで幹細胞を届ける、集中ケア</p>
-      </div>
-
-      <div class="solution__plus">+</div>
-
-      <div class="solution__track">
-        <div class="solution__track-icon solution__track-icon--home">
-          <img src="botanience-pro-ex.webp" alt="ボタニエンス スカルプサプリPRO EX" class="solution__track-tonic">
-        </div>
-        <div class="solution__track-type">ホームケア</div>
-        <div class="solution__track-name">ボタニエンス<br>スカルプサプリ PRO EX</div>
-        <p class="solution__track-desc">毎日、自宅で頭皮に幹細胞を届ける</p>
-      </div>
-    </div>
-
-    <div class="solution__arrow-down">↓</div>
-
-    <div class="solution__result-box">
-      <span>白髪</span>
-      <span class="solution__result-sep">/</span>
-      <span>薄毛</span>
-      <span class="solution__result-sep">/</span>
-      <span>うねり</span>
-      <strong>に根本からアプローチ</strong>
-    </div>
-
-    <p class="solution__desc">
-      ヒト幹細胞ヘッドスパ（サロン施術）と、ヒト幹細胞を頭皮に導入できるトニック（ホームケア）。<br>
-      この2つの組み合わせで、白髪・薄毛・うねりに根本からアプローチします。
-    </p>
-
-    <p class="solution__note">
-      <a href="#details" class="solution__detail-link">ヒト幹細胞・ボタニエンスの詳しい説明を読む ▼</a>
-    </p>
-  </div>
-</section>
-
-<!-- ============================================================
-     4. BOTANIENCE — ホームケアトニック専用セクション
-============================================================ -->
-<section class="botanience section" id="tonic">
-  <div class="container">
-    <p class="section__eyebrow">ホームケアトニック</p>
-    <h2 class="section__title">サンコール × ボタニエンス<br><em class="botanience__product-name">スカルプサプリ PRO EX 115ml</em></h2>
-
-    <div class="botanience__inner">
-      <div class="botanience__visual">
-        <div class="botanience__img-frame">
-          <img src="botanience-pro-ex.webp"
-               alt="BOTANIENCE SCALPSUPPLY PRO EX 115ml - サンコール"
-               class="botanience__img">
-          <div class="botanience__official">正規品・サロン専売</div>
-        </div>
-        <div class="botanience__value">
-          <span class="botanience__value-price">¥9,020</span>
-          <span class="botanience__value-label">相当のホームケアトニック付き</span>
-        </div>
-      </div>
-
-      <div class="botanience__info">
-        <div class="botanience__dual-badge">
-          <span>スカルプケア</span>
-          <span class="botanience__dual-x">×</span>
-          <span>エイジングケア</span>
-          <strong>の両立</strong>
-        </div>
-        <p class="botanience__lead">業界最先端の成分を毎日、自宅で。サロン施術と組み合わせることで、根本改善の効果を日々継続させます。</p>
-        <p class="botanience__ingredients-title">主要成分</p>
-        <ul class="botanience__ingredients">
-          <li class="botanience__ingredient">
-            <span class="botanience__ingredient-num">01</span>
-            <div><strong>ヒト毛根幹細胞順化培養液</strong><p>毛根の細胞を活性化し、健やかな発育をサポート</p></div>
-          </li>
-          <li class="botanience__ingredient">
-            <span class="botanience__ingredient-num">02</span>
-            <div><strong>ヒトサイタイ血幹細胞順化培養液</strong><p>頭皮の若々しさを保つ、エイジングケア成分</p></div>
-          </li>
-          <li class="botanience__ingredient">
-            <span class="botanience__ingredient-num">03</span>
-            <div><strong>Focus P.D.R.N. <span class="ingredient-advance">業界最先端</span></strong><p>幹細胞培養液の効果を引き出す先端美容成分</p></div>
-          </li>
-          <li class="botanience__ingredient">
-            <span class="botanience__ingredient-num">04</span>
-            <div><strong>ヘマチン</strong><p>即効性あり。使い始めから効果実感を早める</p></div>
-          </li>
-          <li class="botanience__ingredient">
-            <span class="botanience__ingredient-num">05</span>
-            <div><strong>ピディオキシジル</strong><p>頭皮環境を整え、健やかな頭皮をサポート</p></div>
-          </li>
-          <li class="botanience__ingredient">
-            <span class="botanience__ingredient-num">06</span>
-            <div><strong>21種の植物美容エキス</strong><p>髪一本一本にハリとコシを与え、しっかりとした髪へ</p></div>
-          </li>
-        </ul>
-        <p class="botanience__footnote">※ サンコール × ボタニエンス スカルプサプリPRO EX 115ml（サロン専売・市販不可）</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ============================================================
-     5. HEADSPA FLOW — 7ステップ施術フロー
-============================================================ -->
-<section class="headspa section section--warm" id="headspa">
-  <div class="container">
-    <p class="section__eyebrow">サロン施術の流れ</p>
-    <h2 class="section__title">ヒト幹細胞ヘッドスパ<br>7ステップの施術</h2>
-
-    <!-- 施術写真（見出し直下・全幅） -->
-    <div class="headspa__banner">
-      <img src="headspa-treatment.jpg"
-           alt="Terminal#10 ヒト幹細胞ヘッドスパ 施術風景"
-           class="headspa__banner-img">
-      <div class="headspa__banner-overlay">
-        <span>実際の施術風景 — Terminal#10</span>
-      </div>
-    </div>
-
-    <div class="headspa__inner">
-
-      <!-- ステップフロー（フル幅） -->
-      <div class="headspa__steps">
-        <div class="headspa__step">
-          <div class="headspa__step-num">1</div>
-          <div class="headspa__step-content">
-            <strong>カウンセリング</strong>
-            <p>髪と頭皮の状態を丁寧に確認</p>
-          </div>
-        </div>
-        <div class="headspa__step">
-          <div class="headspa__step-num">2</div>
-          <div class="headspa__step-content">
-            <strong>頭皮のクレンジング</strong>
-            <p>毛穴の汚れと皮脂をしっかり落とす</p>
-          </div>
-        </div>
-        <div class="headspa__step">
-          <div class="headspa__step-num">3</div>
-          <div class="headspa__step-content">
-            <strong>クレンジングシャンプー</strong>
-            <p>頭皮環境を整える専用シャンプー</p>
-          </div>
-        </div>
-        <div class="headspa__step headspa__step--main">
-          <div class="headspa__step-num headspa__step-num--main">4</div>
-          <div class="headspa__step-content">
-            <strong>ヒト幹細胞ヘッドスパ <span class="step-main-tag">メイン施術</span></strong>
-            <p>ヒト幹細胞培養液を頭皮に導入</p>
-          </div>
-        </div>
-        <div class="headspa__step">
-          <div class="headspa__step-num">5</div>
-          <div class="headspa__step-content">
-            <strong>毛先トリートメント</strong>
-            <p>髪のダメージを補修</p>
-          </div>
-        </div>
-        <div class="headspa__step">
-          <div class="headspa__step-num">6</div>
-          <div class="headspa__step-content">
-            <strong>トニックマッサージ</strong>
-            <p>ボタニエンスを使った頭皮マッサージ</p>
-          </div>
-        </div>
-        <div class="headspa__step">
-          <div class="headspa__step-num">7</div>
-          <div class="headspa__step-content">
-            <strong>仕上げ</strong>
-            <p>ブロー＆スタイリング</p>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<!-- ============================================================
-     6. COURSES — 早期提示・価格大きく
-============================================================ -->
-<section class="courses section" id="courses">
-  <div class="container">
-    <div class="courses__banner">
-      <span>5月限定</span>
-      <span class="courses__banner-sep">|</span>
-      <span>初回限定価格</span>
-      <span class="courses__banner-sep">|</span>
-      <span>お申込みは<strong>5/31まで</strong></span>
-    </div>
-
-    <p class="section__eyebrow">5月限定コース</p>
-    <h2 class="section__title">コースを選んで、今月変わる。</h2>
-
-    <div class="courses__grid">
-
-      <!-- スペシャル（松） -->
-      <div class="course">
-        <p class="course__for">スタイルごと変えたい方</p>
-        <h3 class="course__name">Re:Hair<br>スペシャル</h3>
-        <div class="course__savings">
-          <s>通常 ¥34,520</s>
-          <span class="course__savings-badge">¥6,020 OFF</span>
-        </div>
-        <div class="course__price-wrap">
-          <div class="course__price">¥28,500</div>
-          <span class="course__tax">税込</span>
-        </div>
-        <ul class="course__items">
-          <li>カット</li>
-          <li>カラー（白髪・おしゃれ）</li>
-          <li>ヒト幹細胞ヘッドスパ</li>
-        </ul>
-        <div class="course__tonic-row">
-          <img src="botanience-pro-ex.webp" alt="ボタニエンス スカルプサプリPRO EX" class="course__tonic-mini">
-          <div class="course__tonic-info">
-            <span class="course__tonic-name">ボタニエンス スカルプサプリPRO EX</span>
-            <span class="course__tonic-value">お持ち帰り ¥9,020相当</span>
-          </div>
-        </div>
-        <div class="course__time-row">
-          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12,6 12,12 16,14"/></svg>
-          <span>所要時間 約150分</span>
-        </div>
-        <p class="course__cta-urgency">5月31日まで</p>
-        <a href="https://app.aitemasu.me/u/HairsalonTerminal10/150minhal" target="_blank" rel="noopener noreferrer" class="btn btn--course">ネットで予約する</a>
-      </div>
-
-      <!-- スタンダード（竹・推奨） -->
-      <div class="course course--featured">
-        <div class="course__ribbon">★ 最も選ばれています</div>
-        <p class="course__for">白髪・うねりが気になる方</p>
-        <h3 class="course__name">Re:Hair<br>スタンダード</h3>
-        <div class="course__savings">
-          <s>通常 ¥28,520</s>
-          <span class="course__savings-badge">¥6,520 OFF</span>
-        </div>
-        <div class="course__price-wrap">
-          <div class="course__price course__price--featured">¥22,000</div>
-          <span class="course__tax">税込</span>
-        </div>
-        <ul class="course__items">
-          <li>カラー（白髪染め or おしゃれ染め）</li>
-          <li>ヒト幹細胞ヘッドスパ</li>
-        </ul>
-        <div class="course__tonic-row">
-          <img src="botanience-pro-ex.webp" alt="ボタニエンス スカルプサプリPRO EX" class="course__tonic-mini">
-          <div class="course__tonic-info">
-            <span class="course__tonic-name">ボタニエンス スカルプサプリPRO EX</span>
-            <span class="course__tonic-value">お持ち帰り ¥9,020相当</span>
-          </div>
-        </div>
-        <div class="course__time-row">
-          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12,6 12,12 16,14"/></svg>
-          <span>所要時間 約120分</span>
-        </div>
-        <p class="course__cta-urgency">5月31日まで</p>
-        <a href="https://app.aitemasu.me/u/HairsalonTerminal10/120minhalcopy" target="_blank" rel="noopener noreferrer" class="btn btn--course-featured">ネットで予約する</a>
-      </div>
-
-      <!-- ベース（梅） -->
-      <div class="course">
-        <p class="course__for">まず体感してみたい方</p>
-        <h3 class="course__name">Re:Hair<br>ベース</h3>
-        <div class="course__savings">
-          <s>通常 ¥17,020</s>
-          <span class="course__savings-badge">¥5,020 OFF</span>
-        </div>
-        <div class="course__price-wrap">
-          <div class="course__price">¥12,000</div>
-          <span class="course__tax">税込</span>
-        </div>
-        <ul class="course__items">
-          <li>ヒト幹細胞ヘッドスパ</li>
-        </ul>
-        <div class="course__tonic-row">
-          <img src="botanience-pro-ex.webp" alt="ボタニエンス スカルプサプリPRO EX" class="course__tonic-mini">
-          <div class="course__tonic-info">
-            <span class="course__tonic-name">ボタニエンス スカルプサプリPRO EX</span>
-            <span class="course__tonic-value">お持ち帰り ¥9,020相当</span>
-          </div>
-        </div>
-        <div class="course__time-row">
-          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12,6 12,12 16,14"/></svg>
-          <span>所要時間 約60分</span>
-        </div>
-        <p class="course__cta-urgency">5月31日まで</p>
-        <a href="https://app.aitemasu.me/u/HairsalonTerminal10/90minhalcopycopy" target="_blank" rel="noopener noreferrer" class="btn btn--course">ネットで予約する</a>
-      </div>
-
-    </div>
-
-    <p class="courses__note">
-      ※ 全コース無料カウンセリング（約15分）含む。5月限定初回価格。
-    </p>
-  </div>
-</section>
-
-<!-- ============================================================
-     7. HOME CARE BONUS — 全コース共通特典（強調）
-============================================================ -->
-<section class="home-bonus section">
-  <div class="container">
-    <div class="home-bonus__inner">
-
-      <!-- 商品写真 -->
-      <div class="home-bonus__visual">
-        <img src="botanience-pro-ex.webp"
-             alt="BOTANIENCE SCALPSUPPLY PRO EX 115ml - サンコール"
-             class="home-bonus__img">
-      </div>
-
-      <!-- テキスト -->
-      <div class="home-bonus__text">
-        <div class="home-bonus__tag">✨ 全コース共通の特典</div>
-        <h2 class="home-bonus__title">
-          ボタニエンス<br>スカルプサプリ PRO EX 115ml
-        </h2>
-        <p class="home-bonus__sub">お持ち帰りいただけます</p>
-        <p class="home-bonus__value">通常価格 ¥9,020 相当</p>
-
-        <div class="home-bonus__cycle">
-          <div class="home-bonus__cycle-item">
-            <div class="home-bonus__cycle-num">サロン</div>
-            <div class="home-bonus__cycle-detail">
-              <strong>ヒト幹細胞ヘッドスパ</strong>
-              <small>月1〜2回の集中ケア</small>
-            </div>
-          </div>
-          <div class="home-bonus__cycle-plus">＋</div>
-          <div class="home-bonus__cycle-item">
-            <div class="home-bonus__cycle-num">自宅</div>
-            <div class="home-bonus__cycle-detail">
-              <strong>ボタニエンス（毎日）</strong>
-              <small>90日間のホームケア</small>
-            </div>
-          </div>
-        </div>
-
-        <p class="home-bonus__message">
-          この「両輪」こそ、根本改善の鍵です。
-        </p>
-        <!-- LINE URL: 動作未確認 / 下村が後日正しいURLを再取得予定 -->
-        <a href="https://lin.ee/7M5qu3E" target="_blank" rel="noopener noreferrer" class="btn btn--line-hero home-bonus__btn">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="white" aria-hidden="true"><path d="M19.365 9.863c.349 0 .63.285.63.631 0 .345-.281.63-.63.63H17.61v1.125h1.755c.349 0 .63.283.63.63 0 .344-.281.629-.63.629h-2.386c-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.63-.63h2.386c.346 0 .627.285.627.63 0 .349-.281.63-.63.63H17.61v1.125h1.755zm-3.855 3.016c0 .27-.174.51-.432.596-.064.021-.133.031-.199.031-.211 0-.391-.09-.51-.25l-2.443-3.317v2.94c0 .344-.279.629-.631.629-.346 0-.626-.285-.626-.629V8.108c0-.27.173-.51.43-.595.06-.023.136-.033.194-.033.195 0 .375.104.495.254l2.462 3.33V8.108c0-.345.282-.63.63-.63.345 0 .63.285.63.63v4.771zm-5.741 0c0 .344-.282.629-.631.629-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.63-.63.346 0 .628.285.628.63v4.771zm-2.466.629H4.917c-.345 0-.63-.285-.63-.629V8.108c0-.345.285-.63.63-.63.348 0 .63.285.63.63v4.141h1.756c.348 0 .629.283.629.63 0 .344-.281.629-.629.629M24 10.314C24 4.943 18.615.572 12 .572S0 4.943 0 10.314c0 4.811 4.27 8.842 10.035 9.608.391.082.923.258 1.058.59.12.301.079.766.038 1.08l-.164 1.02c-.045.301-.24 1.186 1.049.645 1.291-.539 6.916-4.078 9.436-6.975C23.176 14.393 24 12.458 24 10.314"/></svg>
-          LINEで予約する
-          <small>24時間受付・3分で完了</small>
-        </a>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<!-- ============================================================
-     8. REVIEWS — お客様の声（5件）
-============================================================ -->
-<section class="reviews section section--warm">
-  <div class="container">
-    <div class="reviews__scores">
-      <div class="reviews__score-block">
-        <span class="stars">★★★★★</span>
-        <span class="reviews__score-num">5.0</span>
-        <span class="reviews__score-label">OZmall（500件超）</span>
-      </div>
-      <div class="reviews__score-sep">/</div>
-      <div class="reviews__score-block">
-        <span class="stars">★★★★★</span>
-        <span class="reviews__score-num">4.9</span>
-        <span class="reviews__score-label">Google（100件超）</span>
-      </div>
-    </div>
-
-    <div class="reviews__grid">
-      <div class="review-card">
-        <div class="stars">★★★★★</div>
-        <p>「半年通って、自分でも見違えるほど髪が変わりました。3回目あたりから手触りが全然違ってきて。今は白髪が来るのが怖くなくなりました」</p>
-        <span class="review-card__meta">48歳・自営業</span>
-      </div>
-      <div class="review-card">
-        <div class="stars">★★★★★</div>
-        <p>「白髪のストレスから解放されました。根元が伸びても気にならなくなってきた。こんな変化があるとは思っていなかった」</p>
-        <span class="review-card__meta">43歳・会社員</span>
-      </div>
-      <div class="review-card review-card--accent">
-        <div class="stars">★★★★★</div>
-        <p>「下村さんに会えて本当によかったです。他のサロンでは流されてしまっていた悩みを、真剣に一緒に考えてくれる」</p>
-        <span class="review-card__meta">52歳・主婦</span>
-      </div>
-      <div class="review-card">
-        <div class="stars">★★★★★</div>
-        <p>「他のサロンとは全く違う体験でした。施術の一つひとつに理由があって、頭皮のことを本当に理解してくれていると感じました」</p>
-        <span class="review-card__meta">39歳・経営者</span>
-      </div>
-      <div class="review-card">
-        <div class="stars">★★★★★</div>
-        <p>「カウンセリングが本当に丁寧で、安心して任せられました。初回から『この人に頼んで正解だった』と思えるサロンは初めてです」</p>
-        <span class="review-card__meta">45歳・自営業</span>
-      </div>
-    </div>
-    <p class="reviews__note">※ お客様のご了承のもと掲載。個人名は伏せ字にしています。</p>
-  </div>
-</section>
-
-<!-- ============================================================
-     9. DETAILS — 折りたたみ詳細
-============================================================ -->
-<section class="details-section section" id="details">
-  <div class="container">
-    <p class="details-section__lead">もっと詳しく知りたい方へ</p>
-
-    <details class="detail-card">
-      <summary class="detail-card__trigger">
-        <span>ヒト幹細胞培養液とは？仕組みを知る</span>
-        <span class="detail-card__arrow">▼</span>
-      </summary>
-      <div class="detail-card__body">
-        <p>ヒト幹細胞の培養液には、細胞の修復・再生を促す<strong>サイトカインや成長因子</strong>が豊富に含まれています。これを頭皮から浸透させることで、毛乳頭細胞・毛母細胞に直接働きかけます。</p>
-        <div class="detail-diagram">
-          <div class="detail-diagram__layer detail-diagram__layer--surface">
-            <span>毛幹（見えている髪）</span><span class="detail-tag">シャンプー・トリートメント</span>
-          </div>
-          <div class="detail-diagram__arrow">↓</div>
-          <div class="detail-diagram__layer detail-diagram__layer--mid">
-            <span>毛根・毛球部</span><span class="detail-tag">一般的なヘアケア</span>
-          </div>
-          <div class="detail-diagram__arrow detail-diagram__arrow--gold">↓ Re:Hair はここまで届く</div>
-          <div class="detail-diagram__layer detail-diagram__layer--deep">
-            <span><strong>毛乳頭細胞・毛母細胞</strong><br><small>Re:Hair ターゲット領域</small></span>
-          </div>
-        </div>
-        <div class="detail-effects">
-          <div class="detail-effect"><span class="detail-effect__dot"></span><div><strong>白髪：</strong>メラノサイトへの働きかけで、色素細胞をサポート</div></div>
-          <div class="detail-effect"><span class="detail-effect__dot"></span><div><strong>薄毛：</strong>毛母細胞の分裂促進・毛周期の正常化</div></div>
-          <div class="detail-effect"><span class="detail-effect__dot"></span><div><strong>うねり：</strong>毛根のゆがみ補正・均一な細胞分裂をサポート</div></div>
-        </div>
-        <p class="detail-note">※効果には個人差があります。医薬品ではなく化粧品成分として作用します。</p>
-      </div>
-    </details>
-
-    <details class="detail-card">
-      <summary class="detail-card__trigger">
-        <span>なぜサンコール × ボタニエンスなのか？</span>
-        <span class="detail-card__arrow">▼</span>
-      </summary>
-      <div class="detail-card__body">
-        <p class="detail-intro-quote">「12年間、数多くのケア製品を試してきた中で、本当に変わったという声を一番多くいただいたのがこの製品でした。」— 下村</p>
-        <p><strong>ボタニエンス スカルプサプリPRO EX 115ml</strong>は、ヒト毛根幹細胞・ヒトサイタイ血幹細胞の2種の培養液と、業界最先端の「Focus P.D.R.N.」を配合したサロン専売トニックです。</p>
-        <div class="detail-compare">
-          <div class="detail-compare__head"></div>
-          <div class="detail-compare__head detail-compare__head--bad">市販品</div>
-          <div class="detail-compare__head detail-compare__head--good">ボタニエンス</div>
-          <div class="detail-compare__label">幹細胞濃度</div>
-          <div class="detail-compare__bad">✕ 微量</div>
-          <div class="detail-compare__good">◎ 毛乳頭まで届く濃度</div>
-          <div class="detail-compare__label">品質設計</div>
-          <div class="detail-compare__bad">✕ 一般向け</div>
-          <div class="detail-compare__good">◎ サロンプロ専用</div>
-          <div class="detail-compare__label">入手方法</div>
-          <div class="detail-compare__bad">△ 誰でも購入可</div>
-          <div class="detail-compare__good">◎ サロン限定・市販不可</div>
-          <div class="detail-compare__label">使い方指導</div>
-          <div class="detail-compare__bad">✕ なし</div>
-          <div class="detail-compare__good">◎ プロが直接レクチャー</div>
-        </div>
-        <p class="detail-note">※ サンコール × ボタニエンス スカルプサプリPRO EX 115ml（サロン専売・市販不可）</p>
-      </div>
-    </details>
-  </div>
-</section>
-
-<!-- ============================================================
-     10. CTA #2 — 申込導線
-============================================================ -->
-<section class="cta-section section section--campaign" id="reserve">
-  <div class="container">
-    <div class="cta-section__badge">5月限定キャンペーン</div>
-    <div class="cta-section__period">5/7(水) 〜 5/31(土)</div>
-    <h2 class="cta-section__title">
-      今月だけの価格で、<br>髪を根本から変える。
-    </h2>
-    <p class="cta-section__urgency">残り枠わずか。お申込みは5月31日まで。</p>
-    <div class="cta-section__buttons">
-      <!-- LINE URL: 動作未確認 / 下村が後日正しいURLを再取得予定 -->
-      <a href="https://lin.ee/7M5qu3E" target="_blank" rel="noopener noreferrer" class="btn btn--line-hero">
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="white" aria-hidden="true"><path d="M19.365 9.863c.349 0 .63.285.63.631 0 .345-.281.63-.63.63H17.61v1.125h1.755c.349 0 .63.283.63.63 0 .344-.281.629-.63.629h-2.386c-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.63-.63h2.386c.346 0 .627.285.627.63 0 .349-.281.63-.63.63H17.61v1.125h1.755zm-3.855 3.016c0 .27-.174.51-.432.596-.064.021-.133.031-.199.031-.211 0-.391-.09-.51-.25l-2.443-3.317v2.94c0 .344-.279.629-.631.629-.346 0-.626-.285-.626-.629V8.108c0-.27.173-.51.43-.595.06-.023.136-.033.194-.033.195 0 .375.104.495.254l2.462 3.33V8.108c0-.345.282-.63.63-.63.345 0 .63.285.63.63v4.771zm-5.741 0c0 .344-.282.629-.631.629-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.63-.63.346 0 .628.285.628.63v4.771zm-2.466.629H4.917c-.345 0-.63-.285-.63-.629V8.108c0-.345.285-.63.63-.63.348 0 .63.285.63.63v4.141h1.756c.348 0 .629.283.629.63 0 .344-.281.629-.629.629M24 10.314C24 4.943 18.615.572 12 .572S0 4.943 0 10.314c0 4.811 4.27 8.842 10.035 9.608.391.082.923.258 1.058.59.12.301.079.766.038 1.08l-.164 1.02c-.045.301-.24 1.186 1.049.645 1.291-.539 6.916-4.078 9.436-6.975C23.176 14.393 24 12.458 24 10.314"/></svg>
-        LINEで予約する
-        <small>24時間受付・3分で完了</small>
-      </a>
-      <a href="https://globaltouchnewyork.wixsite.com/terminal-1" target="_blank" rel="noopener noreferrer" class="btn btn--net-hero">
-        ネットで予約する
-        <small>5月限定価格で確認する</small>
-      </a>
-    </div>
-    <p class="cta-section__tel">お問い合わせ（営業時間内）: <a href="tel:03-6887-0302">03-6887-0302</a></p>
-  </div>
-</section>
-
-<!-- ============================================================
-     11. ABOUT — 短く
-============================================================ -->
-<section class="about section">
-  <div class="container">
-    <div class="about__inner">
-      <div>
-        <p class="section__eyebrow">About Terminal#10</p>
-        <h2 class="section__title section__title--left">麻布十番 12年。<br>根本改善だけを<br>追い続けた。</h2>
-      </div>
-      <div class="about__text">
-        <p>東京・麻布十番で12年間、頭皮と向き合ってきたサロンです。</p>
-        <p>Re:Hair は、私がお客様と向き合い続けた中で「本当に変わる」と確信したアプローチだけを、5月限定でまとめたキャンペーンです。</p>
-        <p class="about__sign">— 下村</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ============================================================
-     12. FINAL REVIEWS — 背中を押す3件
-============================================================ -->
-<section class="reviews-final section section--warm">
-  <div class="container">
-    <h2 class="section__title">「申し込んでよかった」<br>その一言が、一番の答えです。</h2>
-    <div class="reviews-final__grid">
-      <div class="review-card-final">
-        <div class="stars">★★★★★</div>
-        <p>「申し込んで本当によかった。もっと早く来ればよかったと思うくらい。最初の一歩が怖かっただけで、来てみたら全然違いました」</p>
-        <span>50歳・会社役員</span>
-      </div>
-      <div class="review-card-final">
-        <div class="stars">★★★★★</div>
-        <p>「3ヶ月後の自分の髪が楽しみすぎます。今まで諦めていたんだなと気づいた。こういう気持ちになれたのは初めて」</p>
-        <span>38歳・会社員</span>
-      </div>
-      <div class="review-card-final">
-        <div class="stars">★★★★★</div>
-        <p>「サロンで変えて、ボタニエンスのトニックで毎日守るという考え方に腑に落ちました。今まで何を頑張っていたのか分かった気がします」</p>
-        <span>47歳・自営業</span>
-      </div>
-    </div>
-    <p class="reviews__note">※ お客様のご了承のもと掲載。個人名は伏せ字にしています。</p>
-  </div>
-</section>
-
-<!-- ============================================================
-     13. FOOTER
-============================================================ -->
-<footer class="footer">
-  <div class="container">
-    <p class="footer__logo"><span class="footer__logo-re">Re:</span>Hair</p>
-    <p class="footer__salon">Terminal#10</p>
-    <p class="footer__info">
-      〒108-0073 東京都港区三田1-6-5 2F<br>
-      お問い合わせ: <a href="tel:03-6887-0302">03-6887-0302</a>（営業時間内）
-    </p>
-    <p class="footer__hours">営業時間 10:00〜19:00 / 定休日 毎週月曜</p>
-    <p class="footer__copy">© 2025 Terminal#10 / Re:Hair. All rights reserved.</p>
-  </div>
-</footer>
-
 <script>
-  (function() {
-    var end = new Date('2025-05-31T23:59:59+09:00');
-    function updateDays() {
-      var now = new Date();
-      var diff = Math.max(0, Math.ceil((end - now) / 86400000));
-      var el = document.getElementById('days-left');
-      if (el) el.textContent = diff;
-    }
-    updateDays();
-    setInterval(updateDays, 60000);
-  })();
+  // ネット予約(アイテマス)のURL
+  var BOOKING_URL = "https://app.aitemasu.me/u/HairsalonTerminal10/colorspa2026";
+  document.querySelectorAll('.js-book').forEach(function(a){
+    a.href = BOOKING_URL; a.target = "_blank"; a.rel = "noopener";
+  });
 </script>
 </body>
 </html>
