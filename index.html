@@ -126,16 +126,37 @@ footer{padding:28px 20px 30px;text-align:center;font-size:11px;color:var(--gray)
 .sticky__price b{display:block;font-family:var(--serif);font-size:20px;color:var(--terra)}
 .sticky .btn{flex:1;padding:13px 10px;font-size:14px}
 .sticky .btn svg{width:18px;height:18px}
+
+/* v13 campaign */
+.ribbon{position:relative;z-index:2;background:linear-gradient(90deg,#B89968,#D4B07E 50%,#B89968);color:#3B2A1F;text-align:center;font-weight:700;font-size:13px;letter-spacing:.12em;padding:9px 12px}
+.ribbon b{font-family:var(--serif);font-size:16px;margin:0 2px}
+.hero__deadline{display:inline-block;white-space:nowrap;margin-top:14px;padding:8px 18px;border-radius:999px;background:rgba(197,111,77,.22);border:1px solid rgba(212,176,126,.5);font-size:12.5px;letter-spacing:.04em}
+.hero__deadline b{font-family:var(--serif);font-size:20px;color:var(--gold-lt);line-height:1}
+.hero__trust{flex-direction:column;gap:10px;margin-top:28px;opacity:1}
+.hero__trust-ttl{font-family:var(--serif);font-size:14px;letter-spacing:.1em;color:var(--gold-lt)}
+.hero__trust-row{display:flex;justify-content:center;gap:8px;flex-wrap:wrap}
+.hero__trust-row span{background:rgba(255,255,255,.08);border:1px solid rgba(212,176,126,.4);border-radius:10px;padding:8px 12px;font-size:11.5px;line-height:1.4;min-width:100px}
+.hero__trust-row b{display:block;font-family:var(--serif);font-size:22px;color:var(--gold-lt);margin:0 0 2px}
+.reviews{display:grid;gap:14px}
+.rv{background:var(--white);border-radius:14px;padding:18px 18px 16px;box-shadow:0 2px 12px rgba(59,42,31,.06);position:relative}
+.rv::before{content:"“";position:absolute;top:6px;left:14px;font-family:var(--serif);font-size:44px;color:var(--gold-lt);line-height:1}
+.rv__stars{color:#C9A24A;font-size:13px;letter-spacing:.1em;margin:0 0 6px 26px}
+.rv p{font-size:14.5px;line-height:1.85;margin:0 0 10px 26px}
+.rv__meta{font-size:12px;color:var(--gray);margin-left:26px}
+.rv__meta b{color:var(--brown-mid);font-weight:500}
+.rv__more{display:block;text-align:center;margin-top:18px;font-size:13px;color:var(--terra);text-decoration:underline;text-underline-offset:3px}
+.sticky__price small{display:block;font-size:10px;color:var(--terra);font-weight:700}
 @media (min-width:640px){.cta{flex-direction:row}.cta .btn{flex:1}}
 </style>
 </head>
 <body>
 
 <header class="hero">
+  <div class="ribbon">9月限定キャンペーン ｜ 先着15名・残り <b class="js-left">15</b> 名</div>
   <div class="hero__bg"></div>
   <div class="hero__in">
     <div class="hero__shop">TERMINAL#10 ｜ 麻布十番</div>
-    <div class="hero__badge">初めての方限定 ・ 先着15名</div>
+    <div class="hero__badge">初めての方限定 ・ 通常価格から 8,000円OFF</div>
     <h1 class="hero__catch">染めるだけで、<br>終わらせない。</h1>
     <p class="hero__sub">白髪も、頭皮も、ハリ・コシも。<br>大人世代のためのカラーメニューです。</p>
 
@@ -147,7 +168,8 @@ footer{padding:28px 20px 30px;text-align:center;font-size:11px;color:var(--gray)
         <span class="offer__arrow">→</span>
         <span class="offer__now">¥9,000<small>税込</small></span>
       </div>
-      <div class="offer__note">新規のお客様限定 ・ ご予約は10月16日まで<br>白髪染め／おしゃれ染め どちらも対象</div>
+      <div class="offer__note">新規のお客様限定<br>白髪染め／おしゃれ染め どちらも対象</div>
+      <div class="hero__deadline">受付終了まで あと<b class="js-days">30</b>日 <span style="opacity:.75">｜ 10/16まで</span></div>
     </div>
 
     <div class="cta">
@@ -162,9 +184,12 @@ footer{padding:28px 20px 30px;text-align:center;font-size:11px;color:var(--gray)
     </div>
 
     <div class="hero__trust">
-      <span><b>5.0</b>OZmall 500件超</span>
-      <span><b>4.9</b>Google 100件超</span>
-      <span><b>92%</b>リピート率</span>
+      <div class="hero__trust-ttl">― 麻布十番の口コミで選ばれるサロン ―</div>
+      <div class="hero__trust-row">
+        <span><b>5.0</b>OZmall口コミ<br>500件超</span>
+        <span><b>4.9</b>Google口コミ<br>100件超</span>
+        <span><b>92%</b>リピート率<br>2か月以内の再来</span>
+      </div>
     </div>
   </div>
 </header>
@@ -172,7 +197,8 @@ footer{padding:28px 20px 30px;text-align:center;font-size:11px;color:var(--gray)
 <section class="sec">
   <div class="wrap">
     <div class="eyebrow">For you</div>
-    <h2 class="ttl">こんな方に、選ばれています。</h2>
+    <h2 class="ttl">カラーのたびに、<br>頭皮はケアしていますか？</h2>
+    <p class="lead">色は染まる。でも頭皮はそのまま——そんなカラーを続けてきた方に、このメニューは選ばれています。</p>
     <ul class="check">
       <li>白髪は染めたい。でも、染めるたびに頭皮がヒリヒリ・ベタつくのが気になる</li>
       <li>トップのボリュームや、髪のハリ・コシが以前と違うと感じる</li>
@@ -225,6 +251,31 @@ footer{padding:28px 20px 30px;text-align:center;font-size:11px;color:var(--gray)
   </div>
 </section>
 
+<section class="sec">
+  <div class="wrap">
+    <div class="eyebrow">Reviews</div>
+    <h2 class="ttl">初めての方が、こう書いてくれました。</h2>
+    <div class="reviews">
+      <div class="rv">
+        <div class="rv__stars">★★★★★ 5.0</div>
+        <p>★5で、半信半疑で伺いましたが……髪のクセ、なぜこうなるのか、提案など丁寧にしていただき、自分の髪ではないような仕上がりで大満足です。髪の状態や顔映りを考えて、落ち着きのある上品な色合いに仕上げていただきました。</p>
+        <div class="rv__meta"><b>40代後半・女性・初回</b>　初回限定 カット＋カラー＋スパ</div>
+      </div>
+      <div class="rv">
+        <div class="rv__stars">★★★★★ 5.0</div>
+        <p>ここ10年以上、色々試しましたが自分好みの髪型に出会えなかったので、カットとカラーだけでここまで素敵な仕上がりにして頂き、大満足です。丁寧なカウンセリングを通し、髪の悩みを色々相談させて頂きました。安心して通えるサロンです。</p>
+        <div class="rv__meta"><b>40代後半・女性・初回</b>　初回限定 カット＋カラー＋スパ</div>
+      </div>
+      <div class="rv">
+        <div class="rv__stars">★★★★★ 5.0</div>
+        <p>カットもカラーの施術も安定で、いつも頼りにさせていただいております。シャンプーやスパも最高です。カラーはつやもちがよく、増えてきた白髪もきれいに仕上げていただきました。</p>
+        <div class="rv__meta"><b>40代前半・女性・来店36回</b>　カット＋白髪染めリタッチ</div>
+      </div>
+    </div>
+    <a class="rv__more" href="https://www.ozmall.co.jp/hairsalon/0704/review/" target="_blank" rel="noopener">OZmallの口コミ 513件をすべて見る</a>
+  </div>
+</section>
+
 <section class="sec sec--warm">
   <div class="wrap">
     <div class="eyebrow">Price</div>
@@ -241,7 +292,7 @@ footer{padding:28px 20px 30px;text-align:center;font-size:11px;color:var(--gray)
         </div>
         <dl>
           <dt>対象</dt><dd>Terminal#10 を初めてご利用の方</dd>
-          <dt>人数</dt><dd>先着15名(定員になり次第終了)</dd>
+          <dt>人数</dt><dd>先着15名 ・ 残り <b class="js-left">15</b> 名（定員になり次第終了）</dd>
           <dt>予約期限</dt><dd>2026年10月16日までのご予約分</dd>
           <dt>所要時間</dt><dd>120分(カウンセリング含む)</dd>
           <dt>カラー</dt><dd>白髪染め・おしゃれ染め どちらも可</dd>
@@ -262,7 +313,7 @@ footer{padding:28px 20px 30px;text-align:center;font-size:11px;color:var(--gray)
   </div>
 </section>
 
-<section class="sec">
+<section class="sec sec--warm">
   <div class="wrap">
     <div class="eyebrow">How to book</div>
     <h2 class="ttl">ご予約は3ステップ</h2>
@@ -274,7 +325,7 @@ footer{padding:28px 20px 30px;text-align:center;font-size:11px;color:var(--gray)
   </div>
 </section>
 
-<section class="sec sec--warm faq">
+<section class="sec faq">
   <div class="wrap">
     <div class="eyebrow">Q&amp;A</div>
     <h2 class="ttl">よくあるご質問</h2>
@@ -287,7 +338,7 @@ footer{padding:28px 20px 30px;text-align:center;font-size:11px;color:var(--gray)
   </div>
 </section>
 
-<section class="sec">
+<section class="sec sec--warm">
   <div class="wrap">
     <div class="eyebrow">Salon</div>
     <h2 class="ttl">Terminal#10</h2>
@@ -316,13 +367,21 @@ footer{padding:28px 20px 30px;text-align:center;font-size:11px;color:var(--gray)
 
 <div class="sticky">
   <div class="sticky__in">
-    <div class="sticky__price">初回限定<b>¥9,000</b></div>
+    <div class="sticky__price">初回限定<b>¥9,000</b><small>残り<span class="js-left">15</span>名</small></div>
     <a class="btn btn--main js-book" href="#">ネット予約</a>
     <a class="btn btn--line" href="https://lin.ee/7M5qu3E" target="_blank" rel="noopener">LINE</a>
   </div>
 </div>
 
 <script>
+  // 残り枠(毎朝更新) と 受付期限
+  var SLOTS_LEFT = 15;
+  var DEADLINE = "2026-10-16T23:59:59+09:00";
+  document.querySelectorAll('.js-left').forEach(function(e){ e.textContent = SLOTS_LEFT; });
+  var days = Math.max(0, Math.ceil((new Date(DEADLINE) - new Date()) / 86400000));
+  document.querySelectorAll('.js-days').forEach(function(e){ e.textContent = days; });
+  if (SLOTS_LEFT <= 0) { document.querySelector('.ribbon').textContent = '9月限定キャンペーンは定員に達しました。ご予約はLINEでご相談ください'; }
+
   // ネット予約(アイテマス)のURL
   var BOOKING_URL = "https://app.aitemasu.me/u/HairsalonTerminal10/colorspa2026";
   document.querySelectorAll('.js-book').forEach(function(a){
