@@ -646,12 +646,12 @@ footer{text-align:center;font-size:12px;color:var(--muted);padding:20px 0 30px}
   document.querySelectorAll('.js-book').forEach(function(a){
     a.href = BOOKING_URL + (AD ? '?ref=' + encodeURIComponent(AD) : ''); a.target = "_blank"; a.rel = "noopener";
     a.addEventListener('click', function(){
-      if (window.fbq) { fbq('trackCustom', 'BookingClick', { ad: AD || 'direct' }); }
+      if (window.fbq) { fbq('trackCustom', 'BookingClick', { ad: AD || 'direct' }); fbq('track', 'Lead', { content_name: 'colorspa_booking_click' }); }
     });
   });
 
   // Meta計測タグ(IDが空のときは何もしない)
-  var META_PIXEL_ID = "";
+  var META_PIXEL_ID = "922538547376914";
   if (META_PIXEL_ID) {
     !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
     fbq('init', META_PIXEL_ID);
