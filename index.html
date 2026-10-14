@@ -78,7 +78,9 @@ a{color:inherit}
 .btn svg{width:22px;height:22px;flex:none}
 .btn--main{background:var(--terra);color:#fff;box-shadow:0 6px 0 var(--terra-dk)}
 .btn--main:active{transform:translateY(3px);box-shadow:0 3px 0 var(--terra-dk)}
-.btn--line{background:var(--white);color:#05A346;border:2px solid var(--line-green)}
+.btn--line{background:var(--line-green);color:#fff;border:2px solid var(--line-green);box-shadow:0 6px 0 #04A043}
+.btn--line:active{transform:translateY(3px);box-shadow:0 3px 0 #04A043}
+.cta__or{text-align:center;font-size:14px;font-weight:700;color:var(--ink2);margin:4px 0 -4px}
 .btn:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
 .cta__note{text-align:center;font-size:14px;color:var(--muted);margin-top:-2px}
 .trust{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:26px}
@@ -262,8 +264,10 @@ footer{text-align:center;font-size:12px;color:var(--muted);padding:20px 0 30px}
 
     <div class="cta">
       <a class="btn btn--main js-book" href="#"><svg><use href="#i-cal"/></svg>空き日時を見て予約する</a>
-      <div class="cta__note">24時間ネット予約・約1分で完了します</div>
-      <a class="btn btn--line" href="https://lin.ee/7M5qu3E" target="_blank" rel="noopener"><svg><use href="#i-line"/></svg>LINEで相談してから決める</a>
+      <div class="cta__note">24時間ネット予約<br>※予約画面の表示に10秒ほどかかることがあります</div>
+      <div class="cta__or">すぐに予約できない方は</div>
+      <a class="btn btn--line js-line" href="https://lin.ee/7M5qu3E" target="_blank" rel="noopener"><svg><use href="#i-line"/></svg>LINEで日時を相談する</a>
+      <div class="cta__note">ご希望の日時を送るだけで、空きをお返事します</div>
     </div>
 
     <div class="trust">
@@ -548,7 +552,10 @@ footer{text-align:center;font-size:12px;color:var(--muted);padding:20px 0 30px}
     </div>
     <div class="cta">
       <a class="btn btn--main js-book" href="#"><svg><use href="#i-cal"/></svg>空き日時を見て予約する</a>
-      <a class="btn btn--line" href="https://lin.ee/7M5qu3E" target="_blank" rel="noopener"><svg><use href="#i-line"/></svg>LINEで相談してから決める</a>
+      <div class="cta__note">※予約画面の表示に10秒ほどかかることがあります</div>
+      <div class="cta__or">すぐに予約できない方は</div>
+      <a class="btn btn--line js-line" href="https://lin.ee/7M5qu3E" target="_blank" rel="noopener"><svg><use href="#i-line"/></svg>LINEで日時を相談する</a>
+      <div class="cta__note">ご希望の日時を送るだけで、空きをお返事します</div>
     </div>
   </div>
 </section>
@@ -626,7 +633,7 @@ footer{text-align:center;font-size:12px;color:var(--muted);padding:20px 0 30px}
   <div class="sticky__in">
     <div class="sticky__price">初回限定<b>9,000円</b>残り<span class="js-left">12</span>名</div>
     <a class="btn btn--main js-book" href="#">空き日時を見る</a>
-    <a class="btn btn--line" href="https://lin.ee/7M5qu3E" target="_blank" rel="noopener" aria-label="LINEで相談"><svg><use href="#i-line"/></svg></a>
+    <a class="btn btn--line js-line" href="https://lin.ee/7M5qu3E" target="_blank" rel="noopener" aria-label="LINEで相談"><svg><use href="#i-line"/></svg></a>
   </div>
 </div>
 
@@ -652,6 +659,12 @@ footer{text-align:center;font-size:12px;color:var(--muted);padding:20px 0 30px}
     a.href = BOOKING_URL + (AD ? '?ref=' + encodeURIComponent(AD) : ''); a.target = "_blank"; a.rel = "noopener";
     a.addEventListener('click', function(){
       if (window.fbq) { fbq('trackCustom', 'BookingClick', { ad: AD || 'direct' }); fbq('track', 'Lead', { content_name: 'colorspa_booking_click' }); }
+    });
+  });
+
+  document.querySelectorAll('.js-line').forEach(function(a){
+    a.addEventListener('click', function(){
+      if (window.fbq) { fbq('trackCustom', 'LineClick', { ad: AD || 'direct' }); fbq('track', 'Contact', { content_name: 'colorspa_line' }); }
     });
   });
 
